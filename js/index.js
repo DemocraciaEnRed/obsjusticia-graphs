@@ -5,7 +5,14 @@ let causas_cerradas
 let jueces
 let total_casusas
 let juicios_politicos
+
 const hoy = new Date()
+
+const calculateYears = () => { // birthday is a date
+	return Math.abs(hoy.getUTCFullYear() - 1998);
+}
+
+$("#anios_desde_1988").text(calculateYears())
 
 const obtenerAnio = (d) => {
 	const exp = d.expediente_numero.split('/');
@@ -131,6 +138,7 @@ const viz2 = () =>{
 	})
 
 	const num_casusa  = desestimadas.filter((d)=>(d.NORM_estado === "Desestimado"))
+	
 	$(".total_desestimadas").text(num_casusa.length)
 	contador_container.text(num_casusa.length)
 
@@ -179,10 +187,10 @@ const viz4 = () =>{
 			const date = monthDiff(fecha,hoy)
 			if(isNaN(date)) console.log(c)
 			
-			if(date <= 12) color = "dot3"
+			if(date <= 12) color = "dot5"
 			if(date > 12 && date <= 24) color = "dot4"
 			if(date > 24) {
-				color = "dot5";
+				color = "dot3";
 				por_caducar = por_caducar + 1;
 			}
 
@@ -247,8 +255,8 @@ const viz6 = () =>{
 			
 		})
 
-	contador_container.text(juicios_politicos.length)
-	$(".total_juicios").text(juicios_politicos.length)
+	contador_container.text(juicios_politicos.length - 2)
+	$(".total_juicios").text(juicios_politicos.length - 2)
 
 }
 
@@ -278,7 +286,7 @@ const viz7 = () =>{
 		
 	})
 
-	contador_container_2.text(juicios_politicos.length)
+	contador_container_2.text(juicios_politicos.length - 2)
 	contador_container.text(destituidos)
 
 }
@@ -319,7 +327,7 @@ const viz8 = () =>{
 		
 	})
 
-	contador_container_2.text(juicios_politicos.length)
+	contador_container_2.text(juicios_politicos.length - 2)
 	contador_container_3.text(absoluciones)
 	contador_container.text(destituidos)
 
@@ -337,7 +345,11 @@ const viz9 = () =>{
 	let absoluciones = 0
 	let renuncias = 0
 	let otros = 0
-	const juicios_politicos_ordenada = juicios_politicos.sort((a, b) => {
+	const juicios_politicos_ordenada = juicios_politicos.filter((d)=>{
+		return d.causa_modo_de_culminación === 'Destituido' 
+			|| d.causa_modo_de_culminación === "Destitución rechazada"
+			|| d.causa_modo_de_culminación === "Renunció antes del juicio"
+	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Destituido" ? 1 : -1;
 	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Destitución rechazada" ? 1 : -1;
@@ -373,7 +385,7 @@ const viz9 = () =>{
 		
 	})
 
-	contador_container_2.text(juicios_politicos.length)
+	contador_container_2.text(juicios_politicos.length - 2)
 	contador_container_3.text(absoluciones)
 	contador_container_5.text(otros)
 	contador_container.text(destituidos)
@@ -384,6 +396,10 @@ const viz10 = () =>{
 	const dot_container = $("#viz10  > .viz-container > .dot-container")
 	const contador_container = $("#viz10  > .viz-container > .viz-footer > .viz-footer-col-2 > .contador > .viz-numero")
 	const contador_container_2 = $("#viz10  > .viz-container > .viz-footer > .viz-footer-col-1 >.viz-footer-col-1-numero > .viz-numero")
+	const contador_container_3 = $("#viz10  > .viz-container > .viz-footer > .viz-footer-col-2 > .contador > .viz-numero2")
+	const contador_container_4 = $("#viz10  > .viz-container > .viz-footer > .viz-footer-col-2 > .contador > .viz-numero3")
+									
+	
 
 	const pre = Array.from(Array(1500).keys())
 	const post = Array.from(Array(1500).keys())
@@ -391,7 +407,11 @@ const viz10 = () =>{
 	let absoluciones = 0
 	let renuncias = 0
 	let otros = 0
-	const juicios_politicos_ordenada = juicios_politicos.sort((a, b) => {
+	const juicios_politicos_ordenada = juicios_politicos.filter((d)=>{
+		return d.causa_modo_de_culminación === 'Destituido' 
+			|| d.causa_modo_de_culminación === "Destitución rechazada"
+			|| d.causa_modo_de_culminación === "Renunció antes del juicio"
+	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Destituido" ? 1 : -1;
 	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Destitución rechazada" ? 1 : -1;
@@ -427,8 +447,12 @@ const viz10 = () =>{
 		
 	})
 
-	contador_container_2.text(juicios_politicos.length)
+	contador_container_2.text(juicios_politicos.length - 2)
 	contador_container.text(renuncias)
+	
+	contador_container_3.text(destituidos)
+	contador_container_4.text(absoluciones)
+	
 
 }
 
@@ -487,7 +511,11 @@ const vizFinal= (option) =>{
 			}).map((d)=>{
 				let anio = d.anio;
 				if(anio === 200) anio = 2012
-				contador_anio[anio].contador += 1
+				
+				if(!contadores_init.contador_anio){
+					contador_anio[anio].contador += 1
+				}
+
 				color = contador_anio[anio].color;
 				dot_container.append(`<span 
 				class="dot dot8 info" 
@@ -516,6 +544,8 @@ const vizFinal= (option) =>{
 							</div>`)
 			}
 
+			contadores_init.contador_anio = true
+
 			
 	}
 
@@ -532,7 +562,10 @@ const vizFinal= (option) =>{
 			return 0;
 		}).map((d)=>{
 			const norm_estado = normalizacion_situacion[d.NORM_estado]
-			contador_situacion[norm_estado].contador += 1;
+			if(!contadores_init.contador_situacion){
+				contador_situacion[norm_estado].contador += 1;
+			}
+			
 			color = contador_situacion[norm_estado].color
 			dot_container.append(`<span 
 				class="dot dot8 info" 
@@ -560,8 +593,8 @@ const vizFinal= (option) =>{
 
 						</div>`)
 		}
-		console.log(casusas_ordenadas)
-		console.log("contador_situacion",contador_situacion)
+		
+		contadores_init.contador_situacion = true
 
 			
 	}
@@ -575,7 +608,9 @@ const vizFinal= (option) =>{
 				return -1;
 			}
 		}).map((d)=>{
-			contador_estado[d.estado].contador += 1;
+			if(!contadores_init.contador_estado)
+				contador_estado[d.estado].contador += 1;
+
 			const color = contador_estado[d.estado].color
 			dot_container.append(`<span 
 				class="dot dot8 info" 
@@ -603,14 +638,14 @@ const vizFinal= (option) =>{
 						</div>`)
 		}
 
-			
+		contadores_init.contador_estado = true
 	}
 
 	if(option === "demora"){
 		casusas_ordenadas = causas_abiertas.sort((a, b) => {
 			const date_a = new Date(a.fecha_dispone_articulo_11);
 			const date_b = new Date(b.fecha_dispone_articulo_11);
-			return date_a - date_b;
+			return date_a > date_b ? 1 : -1;
 		}).map((d)=>{
 			const fecha = new Date(d.fecha_dispone_articulo_11)
 				const date = monthDiff(fecha,hoy)
@@ -618,32 +653,39 @@ const vizFinal= (option) =>{
 				if(date === NaN) console.log(d)
 
 				if (date <= 6 ) {
-					color = contador_demora.seis_meses.color;
-					contador_demora.seis_meses.contador += 1;
+					color = contador_demora.menor_6.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.menor_6.contador += 1;
 				}
 				if (date <= 12 && date > 6) {
-					color = contador_demora.doce_meses.color;
-					contador_demora.doce_meses.contador += 1;
+					color = contador_demora.entre_12_6.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.entre_12_6.contador += 1;
 				}
 				if (date <= 18 && date > 12) {
-					color = contador_demora.dieciocho_meses.color;
-					contador_demora.dieciocho_meses.contador += 1;
+					color = contador_demora.entre_18_12.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.entre_18_12.contador += 1;
 				}
 				if (date <= 24 && date > 18) {
-					color = contador_demora.veinticuatro_meses.color;
-					contador_demora.veinticuatro_meses.contador += 1;
+					color = contador_demora.entre_24_18.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.entre_24_18.contador += 1;
 				}
 				if (date <= 30 && date > 24) {
-					color = contador_demora.treinta_meses.color;
-					contador_demora.treinta_meses.contador += 1;
+					color = contador_demora.entre_30_24.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.entre_30_24.contador += 1;
 				}
 				if (date <= 36 && date > 30) {
-					color = contador_demora.tresintayseis_meses.color;
-					contador_demora.tresintayseis_meses.contador += 1;
+					color = contador_demora.entre_36_30.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.entre_36_30.contador += 1;
 				}
 				if(date>=36){
-					color = contador_demora.mayor.color;
-					contador_demora.mayor.contador += 1;
+					color = contador_demora.mayor_36.color;
+					if(!contadores_init.contador_demora)
+						contador_demora.mayor_36.contador += 1;
 				}
 				dot_container.append(`<span 
 				class="dot dot8 info" 
@@ -660,7 +702,7 @@ const vizFinal= (option) =>{
 
 		for (const demora in contador_demora) {
 			color = contador_demora[demora].color;
-			const porcentaje = (contador_demora[demora].contador/casusas.length)*100
+			const porcentaje = (contador_demora[demora].contador/causas_abiertas.length)*100
 			const p = Math.round(porcentaje * 100) / 100
 			$(".viz-ref").append(`<div class="dot-ref-container">
 							<span class="dot-ref" style="background-color:${color}"></span>
@@ -671,6 +713,7 @@ const vizFinal= (option) =>{
 						</div>`)
 		}
 
+		contadores_init.contador_demora = true
 			
 	}
 
@@ -684,16 +727,19 @@ const vizFinal= (option) =>{
 				}).map((d)=>{
 					let color
 					if(d.genero_est === "Hombre"){
-						contador_genero.hombre.contador += 1
+						if(!contadores_init.contador_genero)
+							contador_genero.hombre.contador += 1
 						color = contador_genero.hombre.color
 					}
 					if(d.genero_est === "Mujer"){
-						contador_genero.mujer.contador += 1
+						if(!contadores_init.contador_genero)
+							contador_genero.mujer.contador += 1
 						color = contador_genero.mujer.color
 					}
 						
 					if(d.genero_est === "Mixto"){
-						contador_genero.mixto.contador += 1
+						if(!contadores_init.contador_genero)
+							contador_genero.mixto.contador += 1
 						color = contador_genero.mixto.color
 					}
 					dot_container.append(`<span 

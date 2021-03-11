@@ -1,4 +1,12 @@
+const contadores_init = {
+	
+	contador_anio: false,
+	contador_situacion: false,
+	contador_estado: false,
+	contador_demora: false,
+	contador_genero: false
 
+}
 const contador_completos = {
 	incompletos:{
 		contador: 0,
@@ -115,7 +123,7 @@ const contador_situacion = {
 	'sancion':{
 		contador: 0,
 		label:'Sanción',
-		color:"#ac5522"
+		color:"#e59d3f"
 	},
 	'juicio-político':{
 		contador: 0,
@@ -141,40 +149,42 @@ const contador_situacion = {
 }
 
 const contador_demora = {
-	mayor:{
+	mayor_36:{
 		contador: 0,
 		label: 'Mayor a<br />36 meses',
-		color: '550000'
+		color: '#129921'
+		
 	},
-	treinta_meses:{
+	entre_36_30:{
 		contador: 0,
-		label: 'Menor a<br />30 meses',
-		color: '#f00'
+		label: 'Entre 36 meses <br/> y 30 meses',
+		color: '#56df26'
 	},
-	tresintayseis_meses:{
+	entre_30_24:{
 		contador: 0,
-		label: 'Menor a<br />36 meses',
-		color: '#994646'
+		label: 'Entre 30 meses <br/> y 24 meses',
+		color: '#facd35'
+		
 	},
-	veinticuatro_meses:{
+	entre_24_18:{
 		contador: 0,
-		label: 'Menor a<br />24 meses',
+		label: 'Entre 24 meses <br/> y 18 meses',
 		color: '#ff5162'
 	},
-	dieciocho_meses:{
+	entre_18_12:{
 		contador: 0,
-		label: 'Menor a<br/>18 meses',
-		color: '#facd35'
+		label: 'Entre 18 meses <br/> y 12 meses',
+		color: '#f00'
     },
-	doce_meses:{
+	entre_12_6:{
 		contador: 0,
-		label: 'Menor a<br/>12 meses',
-		color: '#56df26'
+		label: 'Entre 12 meses <br/> y 6 meses',
+		color: '#994646'
     },
-	seis_meses:{
+	menor_6:{
 		contador: 0,
 		label: 'Menor a<br/>6 meses',
-		color: '#129921'
+		color: '550000'
 	}
 }
 
