@@ -1,0 +1,4947 @@
+{
+    "name": "Expedientes por Consejero 2",
+    "children": [
+        {
+            "name": "Dra. Conti",
+            "value": 111,
+            "children": [
+                {
+                    "name": "Dr. Tiscornia Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Oyarbide Norberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guglielmino   ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Pizzatelli Carlos - Hornor Guillermo - Grabivker marcos ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Skidelsky Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Santa Marina Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Otero",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ziulu Gabino",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Rodriguez Reinaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Vergottini Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Vila de Gene Agueda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ballerini Matilde",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gesualdi Dora",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Lopez Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Crotto Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Torres Sergio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Flah Lili",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Davolos Julio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. carrasco Quintana V\u00edctor",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Federico Cecilia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Racedo Mario",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Uslenghi - Galli - Otero",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Rafecas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Virgilio Palud",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vitale H. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Onofre Alvarez Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ubiedo Carmen",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Alvarez Alicia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Facciutto Omar ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Arroyo Sandra",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fognini Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Parcio Eva",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cossio de Mercau",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mattera Marta del Rosario",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Delgado Sergio ",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Perez Pardo M. - Carminatti Gladis",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gonzalez Laura",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marino Graciela Elena",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cozzi Cesar - Rodriguez J. - Dupuis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Scotto M. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zabala Pedro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Piedrabuena Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Beneventano Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Converset Juan Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Moran Jorge - Gallegos Fedriani Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "`Dres. Cicciaro Juan - Bonorino Per\u00f3",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Quadrini",
+                    "value": 1
+                },
+                {
+                    "name": "Dra.  Quaglia de Vivas",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Rustan de Estrada M. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Caviglia Silvia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ailan Rita Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gonzalez Echeverria",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guiraldes Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Torres - Gordo - Farias - Obligado",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Monta\u00f1a",
+            "value": 84,
+            "children": [
+                {
+                    "name": "Dr. Gonzalez Atilio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Lona - Mezzena - Munir Falu",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sepulveda Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mezzena H. - Falu Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Munir Falu Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Bonad\u00edo Claudio - Ballestero Jorge - Cavallo Gabriel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Davolos Julio",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Cubas Facundo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Goitia Ezequiel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ca\u00f1al Diana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cortelezzi Beatriz - Diaz Solimine Omar - Juli\u00e1 Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Veron Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Abou Assali de Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Salas Luis - Petite Alberto - Vazquez Acu\u00f1a Mart\u00edn",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zucarino Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Grassi Franco",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Molinari Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Nocetti de Ageleri - Amabile Cibils",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. D\u00edaz Cabral Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Salva Federico",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zelaya Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lopez Crespo Silvia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Pinto Silvia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Biotto Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chavez R.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fern\u00e1ndez Zurita Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra.Iturbe de Garc\u00eda Chafuen",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ballestero Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Muleiro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. parache Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Palmaghini Fabiana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Galmarini Jos\u00e9 - Zanonni Eduardo ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Echave H\u00e9ctor",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez R.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Bertola Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Rustan de Estrada M. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vilella Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Canicoba Corral",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ar\u00eda San Mart\u00edn - Bruglia Leopoldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Filozof Mario - Peralta Omar",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rozansky",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ballerini Matilde",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ubiedo Carmen",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Campos Fillol Adolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gottardi Eduardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Dupou Luis",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Pleno",
+            "value": 183,
+            "children": [
+                {
+                    "name": "Dres. Mosquera - Yofre - Becerra Ferrer",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Hornos Gustavo - Riggi Eduardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hornos - Riggi - Fegoli",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Becerra Ferrer",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vitale H. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Skidelsky Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Paez Casta\u00f1eda Germ\u00e1n",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Miguens Dolores",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Di Noto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bisordi Alfredo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ubiedo Carmen ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Rozanski",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Bunge Campos",
+            "value": 93,
+            "children": [
+                {
+                    "name": "Dr. Corazza Arnaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Digeronimo Omar",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Canicoba Corral - Oyarbide Norbeerto - Ballestero Jorge - Bonad\u00edo Claudio- Cavallo Gabrile",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mar\u00eda Anibal R\u00edos",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Donna - Elbert - Bruzzone",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Brugo Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Rodriguez Vidal Claudia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sanches Freytes Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lezama",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Labate Antonio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Di Noto Norma",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lucini Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Canicoba Corral",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Onofre Alvarez Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cubas Facundo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Perez Cat\u00f3n Ana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ballestero",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Dominguez Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Palmaghini",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Canicoba Corral Rodolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ferro Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ricotta Demby - Avrutin Suarez ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gorostiaga",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Reynaldo Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guiraldes Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servini de Cubria Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Pestalardo Silvio",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Ba\u00f1os Julio Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Braga Margarita",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Piedrabuena Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Imbrogno Alfredo ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fernandez Mar\u00eda Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ubiedo Carmen",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Durao  ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ni\u00f1o - pagano - San Mart\u00edn - Zelaya Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Converset Juan Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cossio de Mercau",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zoni Gustavo Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mill de Pereyra",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mart\u00ednez Guillermina",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Francisco",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Arrola",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Belucci Carlos - Arean Alicia Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Bertola Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Deluca Giacobini Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chavez Ram\u00f3n Claudio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De Preindlsperg Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chazarreta",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aguilar Horacio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servetti de Mejias",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gomez Alsina Marta",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Montezanti - Alvarez Canale",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Heiland Liliana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bustos Fierro ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Delgado Sergio ",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "N. Fern\u00e1ndez",
+            "value": 104,
+            "children": [
+                {
+                    "name": "Dr. Rodriguez Alfredo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 2
+                },
+                {
+                    "name": "Dres. Bustos Fierro Ricardo - Rueda Luis - Sanchez Freytes - Mosquera Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Diaz Cano - Mahdjoubian",
+                    "value": 1
+                },
+                {
+                    "name": "Drtes. Vilela Julio - Pirroni Oscar - Del Valle Puppo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Shiffrin Leopoldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Esposito Vicente",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fernandez Adela Norma",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Delgado",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Elbert Carlos - Bruzzone Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bruzzone ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Scolarici Gabriela ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cortelezzi Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Garzon Funes Oscar",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ramos Padilla - otros",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. santamarina A.",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Sanjuan - Mender - Cosio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Guahnon Silvia",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Oliva - Spillere",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Velasquez Enrique",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Garc\u00eda Mar\u00eda del Carmen",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gastaldi Marta",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Parache",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Goitia Ezequiel - Rollan Ra\u00fal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Cordoba Susana",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ilundain Mirta",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. caramelo Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. O'Reilly Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guiraldes Miguel",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Vitale H\u00e9ctor",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Belen Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Gude Ram\u00f3n - Fernandez Juan",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Braga Margarita",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Jimenez Montilla Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Biscayart",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Perez caton Ana Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dres.Miralles Julio - Duran Alberto - Gabino Ziulu Adolfo - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Carminatti Gladis Adriana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Garc\u00eda de la Torre",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ver\u00f3n Beatriz ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Decaria Hugo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Preindlsperg",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Amabile Cibils Gabriela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Portela Mario",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chavez R.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Nicolaris",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Perez Cat\u00f3n Ana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Juan Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lesch Mar\u00eda Fernanda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Corazza Arnaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Marquez Luis Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Reynoso Ra\u00fal ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zamudio Mauricio ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Oyarbide Norberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Garc\u00eda Berro Diego",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Hornos - Capoluppo de Dura\u00f1ona - Berraz de Vidal",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Munne Rodolfo - Dalla V\u00eda Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. zelaya Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alvarez Canale   ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Gonzalez carlos - Gonzalez Palazo Mariano",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Peralta Omar",
+                    "value": 1
+                },
+                {
+                    "name": "DR. Tiscornia Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Irurzun Mart\u00edn - Luraschi Cesar",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Molina Portela Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernadez Javier",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Kolliker Frers",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Santicchia Gerardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mi\u00f1o Francisco",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Candioti",
+            "value": 83,
+            "children": [
+                {
+                    "name": "Dr. Guglielmino Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Oyarbide Norberto",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Vasallo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Alfredo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Durao Fernando",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Liberman Victor",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Grassi Franco",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Garc\u00eda Ra\u00fal Juan Emilio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Parache",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. parache Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mitchell Gustavo - Fegoli Juan - David Pedro",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Galli - Uslenghi",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Di Noto Norma",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Costabel Nestor",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Torterola Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Di Renzi Luis - Gordo Guillermo - Madue\u00f1o Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De Preindlsperg",
+                    "value": 1
+                },
+                {
+                    "name": "Gesualdi Dora",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carbone Edmundo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cattani Horacio - Irurzun Mart\u00edn - Luraschi Eduardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Luis ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guillermo Montenegro",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Corach Gregorio - Scotti Hector",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ferrari Gonzalez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Prada Errecart Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Llanos Ra\u00fal - Rojas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Barcesa Carlos Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Pradas Rodolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Molina Portela Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Corazza Arnaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zaval\u00eda Conlazo",
+                    "value": 1
+                },
+                {
+                    "name": "Ddr. Schiffrin Leopoldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sastre Hugo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Bisordi Alfredo - Hornos Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servetti de Mejias julia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gonzalez Ferrari Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Games Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Venegas - Caballero de Varabani - Harte Santiago",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sanz",
+            "value": 58,
+            "children": [
+                {
+                    "name": "Dres. Sanjuan Ricardo - Mender David - Cossio de Mercau Marina",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Garzon de Lascano",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 3
+                },
+                {
+                    "name": "Dres. Frondizi Roman - Shiffrin Leopoldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Oliva Juan",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Olivera Pastor - Casas - Cardozo Mariano",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. falcone Roberto Atilio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ferreiro Pella Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chavez Claudio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Novatti Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Prada Errecart Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Corchuelo de Huberman",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Abou Assali de Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. D'Alesandro F. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cama\u00f1o Gerardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aon Cayetano Lucas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Tiscornia Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Reinaldo Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ferreiros - Rodriguez Brunengo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Martinez",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fern\u00e1ndez",
+            "value": 8,
+            "children": [
+                {
+                    "name": "Dr. Velazquez Enrique",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Caama\u00f1o",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Diaz Solimine - Alavarez julia - Cortelezzi Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. O'Reilly Mar\u00eda",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Leguizam\u00f3n",
+            "value": 29,
+            "children": [
+                {
+                    "name": "Dr. Hector Ra\u00fal Acosta",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Kolliker Frers",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servetti de Mejias",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Canicoba Corral Rodolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Olivera Pastor",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Caunedo Fernando Mario",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Vazquez Acu\u00f1a - Huarte Petite - Salas",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ubiedo Carmen",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Pestalardo Silvio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ferreiro Pella Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cebeiro Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Giacobbino de Luca",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vigliani Horacio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cavallo Gabriel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Suarez Araujo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Barreiro Rafael",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gonzalez Ferrari Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Wilde Zulema - Mattera Marta",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Kazakevich Fernando",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Insua Juan Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Carminatti Gladis Adriana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Montenegro Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. castellano Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Galli - Otero - Uslenghi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Araoz de lamadrid Octavio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fontbona de Pombo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Fegoli Juan - Mitchell Gustavo - David Pedro",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "L. Cabral",
+            "value": 83,
+            "children": [
+                {
+                    "name": "Dr. Irigoyen Ra\u00fal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Luis Zelaya",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Braga Margarita",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Pompa Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Giudice Miguel Angel",
+                    "value": 1
+                },
+                {
+                    "name": "Jueces Federales",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Martinez G.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fernandez Adela",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Watehelet Marcelo - Najurieta Mar\u00eda - De las carreras Francisco - Farrel Mart\u00edn",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Arecha - Ramirez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Novile Susana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mender Ra\u00fal - Sanjuan Ricardo - Wayar Ernesto - Cossio De Mercau - Fernandez Graciela",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Chediek - Rengel Mirat",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Jimenez Pablo - Tazza Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. rago Gallo Leopoldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Candela Walter",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alberto Priero Narvaez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Dupou Luis Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Diaz Silvia -Caramelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Vassallo Mar\u00eda Gabriela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Portela Mario",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Iermini Alicia",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Torti Roberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Sarmiento Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cattucci - Bisordi - Madue\u00f1o",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Crotto M.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Abou Assali de Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Catucci Liliana - Rodriguez basavilbaso - Madue\u00f1o Ra\u00fal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ehrlich Moreno F.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Crotto Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Fegoli Juan - Mitchell Gustavo - David Pedro",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Madue\u00f1o - Di Renzi - Gordo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gonzalez aura Irene",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Sorini Marisa - Molina Portela Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Nicolaris Norma Susana",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Barbieri Patricia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ballerini Matilde",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bento walter",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Blanch",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vivas Ojeda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Wathelet Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servini de Cubria Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De Campos Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Hornos - Bisordi - Capolupo de Dura\u00f1ona y Vedia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Prada Errecart Miguel",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Losardo",
+            "value": 74,
+            "children": [
+                {
+                    "name": "Dr. Miralles Julio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Enrique Gustavo Velazquez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Montanaro",
+                    "value": 3
+                },
+                {
+                    "name": "Dres. Mezzena Hugo - Diez Mart\u00edn",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cosidoy Laura",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Montanaro Domingo Esteban",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Montanaro Domingo",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Prada Errecart Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Pereyra Gonzalez - Endeiza - Miret",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lijo Ariel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Portela - Falcone - Parra",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Fernandez orozco - Blazquez - Duprat",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Parada Susana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Morando Juan - Catardo Luis - Lezcano Roberto - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Reinaldo Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Abou Assali de Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Geiler Ruth ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Simari Virginia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Palmaghini",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Beneventano Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Acosta Ra\u00fal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Goitia Ezequiel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Casals Jos\u00e9 Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gonz\u00e1lez Balcarce Santiago",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. castellano Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Estevez Santos Rom\u00e1n",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bento walter",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Grecco Carlos - Argento Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Solves Mar\u00eda Cristina",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Goggi Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra.- Fernandez Zurita",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ize Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Axel Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Yanzi Olga Edith",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Echave H\u00e9ctor",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ormaechea",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Salas Juan Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Labate Guillermo Antonio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. zelaya Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Silveyra Esteban Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ramos Padilla Juan",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Alonso - Rojas de Badaro - Navarro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cornejo abel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chomer",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Kunkel",
+            "value": 56,
+            "children": [
+                {
+                    "name": "Dra. Villanueva Julia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Rodriguez Vidal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Maiztegui Mart\u00edn",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Brugo Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ilundain Mirta",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Biscayart",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Garc\u00eda Daniel ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Rivarola S.",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cubas Facundo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Servetti de Mejias - Dupuis - Miras - Calatayud",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ballerini Matilde",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Munne Rodolfo - Dalla V\u00eda Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Molinari",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Coggi Carlos . Migunes Dolores",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Molinari Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rossi Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servini de Cubria Mar\u00eda",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Storani",
+            "value": 48,
+            "children": [
+                {
+                    "name": "Dra. Lanz Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Schegel Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Moreno ferrer Walter",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Candela - Carella - Logrippo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Compaired Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Comas Graciela - Ossola Dardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Axel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Villagra Noro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ojea Quintana Julio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mordeglia - Argento",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ternan Felipe",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Wilde - Matera",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Feijoo Claudio- Sanso Geronimo - Mizrahi Mauricio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Caro Ruben",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De Preindlsperg",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Pestalardo Silvio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Leiras Adriana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Garc\u00eda Berro - Lopez Biscayart - Hornos - Repetto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Diaz Silvia - Prada Errecart Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ponce Roberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Li Rosi Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chomer Hector",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Delgado Sergio - TOC 30",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Filipuzzi Mirta",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Damarco Hector . Garz\u00f3n de Contegrand Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. salva Federico",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Campos Fillol Adolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lopez Susana Wilma",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafael Barreiro ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alvarez Canale Alcindo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ramirez - Arecha - Sala",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Schiffrin - Frondizi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gonzalez Balcarce Santiago",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Davolos Julio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Zysman Diego",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Garc\u00eda Ra\u00fal - Lopez Gonz\u00e1lez Mirta",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Montero Marta",
+                    "value": 1
+                },
+                {
+                    "name": "Ddra. Amabile Cibils Graciela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Chavez Ram\u00f3n Claudio",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Leguizamon",
+            "value": 12,
+            "children": [
+                {
+                    "name": "Dr. Oyarbide Norberto",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Fedraini Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cornejo Abel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Suarez Araujo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Posee Saguier - Galmarini - Zanonni",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servini de Cubr\u00eda Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. R\u00edos Javier",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Locatelli de Mu\u00f1oz Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Catan H. - Falcone R. ",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Comisi\u00f3n",
+            "value": 424,
+            "children": [
+                {
+                    "name": "Dr. Teran Felipe",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Degiorgis Roberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Bunge Campos Luis - Nocetti de Angeleri Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Smuclir Gustavo Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carcamo Estela - Chamot Armando",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Villanueva Julia",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Pucciarelli Alicia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Jorge Adolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cusmanich Patricia - Vecino Hector - Altieri D.",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Biscayart",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gonzalez Balcarce Santiago",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Larrandart Lucila - Milloc Marta",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Warley Ricardo ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Filozof - Pociello Argerich - Garrigos de Rebori",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Puccirelli A. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cancela Omar - Montes de Oca Leopoldo - Belucci Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sastre Hugo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aon Cayetano Lucas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. D'Alesandro F. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Arata Rodolfo- Wilder - Mattera ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Arrabal Pura Olga",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Oyarbide Norberto - Rafecas Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Hualde Paula",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Alvarez Alicia",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Berdi\u00f3n de Crudo - Abou Assali de Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Oyarbide Norberto",
+                    "value": 2
+                },
+                {
+                    "name": "Dres. Farah - Cavallo - Freile",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Amabile Cibils Gabriela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernandez Emilio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Servini de Cubria Romilda - Blanco Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Tiscornia Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lijo Ariel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. montenegro Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Canicoba Corral - Torres",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Penna Marcela",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. De Herrero Ana Dieta",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Daffis Niklison - Cubas Facundo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Bosio Mar\u00eda Rosa",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ba\u00f1os  ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Montenegro Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Coscia Orlando - Albrieu Oscar - Ferrando Norberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hugo Sastre",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Vasallo Gerardo - Dieuzeide Juan - Heredia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Abou Assali de Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Leal Francisco",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Uslenghi - Galli - Otero",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Postolovka",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Juan manuel Converset",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ubiedo Carm\u00e9n",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Scotto M. ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Barbieri Patricia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sudera Jos\u00e9",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gonzalez de Rosello",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ossores - Soto",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lopez Wilma",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ballestero Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Canicoba Corral Rodolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ba\u00f1os Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Facciutto Omar ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daffis Niklison",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernandez Eduardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Villela Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cubas - Daffis Niklison",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lopez Crespo Silvia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Bossio Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Goitia Ezequiel",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Lemega Miguel Gregorio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Caviglia  ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Goggi Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. I\u00f1igo Delia Beatriz",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servetti de Mejias julia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Juan Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Iturbide Gabriela",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Recondo",
+            "value": 89,
+            "children": [
+                {
+                    "name": "Dr. Ize Alberto",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": " Losardo",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dr. Schiffrin Leopoldo",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Conti",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dr. Lijo Ariel",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Dra. Losardo",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dres. Vasallo Gerardo -  Arecha Mart\u00edn ",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "a estudio",
+            "value": 2,
+            "children": [
+                {
+                    "name": "Dra. Fernandez ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Servetti de Mejias julia",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Comisi\u00f3n ",
+            "value": 7,
+            "children": [
+                {
+                    "name": "Dr. Araoz de lamadrid Octavio",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Fuentes",
+            "value": 59,
+            "children": [
+                {
+                    "name": "Dra. Villanueva Julia",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Cabral",
+            "value": 88,
+            "children": [
+                {
+                    "name": "Dr. Ra\u00fal Reynoso",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Luis A. Armella",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mirta Filipuzzi - Ricardo Barreiro - Fernando Richar Gallego - Mariano Lozano",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Rafecas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Miguel Vaca Narvaja",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Claudio Bonadio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Vicente Soto Davila - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Julia Marano Sanchis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Walter Bento",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hern\u00e1n Horacio Pages",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Miguel Angel Gorla (Juez Subrog.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ramos Feijoo - Roberto Parrilli - Mauricio Mizrahi",
+                    "value": 1
+                },
+                {
+                    "name": "Sala III C\u00e1m. Nac. Apel. Cont. Adm. Federal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandro Catania",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Gretel Diamante - Fatima Ruiz Lopez",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marisa Sorini",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guillermo Gonzalez Zurro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ra\u00fal Bejas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ernesto Kreplak",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mario Eugenio Garzon",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Roberto Ponce",
+                    "value": 1
+                },
+                {
+                    "name": "Ddra. Muleiro Elvira",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Dra. C\u00f3rdoba",
+            "value": 8,
+            "children": []
+        },
+        {
+            "name": "Cimadevilla",
+            "value": 77,
+            "children": [
+                {
+                    "name": "Dra. Olga Pura Arrabal",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Ostropolsky",
+            "value": 40,
+            "children": []
+        },
+        {
+            "name": "Fuentes - Cimadevilla - Urriza",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Fera",
+            "value": 67,
+            "children": [
+                {
+                    "name": "Dr. Claudio Bonad\u00edo",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Ordiales",
+            "value": 77,
+            "children": []
+        },
+        {
+            "name": "Kunkel ",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Moreno",
+            "value": 60,
+            "children": []
+        },
+        {
+            "name": "Masquelet",
+            "value": 22,
+            "children": []
+        },
+        {
+            "name": "Bunge campos",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Urriza",
+            "value": 71,
+            "children": []
+        },
+        {
+            "name": "    N. Fern\u00e1ndez",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "      Monta\u00f1a",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Fargosi",
+            "value": 34,
+            "children": []
+        },
+        {
+            "name": "Dra. Conti ",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "C\u00f3rdoba",
+            "value": 52,
+            "children": []
+        },
+        {
+            "name": "Iturrez",
+            "value": 29,
+            "children": []
+        },
+        {
+            "name": "De Pedro",
+            "value": 21,
+            "children": []
+        },
+        {
+            "name": "Recondo ",
+            "value": 2,
+            "children": []
+        },
+        {
+            "name": "Urriza ",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "\u00c1lvarez",
+            "value": 27,
+            "children": []
+        },
+        {
+            "name": "Godoy",
+            "value": 58,
+            "children": [
+                {
+                    "name": "Dr. Claudio Bonad\u00edo",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Recalde",
+            "value": 48,
+            "children": [
+                {
+                    "name": "Dr. Nestor Luis Montezanti",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Rozas",
+            "value": 84,
+            "children": [
+                {
+                    "name": "Dres. Daniel Rafecas - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Zunilda Niremperger - Enrique Bosch ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Rafecas",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Gustavo M. Hornos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernando Luis Povi\u00f1a",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Enrique Beade",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Andrea Garc\u00eda Vior",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carlos Alberto Rozanski y Cesar Alvarez",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mauricio Mizrahi - Roberto Parrilli - Claudio Ramos Feijoo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernando G. D'alessandro - amplia dcia. c/ Dres. Alfredo Kolikers Frers - Isabel Miguez - Mar\u00eda Elsa Uzal",
+                    "value": 1
+                },
+                {
+                    "name": "Sala II TOCF N\u00ba2 Rosario",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Martha Beatriz Gomez Alsina",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cristina Pozzer Penzo (Subr.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lilia Graciela Carnero (Subr)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Julio Carlos Speroni",
+                    "value": 1
+                },
+                {
+                    "name": "Varios Juzgados",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mart\u00edn Lalau - Luis Herrero",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sastre Hugo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gimenez Uriburu Rodrigo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cesari Fernando",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Moldes",
+            "value": 103,
+            "children": [
+                {
+                    "name": "Dres. Oscar Alberto Hergott - Marcelo Alvero",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Claudio Bonad\u00edo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bernardo Daniel Bibel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mariano Wenceslao Cardozo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Marcelo Bailaque",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Manuel De Campos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Osvaldo Rappa (Subrog)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Maximiliano Caia",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Julio Marcelo Lucini - Ricardo Mat\u00edas Pinto - Mario Filosof",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Monica Berdion de Crudo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mirta Filipuzzi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Alejandro Verdaguer - Felix de Igarzabal - Mario Calatayud - Juan Carlos G. Dupuis - Fernando Racimo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Miguel Angel Maza - Gloria Marina Pasten de Ishihara",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Eduardo Caruso",
+                    "value": 1
+                },
+                {
+                    "name": "C\u00e1mara de Comodoro Rivadavia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Roberto Torti",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Claudio Bonadio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Felix de Igarzabal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gustavo Caramelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Onofre Alvarez - Oscar Ameal - Lidia Hern\u00e1ndez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gonzalez Charvay",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Candis",
+            "value": 91,
+            "children": [
+                {
+                    "name": "Dr. Carlos Villafuerte Ruzo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Norberto Oyarbide",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Claudio Bonad\u00edo",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Ra\u00fal Juan Reynoso",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Myriam Cataldi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carlos Chediek - Federico Salva (subr) - Carlos Rengel Mirat",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Federico Hernan Villena (Subr)",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Macarena Marra Gimenez (Subrg)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Eduardo Rodolfo Freiler",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Obligado",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Jos\u00e9 Perez Arias",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Cristina Garzon de Lascano - Jos\u00e9 Fabian Asis - Jos\u00e9 Mar\u00eda perez Villalobos - Carlos Lascano - Miguel vaca Narvaja",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Andres Fraga",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Laura Garrigos de Rebori",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Walter Carnota",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Rita Mar\u00eda Teresa Ailan",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Gonzalez Graciela - Maza Miguel - Ojeda Ra\u00fal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Martinez de Giorgi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Treacy Guillermo - Alemany Jorge",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Pasa al archivo",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Fern\u00e1ndez Sagasti",
+            "value": 20,
+            "children": []
+        },
+        {
+            "name": "ostropolsky",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Ostropolskuy",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Donato",
+            "value": 79,
+            "children": [
+                {
+                    "name": "Dr. Mario Reynaldi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Jorge Ferro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Juan Manuel Culotta (Subrg)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guido Sebastian Otranto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Manuel Gorostiaga",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Olga Pura Arrabal - Walter Bento",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Santiqgo Quian Zavalia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Andres Guillermo Fraga",
+                    "value": 1
+                },
+                {
+                    "name": "Juzg. Fed. N\u00ba4 Seguridad Social",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Lampugnani- Moreira y Soda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Liliana Noemi Gonzalez",
+                    "value": 1
+                },
+                {
+                    "name": "Paso de los Libres",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Viano Carlomagno Maria",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Vald\u00e9s",
+            "value": 23,
+            "children": []
+        },
+        {
+            "name": "Fuente",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Mahiques",
+            "value": 71,
+            "children": [
+                {
+                    "name": "Dres. Daniel Morin - Fatima Ruiz Lopez y Santiago Diaz",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Luis A. Armella",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gustavo Felix De Igarzabal",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Norma Rosa Abou Assali",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mart\u00edn Bava",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ariel Lijo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ana Mar\u00eda Figueroa",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Valeria Perez Casado",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Alejandro Slokar - Pedro David",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mario Eugenio Garzon",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Paula Andrea Castro (Subr)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandro Javier Siderio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Roberto Parrilli - Mauricio Mizrahi - Claudio Ramos Feijoo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Diana Ca\u00f1al - Luis Raffaghelli",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Vicente Soto Davila",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Laura Gonzalez",
+                    "value": 1
+                },
+                {
+                    "name": "Rojas de Badaro - Alonso -  Ceroleni",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Gabriela Vasallo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gustavo Villanueva",
+                    "value": 1
+                },
+                {
+                    "name": "Juzgado Civil N\u00ba58",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Reinaldo Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Tonelli",
+            "value": 66,
+            "children": [
+                {
+                    "name": "Dr. Claudio Bonad\u00edo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Olga Pura Arrabal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Villafuerte Ruzo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ricardo Bustos Fierro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Diego Javier Slupski",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Gustavo Bruzzone - Mar\u00eda Laura Garrigos de Rebori - Luis Fernando Ni\u00f1o",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Garzon de Lascano - Sanchez Freytes - Vaca Narvaja - Muscara - Otero Alvarez - Diaz Gavier - Quiroga Uriburu - Falcucci - Perez Villalobos - Lascano -  Asis - Jimenez Montilla - Diaz - Casas - Berros - Lopez Arango - Bell - Digeronimo - Venegas Echague - Caballero",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mar\u00eda Dolores Fontbona de Pombo - Mario Filozof - Marcelo Lucini - Ricardo Pinto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carlos Alberto Rozanski - Roberto Falcone - Mario Portela - Cesar Alvarez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandro Walter Slokar",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ricardo Freiler",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Marcelo Mart\u00ednez de Giorgi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Juan Ramos Padilla (Subr.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hugo R. Sastre",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandro Slokar",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carlos Rozanski - Pablo Jantus (subr) - Pablo Vega (Subr)",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Norma Abou Assali",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Santiago Inchausti",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Alejandra Elizabeth Paisan (Subrg.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Alejandro Slokar - Pedro David",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Vicente Soto Davila",
+                    "value": 1
+                },
+                {
+                    "name": "Juzg. Trabajo N\u00ba15",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejo Ramos Padilla (Subrog.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejo Ramos Padilla",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernando Luis Povi\u00f1a - Dr. Ricardo San Juan",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Eduardo Freiler",
+                    "value": 3
+                },
+                {
+                    "name": "Dra. Mar\u00eda Marcela Viano Carlomagno",
+                    "value": 1
+                },
+                {
+                    "name": "Dr.Juan Manuel Converset",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Axel Lopez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aril Lijo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Analia Vigano",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Kandus Cecilia",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gomez Alsina Martha",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sicoli Jorge Silvio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Gesualdi Dora",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marra Gimenez Macarena",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Sicoli Jorge - Uzal Mar\u00eda - Kollilers Frers",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Guichandut Patricia",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ramos Padilla Alejo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Hualde Paula- Vasallo G. - Garibotto Juan - Heredia Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Otranto Guido",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "De pedro",
+            "value": 1,
+            "children": []
+        },
+        {
+            "name": "Godoy - Pais",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dr. Norberto Oyarbide",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Godoy -Pais",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dr. Norberto Oyarbide",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Pais",
+            "value": 36,
+            "children": [
+                {
+                    "name": "Dr. Horacio Alejandro Liberti",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alfredo N\u00e9stor Bertolini",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Jorge Lopez - Santiago Zabala",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. N\u00e9stor Montezanti",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ariel Lijo - Wilma Lopez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Leandro Damian Rios",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Ines Lezama",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Oscar Hergott",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hector Pedro Plou",
+                    "value": 1
+                },
+                {
+                    "name": "Mar\u00eda Silvia Dominguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ruben Skidelsky - Dra. Zunilda Niremperger",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandr Walter Slokar",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Juan Carlos Reynaga - Gabriel Eduardo Casas - Carlos Jimenez Montilla - Marta Liliana Snopek - Ana Mar\u00eda Figueroa",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Alicia Vence - Oscar Alberto Papavero",
+                    "value": 1
+                },
+                {
+                    "name": "sin individualizar",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gustavo Daniel Diaz Caramelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Norma Rosa Abou Assali",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Horacio Dias - y otros sin individualizar",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ricardo Antonio Moreno (Subr.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Roberto Ra\u00fal Torti",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Miguel Hugo Vaca Narvaja",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Carlos Manuel Grecco",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mirta Gonzalez Burbridge",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Andrea Erica Garc\u00eda Vior (Subr) - Miguel Angel Pirolo - Graciela Aida Gonzalez",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Karina M. Zucconi",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Gabriela Marr\u00f3n",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ernesto Kreplak",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Enrique Pico Lavie",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Juan Pablo Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lieber Hern\u00e1n",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Villanueva Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Slokar Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Federico Vilena",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marr\u00f3n Mar\u00eda Gabriela",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Valdes",
+            "value": 13,
+            "children": [
+                {
+                    "name": "Dra. Celia Angeles Perez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Julian Ercolini",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. TOC N\u00ba2 CABA - Axel Lopez - Alberto Patricio Santa Marina",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Romilda Servini",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Piedecasas",
+            "value": 14,
+            "children": [
+                {
+                    "name": "Dra. Martina Isabel Forns",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Enrique Arias Gibert - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carlos Compaired - Olga Calitri - Ana Mar\u00eda Figueroa",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Daniel Obligado - Adiana Paliotti - Leopoldo Bruglia",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Negri",
+            "value": 12,
+            "children": [
+                {
+                    "name": "Dr. Francisco Mi\u00f1o",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Jos\u00e9 Sarmiento",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ra\u00fal Juan Reynoso",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Celia Garc\u00eda Zubillaga",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Carlos Orlando Saboldelli (Juez Subr) - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Jorge A. De Santo - Fabiana Palmaghini",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Leonardo Bavio",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. A. Abrevaya (Subr.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hector Vitale",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Myriam Cataldi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Fraga - Iturbide _ Fajre - Diaz Solimine",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Presidencia",
+            "value": 459,
+            "children": [
+                {
+                    "name": "Dr. Juan Fantini Albarenque",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. carnota Walter",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Muleiro Encarnaci\u00f3n",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Perez Nami Ezquiel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Pi\u00f1ero Viviana",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Carese Rita",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sanz de Urquiza",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. tapia Elias",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Enrique Arias Gibert - Graciela Marino",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Hugo Decar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandro Javier Siderio",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Beatriz Bistue de Soler",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marcela Patricia Somer (Subr)",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mar\u00eda Jos\u00e9 Gigy Traynor - Miguel Prada Errecart",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Alejandro Javier Siderio - y otros",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Carolina Pandolfi - Gustavo Villanueva - y otros",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Martina Forns - Alberto Agustin Lugones",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Alicia Isabel Braghini",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Eduardo Caruso (Subrog.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Liliana Fernandez Rodriguez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Claudio Bonadio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Jos\u00e9 Triputti - M. Aguerrido y P. Diaz Lacava - Daniel rafecas - Iara Silvestre",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Beatriz Veron - Zulema Wilde",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ana Mar\u00eda Figueroa - Mariano Borinsky",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Furnari",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Federico Hernan Villena  ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ariel Lijo",
+                    "value": 3
+                },
+                {
+                    "name": "Juzg. Nac. Crim. Correcc. Fed. N\u00ba2",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Jorge Fernando Cesari",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Fernando Ram\u00f3n Ramirez - Luis Mar\u00edo Garc\u00eda - Jorge Humberto Gettas - Ana Dieta de Herrero",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cristina Pozzer Penzo (Subr.)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Julio Dos Santos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernando Perillo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Marisa Sandra Sorini- - Cecilia kundis - Marcelo Luis Gallo Tagle",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Marialma Berrino - Hern\u00e1n Lieber",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Vera Barros",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Goggi",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mirta Filipuzzi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guillermo Daniel Molinari",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ezequiel Goitia - Martinez de Giorgi - Dr. rappa - Dr. Blajean",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Pozzer penzo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr.  Skidelsky",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Jorge Adolfo Lopez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Eduardo Cecinini",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Lucrecia Rojas de Badaro - Fermin Ceroleni",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Marcelo Peluzzi",
+                    "value": 2
+                },
+                {
+                    "name": "Dres. Jorge Tassara - TOF N\u00ba2",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mirta Susana Filipuzzi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Andres Fraga - otros",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Romilda Servini",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Alejandra Adriana Diaz",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Filipuzzi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Horacio Cattani",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gustavo Pierretti",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Beatriz Veron - liliana Bergher",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Marcelo Martinez De Giorgi",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Servini",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sebastian Casanello",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fermin Ceroleni",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Juan Gemignani - Carlos mahiques - Eduardo Riggi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Eduardo Riggi",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Marcelo peluzzi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Julio Speroni - Hern\u00e1n Lieber",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Valeria Lopez Leston",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. carlos Bruniard",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sebast\u00edan Casanello",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gabriel Ghirlanda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ramos Padilla Juan",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Daniel Rafecas - Alejandro Olazabal",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Viviana Pi\u00f1eiro",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Wagmaister Adriana Monica",
+                    "value": 1
+                },
+                {
+                    "name": "integrantes Tribunal Oral Criminal N\u00ba8",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Horacio Liberti",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Obligado - Bruglia y Palliotti",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sebastian Ignacio Sanchez  Cannavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Graciela Avallone",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Walter Lopez Da Silva",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Alberto Vera Barros",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fermin Amado Ceroleni",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Felix De Igarzabal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Fernando Ramirez",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Celia Elsa Giordanino",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ana Mar\u00eda Figueroa",
+                    "value": 1
+                },
+                {
+                    "name": "Fernandez Monica Cecilia",
+                    "value": 1
+                },
+                {
+                    "name": "C\u00e1mara Nacional Apel. Civil",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Rafecas",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Eduardo Malde - Maria Uzal - Alfredo Kolliker Frers",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Pozzer Penzo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Peluso Mart\u00edn",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Argento Jorge - Grecco carlos - Fern\u00e1ndez Sergio",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Ceroleni Fermin",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Wagmaister Adriana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. D'Alessio Ana - Gimenez Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Rebak Roque - Pinto Sergio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lieber Hern\u00e1n",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Almeida Pons Camilo",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Amabile Cibils - De Pinto Alicia",
+                    "value": 1
+                },
+                {
+                    "name": "Juzgado Nacional de Pirmera Instancia en lo Civil N\u00ba105",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Perez Arias Jos\u00e9",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Blanch Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Portela Mario",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De campos Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. De Campos Manuel - Rodriguez Carina",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Litvack Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alfonso Horacio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Figueroa Ana - Mahiques Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gorostiaga Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Giordanino Celia",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Villanueva Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Christello Fernando",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Caia Maximiliano",
+                    "value": 2
+                },
+                {
+                    "name": "Dres. Malde - Uzal- Kolliker Frers",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Kreplak Ernesto",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cordoba Lucila",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Perez Arias",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Ramirez Fernando - Llerena - Garc\u00eda - Bruzone",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Beade Jorge Enrique",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Corcuera Santiago",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carvajal Guillermo ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Torres Sergio Gabriel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonad\u00edo Claudio",
+                    "value": 3
+                },
+                {
+                    "name": "Dra. Servini Mar\u00eda Romilda",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Lijo Ariel - Mart\u00ednez de Giorgi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Aon Lucas - De los Santos Mabel  - Benavente Mar\u00eda - Diaz de Vivar Elisa",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Herrera Piedrabuena Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Tribunal Oral en lo Penal Economico",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. peluzzi Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Villena Federico Hern\u00e1n",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Perillo Fernando",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Arroyo Salgado Sandra",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Castro Paula Andrea",
+                    "value": 1
+                },
+                {
+                    "name": "De Los Santos Mabel - Posse Saguier Fernando - Diaz de Vivar Elisa",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Olazabal Aejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Slupski Diego",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Luis  ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Candisano Pablo - Larriera Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ramirez Fernando Ram\u00f3n",
+                    "value": 1
+                },
+                {
+                    "name": "Dra Alsina Gomez Martha",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Axel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lanz Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Bonad\u00edo Claudio - Rappa Osvaldo ",
+                    "value": 1
+                },
+                {
+                    "name": " Dres. Sanchez Cannavo S. - Uzal M. y Kollikers Frers A.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Monsalve Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Palmaghini Fabiana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejandro Tazza",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ferro Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Martinez de Giorgi Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fontbona de Pombo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Zucconi Karina",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Marcelo peluzzi - Axel Lopez",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Lascano carlos - Perez Villalobo - Garzon Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Canicoba Corral Rodolfo",
+                    "value": 3
+                },
+                {
+                    "name": "Dr. Rodriguez Luis Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De Igarzabal Felix Gustavo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Arroyo Salgado - Torres Sergio ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Argento Jorge - Grecco Carlos - Fern\u00e1ndez Sergio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Medina Miguel",
+                    "value": 1
+                },
+                {
+                    "name": "Garnica Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Federico cecilia",
+                    "value": 1
+                },
+                {
+                    "name": "Garc\u00eda Zubillaga Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aguirre Pablo",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Hansen Esteban",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Garnica Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Peluffo Vanesa",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Garnica Marcelo - Casenllo Sebastian - Ramos Sebastian - Torres Sergio",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Racimo Fernando - Dupuis Juan",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Monsalve Mar\u00eda Jimena",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Garona Dupuis Ana Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "TOC N\u00ba9",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Otranto Guido",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ziulu Adolfo",
+                    "value": 2
+                },
+                {
+                    "name": "Dres. Ghirlanda Gabriel - Guardia Diego",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. Diaz Cordero Agustina - Alonso Candis Karina",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Riggi Eduardo - Catucci Liliana",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Otranto Guillermo - Lleral Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Corcuera Santiago - Dalla V\u00eda Alberto - Ziulu Adolfo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Casals Jos\u00e9 Luis - Doi Mario Achiro",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Martinez Frugoni Carlos Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Posse Paz - Aleman Alberto - Galo Tagle Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Zubillaga Garc\u00eda - Haggopian Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bejas Ra\u00fal",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Laufer Pablo - Magari\u00f1os -Llerenas",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Villena Federico - Basilico Ricardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lleral Guillermo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila Carlos",
+                    "value": 9
+                },
+                {
+                    "name": "Dra. Biotti Alejandra",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Pereira - Biscardi - Federico - Alonso Candis",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Molteni - Picasso",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Meirovich Gustavo",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Ambrozy Silvana",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bonanno Dario",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Marisi Mar\u00eda Paula",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Canicoba Corral - Servini Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marron Mar\u00eda Gabriela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Pennacca Fernando",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Abreut de Bregher Liliana ",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Bellucci - Carranza Casares",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Busaniche Mateo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Fern\u00e1ndez Paula",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Iturralde Mariano",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Bruglia - Bertuzzi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Balestrini Alvaro - Pompa Roberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rappa Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Lucrecia Rojas de Badaro",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Capuchetti Mar\u00eda Eugenia",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Jorge Eduado Chavez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bejas Raul Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lieber Bernardo",
+                    "value": 1
+                },
+                {
+                    "name": " Dra. Bruniard Laura \u2013 Gonz\u00e1lez Carlos A. y Rodr\u00edguez Varela Ignacio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lopez Axel ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Grumberg Adrian",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ramos Padilla Alejo",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "cama\u00f1o",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dr. Leandro Rios",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Mahiqus",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dres. A. Ledesma - Pedro David - Alejandro Slokar - Liliana Catucci",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Cama\u00f1o",
+            "value": 16,
+            "children": [
+                {
+                    "name": "Dr. Hector Pedro Plou",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Alicia Vence",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Hector Grieben - Hugo Decaria",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mario Eugenio Garzon",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sebastian Casanello",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Rafecas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gustavo Eduardo Noya",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Carlos Rozanski",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Mario Portela - Carlos Rozanski - Roberto falcone",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Alejo Ramos Padilla (Subrg)",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mario Portela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Leopoldo Rago Gallo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. De Campos Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Federico Javier Causse",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Luis Alberto Dupou",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sergio Torres",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Molea",
+            "value": 14,
+            "children": [
+                {
+                    "name": "Dr. Manuel De Campos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sebast\u00edan Casanello",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Sandra Arroyo Salgado",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Javier Lopez Biscayart",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sebastian Ramos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda Gabriela Fernandez Zurita",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bernardo Bibel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Obligado",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Luis Rizzi - Marcela Rodriguez - Guillermo Friele",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Olga Pura Arrabal",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vicente Soto Davila",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Luis Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Laura Irene Gonzalez",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Ailan Rita Mar\u00eda",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Pichetto",
+            "value": 6,
+            "children": [
+                {
+                    "name": "Juzgado Federal de Rio Gallegos",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Liliana Rodriguez Fern\u00e1ndez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Santiago Inchausti",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Carminatti Gladis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr.  Rodriguez Reynaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aon Lucas",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Brizuela y Doria",
+            "value": 9,
+            "children": [
+                {
+                    "name": "Dr. Juan Gemignani",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Walter Bento - Roberto Naciff - Alejandro Pi\u00f1a - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Guido Sebastian Otranto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Mariano Wenceslao Cardozo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Daniel Rafecas",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Furnari Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Auge Juan Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Armella Luis Antonio",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Oportun. Mahiques",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dres. Mariano Borinsky - Juan Carlos Gemignani",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "presidencia",
+            "value": 2,
+            "children": [
+                {
+                    "name": "Dr. Rafecas Daniel",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Mas Velez",
+            "value": 10,
+            "children": [
+                {
+                    "name": "Dr. Rodolfo Canicoba Corral",
+                    "value": 1
+                },
+                {
+                    "name": "Juzg. Fed. N\u00ba1 de Corrientes",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marta Susana Gastaldi",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Verdaguer - De Los Santos - Diaz de Vivar - Benavente",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Ercolini Julian",
+                    "value": 1
+                },
+                {
+                    "name": "Dr.Marcos Andr\u00e9s Fern\u00e1ndez",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Astorga Maximo",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Bargallo Benegas",
+            "value": 6,
+            "children": [
+                {
+                    "name": "Dres. Julio V\u00edctor Reboredo - Carlos Compaired - Roberto Lemos Arias - ",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Vera Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Trib. Oral Crim. Correcc. N\u00ba6 Cap. Fed.",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cataldi Myriam",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Cammarata Adriana",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Giacoppo",
+            "value": 5,
+            "children": [
+                {
+                    "name": "Dr. Guillermo Molinari",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Arias Gibert - Rodriguez Brunengo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Di Filippo Mar\u00eda",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gallo Tagle Marcelo",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Pilatti Vergara",
+            "value": 4,
+            "children": [
+                {
+                    "name": "Dres. Mart\u00edn Irurzun - Eduardo Farah",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Juan mar\u00eda Ramos Padilla",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Sideiro Alejandro",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Forns Martina",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Siley",
+            "value": 4,
+            "children": [
+                {
+                    "name": "Juzg. Fed. Paso de los Libres",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Mar\u00eda O. Bacigalupo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Iturbide Gabriela - Liberman V\u00edctor - Perez Pardo Marcela",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Craig Graciela - Raffaghelli - Pose - Plaisant",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Lugones",
+            "value": 20,
+            "children": [
+                {
+                    "name": "Dr. Alejandro Segura",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Slokar - Angela Ledesma - Pedro David",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Marano Sanchis",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Perez Pardo Marcela - Liberman V\u00edctor",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Caruso Eduardo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Catardo Luis - Carambia Graciela",
+                    "value": 1
+                },
+                {
+                    "name": "Dras. D\u00edaz de Vivar Elisa - Benavente Mar\u00eda Isabel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bavio Julio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Auge Juan Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Fajre J. Abreut de Bagher",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Rodriguez Luis Osvaldo",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Simari Virginia",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Perez Arias - Bisceglia Vilma",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Lijo Ariel",
+                    "value": 2
+                },
+                {
+                    "name": "Dra. Gilardi Madariaga de Negre",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Diez Selva Manuel",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Peluzzi Marcelo",
+                    "value": 2
+                },
+                {
+                    "name": "Dr. Igarzabal Felix",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Ustarroz",
+            "value": 2,
+            "children": [
+                {
+                    "name": "Dr. Claudio Bonad\u00edo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Claudio Bonadio",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Toneli",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dres. Enrique Arias Gibert - Graciela Marino",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Culotta",
+            "value": 17,
+            "children": [
+                {
+                    "name": "Dres. Ferro - Bava - Triputti",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Parcio de Seleme Eva",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Martinez de Giorgi Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Cassineiro Jos\u00e9 Luis",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Calandrino Alberto",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bondio Claudio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Grisolia Julio Armando",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Soto Davila Carlos",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Gorini Jorge",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Peluzzi Marcelo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Aguirre Pablo",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Armella Luis Antonio",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Anzoategui Javier",
+                    "value": 1
+                },
+                {
+                    "name": "Dra. Angulo Graciela",
+                    "value": 1
+                },
+                {
+                    "name": "Dr. Bejas Daniel",
+                    "value": 1
+                },
+                {
+                    "name": "Dres. Perugini Alejandro - Perez Miguel",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "Sanchez Herrero",
+            "value": 1,
+            "children": [
+                {
+                    "name": "Dr. Canicoba Corral Rodolfo",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}

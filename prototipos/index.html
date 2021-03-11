@@ -1,0 +1,37 @@
+<html>
+    <header>
+        <title></title>
+        <link rel="stylesheet" href="assets/css/viz.css">
+        <script src="assets/js/viz.js"></script>
+        
+    </header>
+    
+    <body>
+        
+       <p>Cambiar viz:  
+            <select id = "source">
+                <option value="http://www.javierlujan.com.ar/justicia/data/jueces.json">Jueces</option>
+                <option value="http://www.javierlujan.com.ar/justicia/data/consejeros.json">Consejeros</option> 
+                <option value="http://www.javierlujan.com.ar/justicia/data/denunciantes.json">Denunciantes</option>
+            </select>
+        </p>
+        <p id="chart"></p>
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            window.onload = () => {
+                Viz("http://www.javierlujan.com.ar/justicia/data/jueces.json");
+            };
+
+            $( document ).ready(function() {
+                $("#source").change(()=>{
+                    const source = $("#source").val()
+                    Viz(source);
+                    
+                })
+            });
+
+            
+        </script>
+    </body>
+</html>

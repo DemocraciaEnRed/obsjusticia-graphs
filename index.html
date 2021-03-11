@@ -1,0 +1,538 @@
+<html>
+	<head>
+		<title>Proceso diseño visualizaciones Transparencia Justicia</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+		<script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
+		<script src="js/color-scheme.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://kit.fontawesome.com/e9e2adacb6.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		
+		<nav>
+			<ul id="mainNav">
+				22 AÑOS
+				<li class="active">
+					<a href="#viz1">
+						<span class="num total_denuncias">0</span>
+						<br/> 
+						<span class="title">DENUNCIAS</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#viz2">
+						<span class="num total_desestimadas">0</span>
+						<br/> 
+						<span class="title">DESESTIMADAS</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#viz3">
+						<span class="num total_caducadas">0</span>
+						<br/> 
+						<span class="title">CADUCARON</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#viz4">
+						<span class="num total_activas">0</span>
+						<br/> 
+						<span class="title">causas activas</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#viz5">
+						<span class="num total_sancionadas">0</span>
+						<br/> 
+						<span class="title">con sanciones</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#viz6">
+						<span class="num total_juicios">0</span>
+						<br/> 
+						<span class="title">juicios politcos</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#viz11">
+						<span class="num total_incompletas">0</span>
+						<br/> 
+						<span class="title">incompletas</span>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#vizFinal">
+						<span class="num">BUSCA DENUNCIAS</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="viz-section" id="viz1">
+			
+			<div class="viz-container">
+				<h1> Desde que comenzó a funcionar el consejo de la magistratura en 1998 se registran <strong>3770  denuncias</strong>. </h1>
+				<div class="dot-container">
+					<img src="loading.gif" class="loading"/>
+				</div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							En 20 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color1"></span> denuncias
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz2">
+			<div class="viz-container">
+				<h1>De todas las denuncias, <strong>3542 se desestimaron</strong> a la falta de solidez de las mismas , muchas  ni siquiera cumplen con los requisitos mínimos (in limine) 			</h1>
+				<div class="dot-container">
+					<img src="loading.gif" class="loading"/>
+				</div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							En 20 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color1"></span> denuncias
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							De todas las denuncias
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color2"></span> se desestimaron
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz3">
+			<div class="viz-container">
+				<h1><strong>245</strong> denuncias <strong>caducaron</strong> por falta de voluntad del Consejo! La ley establece que tiene 3 años para investigar y determinar un veredicto, caso contrario se cierra por falta de eficacia.</h1>
+				<div class="dot-container">
+					<img src="loading.gif" class="loading"/>
+				</div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							En 20 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color1"></span> denuncias
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							De todas las denuncias
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color1"></span> se desestimaron
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz4">
+			<div class="viz-container">
+				<h1>En la actualidad hay  187 causas activas! De las cuales 62 estan a punto de caducar!</h1>
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							En la actualidad existen
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color1"></span> casusas activas
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							De las cuales
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color1"></span> estan a punto de caducar
+						</div>
+					</div>
+				</div>
+				<div class="viz-footer-ref">
+					<div class="ref-container"> 
+						<div class="ref-dot">
+							<div class="dot-ref dot3">
+
+							</div>
+						</div>
+						<div class="ref-text">
+							Caducan en <br/>
+							<span class="color3 bold">1 año</span>
+						</div>
+					</div>
+
+					<div class="ref-container"> 
+						<div class="ref-dot">
+							<div class="dot-ref dot4">
+
+							</div>
+						</div>
+						<div class="ref-text">
+							Caducan en <br/>
+							<span class="color4 bold">2 años</span>
+						</div>
+					</div>
+
+					<div class="ref-container"> 
+						<div class="ref-dot">
+							<div class="dot-ref dot5">
+
+							</div>
+						</div>
+						<div class="ref-text">
+							Caducan en <br/>
+							<span class="color5 bold">3 años</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz5">
+			<div class="viz-container">
+				
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Del total de denuncias cerradas
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color1"></span> terminaron con sanciones
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							Mientras que
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color7"></span> obtuvieron algun tipo de sanción
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz6">
+			<div class="viz-container">
+				<h1>De todas las denuncias y luego de 22 años existen 37 juicios políticos completos que terminaron con 18 destituciones y 6 casos que se absolvieron.</h1>
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Luego de 22 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero"></span> juicios politicos
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz7">
+			<div class="viz-container">
+				
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Luego de 22 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero"></span> juicios politicos
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							Que terminaron en
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color9"></span> destituciones
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz8">
+			<div class="viz-container">
+				<h1>16 juicios políticos terminaron en destitución.</h1>
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Luego de 22 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero"></span> juicios politicos
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							Que terminaron en
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color9"></span> destituciones
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero2 color7"></span> absoluciones
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz9">
+			<div class="viz-container">
+				<h1>6 juicios políticos terminaron en absoluciones.</h1>
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Luego de 22 años
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero"></span> juicios politicos
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							Que terminaron en
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color9"></span> Destituciones
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero2 color7"></span> Absoluciones
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero4 color8"></span> Otros
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz10">
+			<div class="viz-container">
+				<h1>11 juicios políticos terminaron con la renuncia del Juez antes de que el proceso judicial termine. En muchos casos esto es una solución política que no resuelve el fondo de la denuncia.</h1>
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Del total de denuncias cerradas
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color1"></span> terminaron con sanciones
+						</div>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							Durante este tiempo
+						</div>
+						<div class="contador bold">
+							<span class="viz-numero color10"></span> Juicios politicos que terminaron en la renuncia del juez
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="viz11">
+			<div class="viz-container">
+				<h1>Lamentablemente hay más de 2470 denuncias con información incompleta, en muchísimos casos no contamos ni con el nombre del juez o  datos como el género del mismo. La información abierta es poca y de baja calidad.
+				</h1>
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-footer-col-1">
+						<div class="viz-footer-col-1-copete">
+							Lamentablemente hay mas de 
+						</div>
+						<div class="viz-footer-col-1-numero">
+							<span class="viz-numero color6"></span> denuncias con información incompleta
+						</div>
+						<p>en muchísimos casos no contamos ni con el nombre del juezo datos como el género del mismo.</p>
+					</div>
+					<div class="viz-footer-col-2">
+						<div>
+							La información abiertas es
+						</div>
+						<div class="contador bold">
+							poca y de baja calidad
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="viz-section" id="vizFinal">
+			<div class="viz-container">
+				
+				<div class="title-search-contianer">
+					<div class="title-search">Ahora te toca a vos jugar al</div>
+					<div lass="sub-title-search">buscar denuncias</div>
+				</div>
+				<div class="title-feet-search">Selecciná los datos que quieras ver en detalles</div>
+
+				<div class="filter-container">
+					
+					
+						<label class="container">
+							
+							<input type="radio" name="filter" class="filtro" value="anio">
+							<div class="pre-checkmark">
+								<span class="checkmark"/>
+							</div>
+							
+							<img src="img/anio.png"/>
+							Por año
+						  </label>
+						
+						
+						  <label class="container">
+							
+							<input type="radio" name="filter" class="filtro" value="situacion">
+							<div class="pre-checkmark">
+								<span class="checkmark"/>
+							</div>
+							
+							<img src="img/situacion.png"/>
+							Situación
+						  </label>
+						  <label class="container">
+							
+							<input type="radio" name="filter" class="filtro" value="estado">
+							<div class="pre-checkmark">
+								<span class="checkmark"/>
+							</div>
+							
+							<img src="img/estado.png"/>
+							Estado
+						  </label>
+						  <label class="container">
+							
+							<input type="radio" name="filter" class="filtro" value="demora">
+							<div class="pre-checkmark">
+								<span class="checkmark"/>
+							</div>
+							
+							<img src="img/demora.png"/>
+							Demora
+						  </label>
+						  <label class="container">
+							
+							<input type="radio" name="filter" class="filtro" value="genero">
+							<div class="pre-checkmark">
+								<span class="checkmark"/>
+							</div>
+							
+							<img src="img/genero.png"/>
+							Genero
+						  </label>
+				</div>
+
+				<div class="tooltip-container" id="tooltip-container">
+					<img src="img/t.png" id="t">
+					<div class="tooltip-row chivo">
+						<p>
+							<span class="tooltip-label">DENUNCIADO</span>
+							<br>
+							<div class="tooltip-info" id="tooltip-denunciado"></div>
+						</p>
+					</div>
+					<div class="tooltip-row chivo">
+						<p>
+							<span class="tooltip-label">AÑO</span>
+							<br>
+							<span class="tooltip-info" id="tooltip-anio"></span>
+						</p>
+					</div>
+					<div class="tooltip-row chivo">
+						<p>
+							<span class="tooltip-label">ESTADO</span>
+							<br>
+							<span class="tooltip-info" id="tooltip-estado"></span>
+						</p>
+					</div>
+					<div class="tooltip-row chivo">
+						<p>
+							<span class="tooltip-label">DENUNCIANTE</span>
+							<br>
+							<span class="tooltip-info" id="tooltip-denunciante"></span>
+						</p>
+					</div>
+					<div class="tooltip-row chivo">
+						<p>
+							<span class="tooltip-label">SITUACION</span>
+							<br>
+							<span class="tooltip-info" id="tooltip-situacion"></span>
+						</p>
+					</div>
+				</div>
+
+				<div class="dot-container"></div>
+				<div class="viz-footer">
+					<div class="viz-ref">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script src="js/const.js" ></script>
+		<script src="js/contadores.js" ></script>
+		<script src="js/index.js" ></script>
+		<script src="js/menu.js" ></script>
+		
+	</body>
+</html>
