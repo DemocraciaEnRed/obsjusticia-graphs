@@ -27,8 +27,8 @@ h1{
 }
 
 .viz-container{
-    max-width: 60vw;
-    margin: auto;
+    max-width: 80vw;
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +38,7 @@ section{
 }
 
 .viz-section{
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 100vh;
     padding: 50px;
     display: block;
