@@ -220,7 +220,7 @@ const viz5 = () =>{
 
 	sancionadas.map((d)=>{
 		//console.log(d.NORM_estado)
-		if(d.NORM_estado === 'Desestimado') num_sanciones = num_sanciones + 1
+		if(d.NORM_estado === 'Sanción') num_sanciones = num_sanciones + 1
 		d.NORM_estado === "Sanción" ?
 			dot_container.append(`<span class="dot dot1"></span>`)
 			:
@@ -230,7 +230,7 @@ const viz5 = () =>{
 	const num_casusa  = sancionadas.filter((d)=>(d.NORM_estado === "Sanción"))
 	contador_container_2.text(num_casusa.length)
 	contador_container.text(sancionadas.length - num_sanciones)
-	$(".total_sancionadas").text(sancionadas.length)
+	$(".total_sancionadas").text(num_sanciones)
 	
 
 }
