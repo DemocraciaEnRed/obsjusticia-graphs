@@ -231,12 +231,12 @@ section{
 }
 
 nav{
-    max-width: 20vw;
+    max-width: 215px;
     position:fixed;
     right: 0;
-    top: 10%;
+    top: 30px;
     color: #6b6b6b;
-    padding: 25px;
+    padding-right: 25px;
     text-align: right;
     font-size: 15px;
 }
@@ -447,116 +447,6 @@ nav > ul > li.active{
     background-color: red !important;
 }
 
-.card-lexico{
-    min-width: 279px;
-    background-color: #fff;
-    padding: 20px;
-    margin: 9px;
-    flex: 0 1 100%;
-}
-
-.card-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Chivo', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.card-body{
-    font-family: 'Chivo', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-style: normal;
-    font-weight: normal;
-
-
-}
-
-.fuentes-notas{
-    text-align: center;
-}
-
-.fuentes-body{
-    margin-bottom: 50px;
-    max-width: 600px;
-    margin:auto
-
-}
-.fuentes-body > p{
-    font-family: 'Chivo', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-}
-
-.Fuente-y-notas {
-    font-family: 'Chivo', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-
-  .acceder{
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: underline !important;
-  }
-
-  .creditos-t{
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    /* or 156% */
-    
-    text-align: center;
-    
-    color: #000000;
-  }
-
-  .creditos{
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 29px;
-    text-align: center;
-  }
-
-  .creditos-t{
-      margin-bottom: 50px;
-      font-size: 18px;
-  }
-
-  .f16{
-      font-size: 16px;
-  }
 .viz-caption{
     color: #5a5a5a;
     font-size: 12px;

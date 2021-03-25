@@ -14,10 +14,11 @@ var lastId,
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
   var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+      // offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+      offsetTop = href === "#" ? 0 : $(href).offset().top-30;
   $('html, body').stop().animate({ 
       scrollTop: offsetTop
-  }, 850);
+  }, 650);
   e.preventDefault();
 });
 
@@ -25,7 +26,7 @@ menuItems.click(function(e){
 $(window).scroll(function(){
    // Get container scroll position
    var fromTop = $(this).scrollTop()+topMenuHeight;
-   
+  //  console.log(scrollItems)
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
      if ($(this).offset().top < fromTop)
