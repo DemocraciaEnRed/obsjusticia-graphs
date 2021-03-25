@@ -53,58 +53,124 @@ const finishloading = () =>{
 }
 $(document).ready(function () {
 	
-	$.get('https://www.javierlujan.com.ar/justicia/juiciosp.csv', (data) => {
-		dataParse = Papa.parse(data, {
-			header: 'true',
-			transformHeader: function (h) {
-				return h.trim();
-			},
+	var getOne = $.ajax('data/juiciosp.csv')
+	var getTwo = $.ajax('data/data2.csv')
+	
+	console.log('- GET datasets...')
+	$.when( getOne, getTwo )
+		.done( (dataOne, dataTwo) => {
+			console.log('- 200 OK...')
+			dataParseOne = Papa.parse(dataOne[0], {
+				header: 'true',
+				transformHeader: function (h) {
+					return h.trim();
+				},
+			});
+
+			juicios_politicos = dataParseOne.data.map((j)=>{
+				const a = new Date(j.causa_fecha)
+				j["anio"] = a.getFullYear()
+				j['juez_nombre_apellido'] = j.juez_apellido + " "+ j.juez_nombre
+				return  j
+			}).filter((j)=> {return j.causa_numero !== ""})
+			console.log('-- step one DONE')
+		}).done( (dataOne, dataTwo) => {
+			dataParseTwo= Papa.parse(dataTwo[0], {
+				header: 'true',
+				transformHeader: function (h) {
+					return h.trim();
+				},
+			});
+			
+			dataParseTwo = dataParseTwo.data.map((d) => {
+				d['anio'] = obtenerAnio(d);
+				if (d.fecha_dispone_articulo_11 === "" || d.fecha_dispone_articulo_11 === "17/0/19") d.fecha_dispone_articulo_11 = "1/1/2019"
+				return d;
+			});
+
+			casusas = dataParseTwo
+			causas_abiertas = dataParseTwo.filter((d) => d.estado !== 'cerrados')
+			causas_cerradas = dataParseTwo.filter((d) => d.estado === 'cerrados')
+			const _jueces = dataParseTwo.map((k) => k.juez_nombre_apellido);
+			jueces = _.uniq(_jueces);
+			console.log('-- step two: DONE')
+		}).done( () => {
+			console.log('-- Generating Visualizations...')
+			viz1()
+			viz2()
+			console.log('-- 30%...')
+			viz3()
+			viz4()
+			console.log('-- 50%...')
+			viz5()
+			// viz6()
+			// viz7()
+			// viz8()
+			viz9()
+			console.log('-- 80%...')
+			viz10()
+			viz11()
+			vizFinal('init')
+			console.log('-- 100%...')
+			console.log('-- step three: DONE')
+			console.log('-- All done...')
+			finishloading()
+		}).fail( () => {
+			console.log('Error GET!!!')
 		});
 
-		juicios_politicos = dataParse.data.map((j)=>{
-			const a = new Date(j.causa_fecha)
-			j["anio"] = a.getFullYear()
-			j['juez_nombre_apellido'] = j.juez_apellido + " "+ j.juez_nombre
-			return  j
-		}).filter((j)=> {return j.causa_numero !== ""})
 
-		finishloading()
+	// $.get('data/juiciosp.csv', (data) => {
+	// 	dataParse = Papa.parse(data, {
+	// 		header: 'true',
+	// 		transformHeader: function (h) {
+	// 			return h.trim();
+	// 		},
+	// 	});
+
+	// 	juicios_politicos = dataParse.data.map((j)=>{
+	// 		const a = new Date(j.causa_fecha)
+	// 		j["anio"] = a.getFullYear()
+	// 		j['juez_nombre_apellido'] = j.juez_apellido + " "+ j.juez_nombre
+	// 		return  j
+	// 	}).filter((j)=> {return j.causa_numero !== ""})
+	// 	finishloading()
+	// })
+
+	// $.get('data/data2.csv', (data) => {
+	// 	dataParse = Papa.parse(data, {
+	// 		header: 'true',
+	// 		transformHeader: function (h) {
+	// 			return h.trim();
+	// 		},
+	// 	});
 		
-	})
+	// 	dataParse = dataParse.data.map((d) => {
+	// 		d['anio'] = obtenerAnio(d);
+	// 		if (d.fecha_dispone_articulo_11 === "" || d.fecha_dispone_articulo_11 === "17/0/19") d.fecha_dispone_articulo_11 = "1/1/2019"
+	// 		return d;
+	// 	});
 
-	$.get('https://www.javierlujan.com.ar/justicia/data2.csv', (data) => {
-		dataParse = Papa.parse(data, {
-			header: 'true',
-			transformHeader: function (h) {
-				return h.trim();
-			},
-		});
-		
-		dataParse = dataParse.data.map((d) => {
-			d['anio'] = obtenerAnio(d);
-			if (d.fecha_dispone_articulo_11 === "" || d.fecha_dispone_articulo_11 === "17/0/19") d.fecha_dispone_articulo_11 = "1/1/2019"
-			return d;
-		});
-
-		casusas = dataParse
-		causas_abiertas = dataParse.filter((d) => d.estado !== 'cerrados')
-		causas_cerradas = dataParse.filter((d) => d.estado === 'cerrados')
-		const _jueces = dataParse.map((k) => k.juez_nombre_apellido);
-		jueces = _.uniq(_jueces);
-		viz1()
-		viz2()
-		viz3()
-		viz4()
-		viz5()
-		viz6()
-		viz7()
-		viz8()
-		viz9()
-		viz10()
-		viz11()
-		vizFinal('init')
-		finishloading()
-	});
+	// 	casusas = dataParse
+	// 	causas_abiertas = dataParse.filter((d) => d.estado !== 'cerrados')
+	// 	causas_cerradas = dataParse.filter((d) => d.estado === 'cerrados')
+	// 	const _jueces = dataParse.map((k) => k.juez_nombre_apellido);
+	// 	jueces = _.uniq(_jueces);
+	// }).done( () => {
+	// 	viz1()
+	// 	viz2()
+	// 	viz3()
+	// 	viz4()
+	// 	viz5()
+	// 	viz6()
+	// 	viz7()
+	// 	viz8()
+	// 	viz9()
+	// 	viz10()
+	// 	viz11()
+	// 	vizFinal('init')
+	// 	finishloading()
+	// });
 
 });
 
@@ -357,7 +423,7 @@ const viz9 = () =>{
 		return a.causa_modo_de_culminación === "Renunció antes del juicio" ? 1 : -1;
 	});
 	const juicios_politicos_extendida = juicios_politicos_ordenada.concat(pre.concat(post));
-	console.log(juicios_politicos_extendida)
+	// console.log(juicios_politicos_extendida)
 	juicios_politicos_extendida.map((d)=>{
 		if(!Number.isInteger(d)){
 			if(d.causa_modo_de_culminación === 'Destituido'){
