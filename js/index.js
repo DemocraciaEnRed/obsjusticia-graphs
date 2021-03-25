@@ -515,8 +515,8 @@ const viz10 = () =>{
 	})
 
 	contador_container_2.text(juicios_politicos.length - 2)
+	$(".total_juicios").text(juicios_politicos.length - 2)
 	contador_container.text(renuncias)
-	
 	contador_container_3.text(destituidos)
 	contador_container_4.text(absoluciones)
 	

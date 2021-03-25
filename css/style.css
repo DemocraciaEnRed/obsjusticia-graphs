@@ -9,8 +9,12 @@
 }
 
 html, body{
-    background-color: #ededed;
+    background-color: #ebebeb;
     font-family: 'Chivo', sans-serif;
+}
+
+body{
+    overflow: clip
 }
 
 h1{
