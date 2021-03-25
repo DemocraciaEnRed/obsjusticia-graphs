@@ -110,6 +110,12 @@ section{
 .dot10{
     background-color: #cd3d2b
 }
+.dot11{
+    background-color: #e9dfb1
+}
+.dot12{
+    background-color: #1db8b1
+}
 
 .color2{
     color:#cf4833
@@ -139,6 +145,12 @@ section{
 
 .color10{
     color: #cd3d2b
+}
+.color11{
+    color: #e9dfb1
+}
+.color12{
+    color: #1db8b1
 }
 
 .dot-container{
@@ -178,7 +190,7 @@ section{
     flex-flow: row;
     justify-content: center;
     align-items: center;
-
+    margin-top: 30px;
 }
 
 .ref-text{
@@ -433,4 +445,9 @@ nav > ul > li.active{
 
 .overRed{
     background-color: red !important;
+}
+
+.viz-caption{
+    color: #5a5a5a;
+    font-size: 12px;
 }

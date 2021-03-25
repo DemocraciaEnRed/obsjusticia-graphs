@@ -178,7 +178,7 @@ const viz4 = () =>{
 		return date_a - date_b;
 	})
 
-	const casusas_biertas_ordenadas_extendida = pre.concat(casusas_biertas_ordenadas.concat(post));
+	const casusas_biertas_ordenadas_extendida = casusas_biertas_ordenadas.concat(pre.concat(post));
 	let por_caducar = 0
 	casusas_biertas_ordenadas_extendida.map((c)=>{
 		let color = "dot0"
@@ -213,7 +213,7 @@ const viz5 = () =>{
 	const contador_container_2 = $("#viz5  > .viz-container > .viz-footer > .viz-footer-col-1 >.viz-footer-col-1-numero > .viz-numero")
 	
 	const sancionadas = causas_cerradas.sort((a, b) => {
-		return a.NORM_estado === "Sanción" ? -1 : 1;
+		return a.NORM_estado === "Sanción" ? 1 : -1;
 	});
 
 	let num_sanciones = 0
@@ -305,7 +305,7 @@ const viz8 = () =>{
 	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Destitución rechazada" ? 1 : -1;
 	});
-	const juicios_politicos_extendida = pre.concat(juicios_politicos_ordenada.concat(post));
+	const juicios_politicos_extendida = juicios_politicos_ordenada.concat(pre.concat(post));
 	juicios_politicos_extendida.map((d)=>{
 		if(!Number.isInteger(d)){
 			if(d.causa_modo_de_culminación === 'Destituido'){
@@ -356,7 +356,8 @@ const viz9 = () =>{
 	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Renunció antes del juicio" ? 1 : -1;
 	});
-	const juicios_politicos_extendida = pre.concat(juicios_politicos_ordenada.concat(post));
+	const juicios_politicos_extendida = juicios_politicos_ordenada.concat(pre.concat(post));
+	console.log(juicios_politicos_extendida)
 	juicios_politicos_extendida.map((d)=>{
 		if(!Number.isInteger(d)){
 			if(d.causa_modo_de_culminación === 'Destituido'){
@@ -418,7 +419,7 @@ const viz10 = () =>{
 	}).sort((a, b) => {
 		return a.causa_modo_de_culminación === "Renunció antes del juicio" ? 1 : -1;
 	});
-	const juicios_politicos_extendida = pre.concat(juicios_politicos_ordenada.concat(post));
+	const juicios_politicos_extendida = juicios_politicos_ordenada.concat(pre.concat(post));
 	juicios_politicos_extendida.map((d)=>{
 		if(!Number.isInteger(d)){
 			if(d.causa_modo_de_culminación === 'Destituido'){
