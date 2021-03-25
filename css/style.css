@@ -9,7 +9,7 @@
 }
 
 html, body{
-    background-color: #E5E5E5;
+    background-color: #ededed;
     font-family: 'Chivo', sans-serif;
 }
 
@@ -234,7 +234,7 @@ nav{
     max-width: 215px;
     position:fixed;
     right: 0;
-    top: 30px;
+    top: 70px;
     color: #6b6b6b;
     padding-right: 25px;
     text-align: right;
