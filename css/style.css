@@ -31,8 +31,8 @@ h1{
 }
 
 .viz-container{
-    max-width: 80vw;
-    /* margin: auto; */
+    max-width: 100vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }
@@ -44,7 +44,8 @@ section{
 .viz-section{
     /* height: 100vh; */
     min-height: 100vh;
-    padding: 50px;
+    padding: 0 150px 0 150px;
+    /* padding: 50px; */
     display: block;
     scroll-margin-top: 0em!important;
 }
@@ -61,10 +62,10 @@ section{
 .dot{
     min-height: 8px;
     min-width: 8px;
-    border-radius: 50%;
+    border-radius: 20px;
     display: inline-block;
     margin-right: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 3px;   
 }
 .bold{
     font-weight: bold;
@@ -235,14 +236,15 @@ section{
 }
 
 nav{
-    max-width: 215px;
+    max-width: 180px;
     position:fixed;
     right: 0;
-    top: 70px;
+    top: 0px;
     color: #6b6b6b;
-    padding-right: 25px;
+    padding-right: 10px;
     text-align: right;
     font-size: 15px;
+    padding-left: 0;
 }
 
 nav > ul{
@@ -454,4 +456,49 @@ nav > ul > li.active{
 .viz-caption{
     color: #5a5a5a;
     font-size: 12px;
+}
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 15px;
+    }
+    .viz-section{
+        padding: 0 135px 0 20px;
+    }
+    .dot{
+        min-height: 4px;
+        min-width: 4px;
+        border-radius: 10px;
+        margin-right: 2px;
+        margin-bottom: 2px;   
+    }
+    .dot-ref{
+        min-height: 20px;
+        min-width: 20px;
+    }
+    .ref-text{
+        font-size: 13px;
+    }
+    .title-search-contianer{
+        font-size: 20px;
+    }
+    .container {
+        font-size: 11px;
+    }
+    .checkmark {
+        height: 14px;
+        width: 14px;
+    }
+    .pre-checkmark {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+    }
+    .container .pre-checkmark .checkmark:after {
+        left: 5px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+    }
 }

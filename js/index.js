@@ -279,7 +279,7 @@ const viz5 = () =>{
 	const contador_container_2 = $("#viz5  > .viz-container > .viz-footer > .viz-footer-col-1 >.viz-footer-col-1-numero > .viz-numero")
 	
 	const sancionadas = causas_cerradas.sort((a, b) => {
-		return a.NORM_estado === "Sanción" ? 1 : -1;
+		return a.NORM_estado === "Sanción" ? -1 : 1;
 	});
 
 	let num_sanciones = 0
