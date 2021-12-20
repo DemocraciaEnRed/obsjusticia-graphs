@@ -839,7 +839,8 @@ $(".filtro").change(function(){
 
 const applyFilters = () => {
 	const dot_container = $("#vizFinal  > .viz-container > .dot-container");
-	dot_container.empty()
+	dot_container.empty();
+	$(".viz-ref").empty();
 
 	const anios = $('#anio-multiselect').val();
 	const estados = $('#estado-multiselect').val();
