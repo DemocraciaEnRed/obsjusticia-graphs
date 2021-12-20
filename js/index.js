@@ -55,20 +55,12 @@ const finishloading = () =>{
 $(document).ready(function () {
 
 	$('#anio-multiselect').multiselect({
-		buttonText: () => 'Año',
-		/* onInitialized: function(select, container) {
-			$('#anio .multiselect-container').append("<button id='anio-apply'>APLICAR</button>")
-			$('#anio-apply').on("click", function(){
-				console.log("apply!", $('#anio-multiselect').val())
-		});
-		} */
+		buttonText: () => 'Año'
 	});
 	
 	$('#estados-multiselect').multiselect({
-		buttonText: () => 'Estado',
+		buttonText: () => 'Estado'
 	});
-
-
 	
 	var getOne = $.ajax('data/juiciosp.csv')
 	var getTwo = $.ajax('data/data2.csv')
@@ -881,9 +873,23 @@ $(".filtro").change(function(){
 })
 
 const applyFilters = () => {
+	const dot_container = $("#vizFinal  > .viz-container > .dot-container");
+	dot_container.empty()
+
 	const anios = $('#anio-multiselect').val();
 	const estados = $('#estados-multiselect').val();
-	const dot_container = $("#vizFinal  > .viz-container > .dot-container");
+
+	const filters = [
+		{
+			values: _.map(anios, _.toNumber),
+			attributeName: "anio" 
+		},
+		{
+			values: estados,
+			attributeName: "estado" 
+		}
+	];
+
 
 	let drawers = [
 		{
@@ -904,26 +910,12 @@ const applyFilters = () => {
 		},
 	];
 
-	dot_container.empty()
-	const filters = [
-		{
-			values: _.map(anios, _.toNumber),
-			attributeName: "anio" 
-		},
-		{
-			values: estados,
-			attributeName: "estado" 
-		}
-]
-
-	console.log({ anios, estados })
-
 	casusas_ordenadas.filter(d => 
 		_.every(filters, ({ values, attributeName }) => _.isEmpty(values) || _.includes(values, _.get(d, attributeName)))
-		)
-		.forEach(d => {
-			drawer = _.find(drawers, { categoria: categoria_principal }).drawer;
-			drawer(dot_container, d)
+	)
+	.forEach(d => {
+		drawer = _.find(drawers, { categoria: categoria_principal }).drawer;
+		drawer(dot_container, d)
 	})
 }
 
