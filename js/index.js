@@ -52,16 +52,16 @@ const finishloading = () =>{
 		hideLoading();
 	}
 }
-$(document).ready(function () {
 
-	$('#anio-multiselect').multiselect({
-		buttonText: () => 'Año'
-	});
-	
-	$('#estado-multiselect').multiselect({
-		buttonText: () => 'Estado'
-	});
-	
+const filter_options_drawer = (options, filter_name) => _.forEach(options, value =>
+	$(filter_name).append($('<option>', {
+			value,
+			text: value
+		})
+	)
+);
+
+$(document).ready(function () {
 	var getOne = $.ajax('data/juiciosp.csv')
 	var getTwo = $.ajax('data/data2.csv')
 	
@@ -103,6 +103,17 @@ $(document).ready(function () {
 			const _jueces = dataParseTwo.map((k) => k.juez_nombre_apellido);
 			jueces = _.uniq(_jueces);
 			console.log('-- step two: DONE')
+
+			const anios_posibles = _(casusas).map("anio").uniq().filter(anio => anio > 1000).sort().value();
+			filter_options_drawer(anios_posibles, "#anio-multiselect");
+			$('#anio-multiselect').multiselect({ buttonText: () => 'Año' });
+			
+			
+			//TODO rename cerrados -> cerrado
+			const estados_posibles = _(casusas).map("estado").uniq().sort().value();
+			filter_options_drawer(estados_posibles, "#estado-multiselect");
+			$('#estado-multiselect').multiselect({ buttonText: () => 'Estado' });
+
 		}).done( () => {
 			console.log('-- Generating Visualizations...')
 			viz1()
