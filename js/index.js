@@ -58,7 +58,7 @@ $(document).ready(function () {
 		buttonText: () => 'Año'
 	});
 	
-	$('#estados-multiselect').multiselect({
+	$('#estado-multiselect').multiselect({
 		buttonText: () => 'Estado'
 	});
 	
@@ -701,6 +701,8 @@ const vizFinal= (option) =>{
 	else {
 		$('#search-filters-container').css('visibility', 'visible');
 		categoria_principal = option;
+		$(`[id$=multiselect-container]`).css('visibility', 'visible');
+		$(`#${categoria_principal}-multiselect-container`).css('visibility', 'hidden');
 	}
 
 	//TODO remove
@@ -877,7 +879,7 @@ const applyFilters = () => {
 	dot_container.empty()
 
 	const anios = $('#anio-multiselect').val();
-	const estados = $('#estados-multiselect').val();
+	const estados = $('#estado-multiselect').val();
 
 	const filters = [
 		{
