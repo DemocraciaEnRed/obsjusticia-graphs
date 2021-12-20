@@ -354,61 +354,60 @@
 				<div class="title-feet-search">Selecciná los datos que quieras ver en detalles</div>
 
 				<div class="filter-container">
-					
-					
-						<label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="anio">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/anio.png"/>
-							Por año
-						  </label>
+					<label class="container">
 						
+						<input type="radio" name="filter" class="filtro" value="estado">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
 						
-						  <label class="container">
+						<img src="img/estado.png"/>
+						Estado
+					</label>
+						
+					<label class="container">
 							
-							<input type="radio" name="filter" class="filtro" value="situacion">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/situacion.png"/>
-							Situación
-						  </label>
-						  <label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="estado">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/estado.png"/>
-							Estado
-						  </label>
-						  <label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="demora">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/demora.png"/>
-							Demora
-						  </label>
-						  <label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="genero">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/genero.png"/>
-							Género
-						  </label>
+						<input type="radio" name="filter" class="filtro" value="situacion">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
+						
+						<img src="img/situacion.png"/>
+						Resultado
+					</label>
+					<label class="container">
+						
+						<input type="radio" name="filter" class="filtro" value="demora">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
+						
+						<img src="img/demora.png"/>
+						Duración
+					</label>
+					<label class="container">
+						
+						<input type="radio" name="filter" class="filtro" value="genero">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
+						
+						<img src="img/genero.png"/>
+						Género
+					</label>
 				</div>
+
+			<div id="search-filters-container" class="filter-container"  style="visibility: hidden">
+					<select id="anio-multiselect" multiple="multiple">
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+					</select>
+					<select id="estados-multiselect" multiple="multiple">
+							<option value="abierto">abierto</option>
+							<option value="cerrados">cerrado</option>
+					</select>
+					<button id="apply-filters">APLICAR</button>
+			</div>
 
 				<div class="tooltip-container" id="tooltip-container">
 					<img src="img/t.png" id="t">
