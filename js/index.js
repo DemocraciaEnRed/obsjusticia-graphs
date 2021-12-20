@@ -705,54 +705,6 @@ const vizFinal= (option) =>{
 		$(`#${categoria_principal}-multiselect-container`).css('visibility', 'hidden');
 	}
 
-	//TODO remove
-	if(option === "anio"){
-		casusas_ordenadas = casusas.sort((a, b) => {
-				if (a.anio > b.anio) {
-					return 1;
-				} else if (a.anio < b.anio) {
-					return -1;
-				}
-			}).map((d)=>{
-				let anio = d.anio;
-				if(anio === 200) anio = 2012
-				
-				if(!contadores_init.contador_anio){
-					contador_anio[anio].contador += 1
-				}
-
-				color = contador_anio[anio].color;
-				dot_container.append(`<span 
-				class="dot dot8 info" 
-				data-nombre="${d.juez_nombre_apellido}"
-				data-anio="${d.anio}"
-				data-estado="${d.estado}"
-				data-denunciante="${d.denunciante_nombre}"
-				data-situacion="${d.NORM_estado}"
-				onmouseover="hoverdiv(event,'show')" 
-				onmouseout="hoverdiv(event,'hide')"
-				style="background-color:${color}"
-				></span>`)
-				
-			});
-
-			for (const anio in contador_anio) {
-				color = contador_anio[anio].color;
-				const porcentaje = (contador_anio[anio].contador/casusas.length)*100
-				const p = Math.round(porcentaje * 100) / 100
-				$(".viz-ref").append(`<div class="dot-ref-container">
-								<span class="dot-ref" style="background-color:${color}"></span>
-								<span class="dot-ref-label chivo">${anio}</span>
-								<span class="dot-ref-contador chivo">${contador_anio[anio].contador}</span>
-								<span class="dot-ref-porcentaje chivo">${p}%</span>
-
-							</div>`)
-			}
-
-			contadores_init.contador_anio = true
-
-			
-	}
 
 	if(option === "situacion"){
 		casusas_ordenadas = causas_cerradas.filter((d) => {
