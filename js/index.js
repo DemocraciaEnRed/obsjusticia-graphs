@@ -53,17 +53,24 @@ const finishloading = () =>{
 	}
 }
 
-const filter_options_drawer = (options, filter_name) => _.forEach(options, value =>
-	$(filter_name).append($('<option>', {
-			value,
-			text: value
+const filter_options_drawer = (options, filter_name) => {
+	const opciones_multiselect = _.map(options, option => ({
+		label: option,
+		value: option
 		})
-	)
-);
+	);
+	$(filter_name).multiselect('dataprovider', opciones_multiselect);
+}
 
 $(document).ready(function () {
 	var getOne = $.ajax('data/juiciosp.csv')
 	var getTwo = $.ajax('data/data2.csv')
+
+	$('#anio-multiselect').multiselect({ buttonText: () => 'AÑO' });
+	$('#estado-multiselect').multiselect({ buttonText: () => 'ESTADO' });
+	$('#resultado-multiselect').multiselect({ buttonText: () => 'RESULTADO' });
+	$('#duracion-multiselect').multiselect({ buttonText: () => 'DURACIÓN' });
+	$('#genero-multiselect').multiselect({ buttonText: () => 'GÉNERO' });
 	
 	console.log('- GET datasets...')
 	$.when( getOne, getTwo )
@@ -106,24 +113,19 @@ $(document).ready(function () {
 
 			const anios_posibles = _(casusas).map("anio").uniq().filter(anio => anio > 1000).sort().value();
 			filter_options_drawer(anios_posibles, "#anio-multiselect");
-			$('#anio-multiselect').multiselect({ buttonText: () => 'AÑO' });
 			
 			//TODO rename cerrados -> cerrado
 			const estados_posibles = _(casusas).map("estado").uniq().sort().value();
 			filter_options_drawer(estados_posibles, "#estado-multiselect");
-			$('#estado-multiselect').multiselect({ buttonText: () => 'ESTADO' });
 
 			const resultados_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
 			filter_options_drawer(resultados_posibles, "#resultado-multiselect");
-			$('#resultado-multiselect').multiselect({ buttonText: () => 'RESULTADO' });
 
 			const duraciones_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
 			filter_options_drawer(duraciones_posibles, "#duracion-multiselect");
-			$('#duracion-multiselect').multiselect({ buttonText: () => 'DURACIÓN' });
 
 			const generos_posibles = [ "Hombre", "Mujer", "Mixto" ];
 			filter_options_drawer(generos_posibles, "#genero-multiselect");
-			$('#genero-multiselect').multiselect({ buttonText: () => 'GÉNERO' });
 
 		}).done( () => {
 			console.log('-- Generating Visualizations...')
@@ -688,7 +690,7 @@ const genero_drawer = (dot_container, d) => {
 		></span>`)
 }
 
-const causas_filtradas_por_categoria = option => {
+const causas_filtradas_por_categoria = () => {
 	const anios = $('#anio-multiselect').val();
 	const estados = $('#estado-multiselect').val();
 	const resultados = $('#resultado-multiselect').val();
@@ -749,7 +751,6 @@ const vizFinal= (option) =>{
 		});
 	}
 	else {
-		$('#search-filters-container').css('visibility', 'visible');
 		categoria_principal = option;
 		$(`[id$=multiselect-container]`).css('visibility', 'visible');
 		$(`#${categoria_principal}-multiselect-container`).css('visibility', 'hidden');
@@ -770,7 +771,7 @@ const vizFinal= (option) =>{
 			return 0;
 		})
 		
-		const causas_filtradas = causas_filtradas_por_categoria(option);
+		const causas_filtradas = causas_filtradas_por_categoria();
 		causas_filtradas.forEach(d => situacion_drawer(dot_container, d));
 
 		for (const situacion in contador_situacion) {
@@ -798,7 +799,7 @@ const vizFinal= (option) =>{
 			}
 		})
 		
-		const causas_filtradas = causas_filtradas_por_categoria(option);
+		const causas_filtradas = causas_filtradas_por_categoria();
 		causas_filtradas.forEach(d => estado_drawer(dot_container, d));
 
 		for (const estado in contador_estado) {
@@ -823,7 +824,7 @@ const vizFinal= (option) =>{
 			return date_a > date_b ? 1 : -1;
 		})
 		
-		const causas_filtradas = causas_filtradas_por_categoria(option);
+		const causas_filtradas = causas_filtradas_por_categoria();
 		causas_filtradas.forEach(d => demora_drawer(dot_container, d));
 
 		for (const demora in contador_demora) {
@@ -850,7 +851,7 @@ const vizFinal= (option) =>{
 					return 0;
 				})
 				
-		const causas_filtradas = causas_filtradas_por_categoria(option);
+		const causas_filtradas = causas_filtradas_por_categoria();
 		causas_filtradas.forEach(d => genero_drawer(dot_container, d));
 
 		for (const genero in contador_genero) {
