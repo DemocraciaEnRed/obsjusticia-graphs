@@ -698,28 +698,34 @@ const causas_filtradas_por_categoria = option => {
 	const filters = [
 		{
 			values: _.map(anios, _.toNumber),
-			attributeName: "anio" 
+			attributeName: "anio",
+			category: "anio"
 		},
 		{
 			values: estados,
-			attributeName: "estado" 
+			attributeName: "estado",
+			category: "estado"
 		},
 		{
 			values: resultados,
-			attributeName: "NORM_estado" 
+			attributeName: "NORM_estado",
+			category: "resultado"
 		},
 		{
 			values: duraciones,
-			attributeName: "duracion" 
+			attributeName: "duracion",
+			category: "duracion"
 		},
 		{
 			values: generos,
-			attributeName: "genero_est" 
+			attributeName: "genero_est",
+			category: "genero"
 		},
 	];
 
 	return casusas_ordenadas.filter(d => 
-		_.every(filters, ({ values, attributeName }) => _.isEmpty(values) || _.includes(values, _.get(d, attributeName)))
+		_(filters).reject({ category: categoria_principal })
+		.every(({ values, attributeName }) => _.isEmpty(values) || _.includes(values, _.get(d, attributeName)))
 	)
 }
 
@@ -747,7 +753,6 @@ const vizFinal= (option) =>{
 		categoria_principal = option;
 		$(`[id$=multiselect-container]`).css('visibility', 'visible');
 		$(`#${categoria_principal}-multiselect-container`).css('visibility', 'hidden');
-		$(`#${categoria_principal}-multiselect`).multiselect('deselectAll', false);
 	}
 
 
