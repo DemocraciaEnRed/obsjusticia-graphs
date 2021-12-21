@@ -106,13 +106,24 @@ $(document).ready(function () {
 
 			const anios_posibles = _(casusas).map("anio").uniq().filter(anio => anio > 1000).sort().value();
 			filter_options_drawer(anios_posibles, "#anio-multiselect");
-			$('#anio-multiselect').multiselect({ buttonText: () => 'Año' });
-			
+			$('#anio-multiselect').multiselect({ buttonText: () => 'AÑO' });
 			
 			//TODO rename cerrados -> cerrado
 			const estados_posibles = _(casusas).map("estado").uniq().sort().value();
 			filter_options_drawer(estados_posibles, "#estado-multiselect");
-			$('#estado-multiselect').multiselect({ buttonText: () => 'Estado' });
+			$('#estado-multiselect').multiselect({ buttonText: () => 'ESTADO' });
+
+			const resultados_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
+			filter_options_drawer(resultados_posibles, "#resultado-multiselect");
+			$('#resultado-multiselect').multiselect({ buttonText: () => 'RESULTADO' });
+
+			const duraciones_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
+			filter_options_drawer(duraciones_posibles, "#duracion-multiselect");
+			$('#duracion-multiselect').multiselect({ buttonText: () => 'DURACIÓN' });
+
+			const generos_posibles = [ "Hombre", "Mujer", "Mixto" ];
+			filter_options_drawer(generos_posibles, "#genero-multiselect");
+			$('#genero-multiselect').multiselect({ buttonText: () => 'GÉNERO' });
 
 		}).done( () => {
 			console.log('-- Generating Visualizations...')
@@ -569,9 +580,7 @@ const viz11= () =>{
 
 const situacion_drawer = (dot_container, d) => {
 	const norm_estado = normalizacion_situacion[d.NORM_estado]
-	if(!contadores_init.contador_situacion){
-		contador_situacion[norm_estado].contador += 1;
-	}
+	contador_situacion[norm_estado].contador += 1;
 	color = contador_situacion[norm_estado].color
 
 	dot_container.append(`<span 
@@ -588,8 +597,7 @@ const situacion_drawer = (dot_container, d) => {
 }
 
 const estado_drawer = (dot_container, d) => {
-	if(!contadores_init.contador_estado)
-		contador_estado[d.estado].contador += 1;
+	contador_estado[d.estado].contador += 1;
 
 	const color = contador_estado[d.estado].color
 	dot_container.append(`<span 
@@ -613,38 +621,31 @@ const demora_drawer = (dot_container, d) => {
 
 	if (date <= 6 ) {
 		color = contador_demora.menor_6.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.menor_6.contador += 1;
+		contador_demora.menor_6.contador += 1;
 	}
 	if (date <= 12 && date > 6) {
 		color = contador_demora.entre_12_6.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.entre_12_6.contador += 1;
+		contador_demora.entre_12_6.contador += 1;
 	}
 	if (date <= 18 && date > 12) {
 		color = contador_demora.entre_18_12.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.entre_18_12.contador += 1;
+		contador_demora.entre_18_12.contador += 1;
 	}
 	if (date <= 24 && date > 18) {
 		color = contador_demora.entre_24_18.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.entre_24_18.contador += 1;
+		contador_demora.entre_24_18.contador += 1;
 	}
 	if (date <= 30 && date > 24) {
 		color = contador_demora.entre_30_24.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.entre_30_24.contador += 1;
+		contador_demora.entre_30_24.contador += 1;
 	}
 	if (date <= 36 && date > 30) {
 		color = contador_demora.entre_36_30.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.entre_36_30.contador += 1;
+		contador_demora.entre_36_30.contador += 1;
 	}
 	if(date>=36){
 		color = contador_demora.mayor_36.color;
-		if(!contadores_init.contador_demora)
-			contador_demora.mayor_36.contador += 1;
+		contador_demora.mayor_36.contador += 1;
 	}
 	dot_container.append(`<span 
 	class="dot dot8 info" 
@@ -662,19 +663,16 @@ const demora_drawer = (dot_container, d) => {
 const genero_drawer = (dot_container, d) => {
 	let color
 	if(d.genero_est === "Hombre"){
-		if(!contadores_init.contador_genero)
-			contador_genero.hombre.contador += 1
+		contador_genero.hombre.contador += 1
 		color = contador_genero.hombre.color
 	}
 	if(d.genero_est === "Mujer"){
-		if(!contadores_init.contador_genero)
-			contador_genero.mujer.contador += 1
+		contador_genero.mujer.contador += 1
 		color = contador_genero.mujer.color
 	}
 		
 	if(d.genero_est === "Mixto"){
-		if(!contadores_init.contador_genero)
-			contador_genero.mixto.contador += 1
+		contador_genero.mixto.contador += 1
 		color = contador_genero.mixto.color
 	}
 	dot_container.append(`<span 
@@ -688,6 +686,41 @@ const genero_drawer = (dot_container, d) => {
 		onmouseout="hoverdiv(event,'hide')"
 		style="background-color:${color}"
 		></span>`)
+}
+
+const causas_filtradas_por_categoria = option => {
+	const anios = $('#anio-multiselect').val();
+	const estados = $('#estado-multiselect').val();
+	const resultados = $('#resultado-multiselect').val();
+	const duraciones = $('#duracion-multiselect').val();
+	const generos = $('#genero-multiselect').val();
+
+	const filters = [
+		{
+			values: _.map(anios, _.toNumber),
+			attributeName: "anio" 
+		},
+		{
+			values: estados,
+			attributeName: "estado" 
+		},
+		{
+			values: resultados,
+			attributeName: "NORM_estado" 
+		},
+		{
+			values: duraciones,
+			attributeName: "duracion" 
+		},
+		{
+			values: generos,
+			attributeName: "genero_est" 
+		},
+	];
+
+	return casusas_ordenadas.filter(d => 
+		_.every(filters, ({ values, attributeName }) => _.isEmpty(values) || _.includes(values, _.get(d, attributeName)))
+	)
 }
 
 const vizFinal= (option) =>{
@@ -714,10 +747,12 @@ const vizFinal= (option) =>{
 		categoria_principal = option;
 		$(`[id$=multiselect-container]`).css('visibility', 'visible');
 		$(`#${categoria_principal}-multiselect-container`).css('visibility', 'hidden');
+		$(`#${categoria_principal}-multiselect`).multiselect('deselectAll', false);
 	}
 
 
-	if(option === "situacion"){
+	if(option === "resultado"){
+		_.forEach(contador_situacion, (contador) => _.update(contador, "contador", () => 0));
 		casusas_ordenadas = causas_cerradas.filter((d) => {
 			return  d.situacion.toLowerCase() !== 'acumulados' 
 					&& d.situacion !== ''
@@ -730,7 +765,8 @@ const vizFinal= (option) =>{
 			return 0;
 		})
 		
-		casusas_ordenadas.forEach(d => situacion_drawer(dot_container, d));
+		const causas_filtradas = causas_filtradas_por_categoria(option);
+		causas_filtradas.forEach(d => situacion_drawer(dot_container, d));
 
 		for (const situacion in contador_situacion) {
 			color = contador_situacion[situacion].color;
@@ -743,12 +779,11 @@ const vizFinal= (option) =>{
 							<span class="dot-ref-porcentaje chivo">${p}%</span>
 
 						</div>`)
-		}
-		
-		contadores_init.contador_situacion = true			
+		}		
 	}
 
 	if(option === "estado"){
+		_.forEach(contador_estado, (contador) => _.update(contador, "contador", () => 0));
 		casusas_ordenadas = casusas.sort((a, b) => {
 			if (a.estado == 'cerrados') {
 				return 1;
@@ -758,7 +793,8 @@ const vizFinal= (option) =>{
 			}
 		})
 		
-		casusas_ordenadas.forEach(d => estado_drawer(dot_container, d));
+		const causas_filtradas = causas_filtradas_por_categoria(option);
+		causas_filtradas.forEach(d => estado_drawer(dot_container, d));
 
 		for (const estado in contador_estado) {
 			color = contador_estado[estado].color;
@@ -772,18 +808,18 @@ const vizFinal= (option) =>{
 
 						</div>`)
 		}
-
-		contadores_init.contador_estado = true
 	}
 
-	if(option === "demora"){
+	if(option === "duracion"){
+		_.forEach(contador_demora, (contador) => _.update(contador, "contador", () => 0));
 		casusas_ordenadas = causas_abiertas.sort((a, b) => {
 			const date_a = new Date(a.fecha_dispone_articulo_11);
 			const date_b = new Date(b.fecha_dispone_articulo_11);
 			return date_a > date_b ? 1 : -1;
 		})
 		
-		casusas_ordenadas.forEach(d => demora_drawer(dot_container, d));
+		const causas_filtradas = causas_filtradas_por_categoria(option);
+		causas_filtradas.forEach(d => demora_drawer(dot_container, d));
 
 		for (const demora in contador_demora) {
 			color = contador_demora[demora].color;
@@ -797,12 +833,10 @@ const vizFinal= (option) =>{
 
 						</div>`)
 		}
-
-		contadores_init.contador_demora = true
-			
 	}
 
 	if(option === "genero"){
+		_.forEach(contador_genero, (contador) => _.update(contador, "contador", () => 0));
 		casusas_ordenadas = casusas
 				.filter((d) => d.juez_nombre_apellido !== "" && d.genero_est !== "Desconocido")
 				.sort((a, b) => {
@@ -811,7 +845,8 @@ const vizFinal= (option) =>{
 					return 0;
 				})
 				
-		casusas_ordenadas.forEach(d => genero_drawer(dot_container, d));
+		const causas_filtradas = causas_filtradas_por_categoria(option);
+		causas_filtradas.forEach(d => genero_drawer(dot_container, d));
 
 		for (const genero in contador_genero) {
 			color = contador_genero[genero].color;
@@ -824,65 +859,18 @@ const vizFinal= (option) =>{
 							<span class="dot-ref-porcentaje chivo">${p}%</span>
 
 						</div>`)
-		}
-
-			
+		}	
 	}
 
 }
 
 $(".filtro").change(function(){
 	const op = $(this).val()
-	vizFinal(op)
-	
+	vizFinal(op);
 })
 
 const applyFilters = () => {
-	const dot_container = $("#vizFinal  > .viz-container > .dot-container");
-	dot_container.empty();
-	$(".viz-ref").empty();
-
-	const anios = $('#anio-multiselect').val();
-	const estados = $('#estado-multiselect').val();
-
-	const filters = [
-		{
-			values: _.map(anios, _.toNumber),
-			attributeName: "anio" 
-		},
-		{
-			values: estados,
-			attributeName: "estado" 
-		}
-	];
-
-
-	let drawers = [
-		{
-			categoria: "situacion",
-			drawer: situacion_drawer
-		},
-		{
-			categoria: "estado",
-			drawer: estado_drawer
-		},
-		{
-			categoria: "demora",
-			drawer: demora_drawer
-		},
-		{
-			categoria: "genero",
-			drawer: genero_drawer
-		},
-	];
-
-	casusas_ordenadas.filter(d => 
-		_.every(filters, ({ values, attributeName }) => _.isEmpty(values) || _.includes(values, _.get(d, attributeName)))
-	)
-	.forEach(d => {
-		drawer = _.find(drawers, { categoria: categoria_principal }).drawer;
-		drawer(dot_container, d)
-	})
+	vizFinal(categoria_principal);
 }
 
 $("#apply-filters").on("click", applyFilters)
