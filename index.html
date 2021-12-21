@@ -367,7 +367,7 @@
 						
 					<label class="container">
 							
-						<input type="radio" name="filter" class="filtro" value="situacion">
+						<input type="radio" name="filter" class="filtro" value="resultado">
 						<div class="pre-checkmark">
 							<span class="checkmark"/>
 						</div>
@@ -377,7 +377,7 @@
 					</label>
 					<label class="container">
 						
-						<input type="radio" name="filter" class="filtro" value="demora">
+						<input type="radio" name="filter" class="filtro" value="duracion">
 						<div class="pre-checkmark">
 							<span class="checkmark"/>
 						</div>
@@ -404,6 +404,18 @@
 					
 					<div id="estado-multiselect-container">
 						<select id="estado-multiselect" multiple="multiple"></select>
+					</div>
+
+					<div id="resultado-multiselect-container">
+						<select id="resultado-multiselect" multiple="multiple"></select>
+					</div>
+					
+					<div id="duracion-multiselect-container">
+						<select id="duracion-multiselect" multiple="multiple"></select>
+					</div>
+					
+					<div id="genero-multiselect-container">
+						<select id="genero-multiselect" multiple="multiple"></select>
 					</div>
 					
 					<button id="apply-filters">APLICAR</button>
@@ -441,7 +453,7 @@
 					</div>
 					<div class="tooltip-row chivo">
 						<p>
-							<span class="tooltip-label">SITUACION</span>
+							<span class="tooltip-label">RESULTADO</span>
 							<br>
 							<span class="tooltip-info" id="tooltip-situacion"></span>
 						</p>
