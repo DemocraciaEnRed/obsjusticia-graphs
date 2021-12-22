@@ -54,11 +54,17 @@ const finishloading = () =>{
 }
 
 const filter_options_drawer = (options, filter_name) => {
-	const opciones_multiselect = _.map(options, option => ({
-		label: option,
-		value: option
-		})
-	);
+	const opciones_multiselect = _.map(options, option => {
+		const label = _.isObject(option)? option.label : option;
+		const min_and_max = {
+			attributes: _.pick(option, [ "min", "max" ])
+		};
+
+		return _.assign({
+				label: label,
+				value: label,
+			}, min_and_max);
+	});
 	$(filter_name).multiselect('dataprovider', opciones_multiselect);
 }
 
@@ -121,7 +127,8 @@ $(document).ready(function () {
 			const resultados_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
 			filter_options_drawer(resultados_posibles, "#resultado-multiselect");
 
-			const duraciones_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
+			//TODO add missing ones
+			const duraciones_posibles = [{ label: "Entre 18 y 24", min: 18, max: 24 }, { label: "Entre 12 y 18", min: 12, max: 18}];
 			filter_options_drawer(duraciones_posibles, "#duracion-multiselect");
 
 			const generos_posibles = [ "Hombre", "Mujer", "Mixto" ];
@@ -694,40 +701,46 @@ const causas_filtradas_por_categoria = () => {
 	const anios = $('#anio-multiselect').val();
 	const estados = $('#estado-multiselect').val();
 	const resultados = $('#resultado-multiselect').val();
-	const duraciones = $('#duracion-multiselect').val();
+	const duraciones = $("#duracion-multiselect option:selected").toArray()
+		.map(it => ({ min: $(it).attr("data-min"), max: $(it).attr("data-max") }));
 	const generos = $('#genero-multiselect').val();
 
 	const filters = [
 		{
 			values: _.map(anios, _.toNumber),
-			attributeName: "anio",
+			obtener_valor: d => _.get(d, "anio"),
 			category: "anio"
 		},
 		{
 			values: estados,
-			attributeName: "estado",
+			obtener_valor: d => _.get(d, "estado"),
 			category: "estado"
 		},
 		{
 			values: resultados,
-			attributeName: "NORM_estado",
+			obtener_valor: d => _.get(d, "NORM_estado"),
 			category: "resultado"
 		},
 		{
 			values: duraciones,
-			attributeName: "duracion",
-			category: "duracion"
+			obtener_valor: d => monthDiff(new Date(_.get(d, "fecha_dispone_articulo_11")), hoy),
+			category: "duracion",
+			is_range: true
 		},
 		{
 			values: generos,
-			attributeName: "genero_est",
+			obtener_valor: d => _.get(d, "genero_est"),
 			category: "genero"
 		},
 	];
 
 	return casusas_ordenadas.filter(d => 
 		_(filters).reject({ category: categoria_principal })
-		.every(({ values, attributeName }) => _.isEmpty(values) || _.includes(values, _.get(d, attributeName)))
+		.every(({ values, obtener_valor, is_range }) => {
+			const value = obtener_valor(d);
+			const filter_applies = is_range? _.some(values, ({ min, max }) => (!min || value > min) && (!max || value <= max)) : _.includes(values, value);
+			return _.isEmpty(values) || filter_applies;
+		})
 	)
 }
 
