@@ -772,8 +772,8 @@ const vizFinal= (option) =>{
 	}
 	else {
 		categoria_principal = option;
-		$(`[id$=multiselect-container]`).css('visibility', 'visible');
-		$(`#${categoria_principal}-multiselect-container`).css('visibility', 'hidden');
+		$(`[id$=multiselect-container]`).css('display', 'block');
+		$(`#${categoria_principal}-multiselect-container`).css('display', 'none');
 	}
 
 
