@@ -659,7 +659,7 @@ const demora_drawer = (dot_container, d) => {
 		color = contador_demora.entre_36_30.color;
 		contador_demora.entre_36_30.contador += 1;
 	}
-	if(date>=36){
+	if(date>36){
 		color = contador_demora.mayor_36.color;
 		contador_demora.mayor_36.contador += 1;
 	}
