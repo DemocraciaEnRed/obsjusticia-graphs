@@ -56,13 +56,14 @@ const finishloading = () =>{
 const filter_options_drawer = (options, filter_name) => {
 	const opciones_multiselect = _.map(options, option => {
 		const label = _.isObject(option)? option.label : option;
+		const value = _.isObject(option)? option.value : label;
 		const min_and_max = {
 			attributes: _.pick(option, [ "min", "max" ])
 		};
 
 		return _.assign({
-				label: label,
-				value: label,
+				label: _.toUpper(label),
+				value,
 			}, min_and_max);
 	});
 	$(filter_name).multiselect('dataprovider', opciones_multiselect);
@@ -120,8 +121,7 @@ $(document).ready(function () {
 			const anios_posibles = _(casusas).map("anio").uniq().filter(anio => anio > 1000).sort().value();
 			filter_options_drawer(anios_posibles, "#anio-multiselect");
 			
-			//TODO rename cerrados -> cerrado
-			const estados_posibles = _(casusas).map("estado").uniq().sort().value();
+			const estados_posibles = [{ label: "Activo", value: "abierto" }, { label: "Cerrado", value: "cerrados" }];
 			filter_options_drawer(estados_posibles, "#estado-multiselect");
 
 			const resultados_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
