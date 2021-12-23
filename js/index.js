@@ -889,7 +889,8 @@ $(".filtro").change(function(){
 })
 
 const applyFilters = () => {
-	vizFinal(categoria_principal);
+	if (categoria_principal)
+		vizFinal(categoria_principal);
 }
 
 $("#apply-filters").on("click", applyFilters)
