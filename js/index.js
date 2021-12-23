@@ -127,8 +127,15 @@ $(document).ready(function () {
 			const resultados_posibles = [ "Desestimado", "Caducado", "Sanción", "Juicio Político" ];
 			filter_options_drawer(resultados_posibles, "#resultado-multiselect");
 
-			//TODO add missing ones
-			const duraciones_posibles = [{ label: "Entre 18 y 24", min: 18, max: 24 }, { label: "Entre 12 y 18", min: 12, max: 18}];
+			const duraciones_posibles = [
+				{ label: "Mayor a 36 meses", min: 36 },
+				{ label: "Entre 36 y 30 meses", min: 30, max: 36 },
+				{ label: "Entre 30 y 24 meses", min: 24, max: 30 },
+				{ label: "Entre 24 y 18 meses", min: 18, max: 24 },
+				{ label: "Entre 18 y 12 meses", min: 12, max: 18 },
+				{ label: "Entre 12 y 6 meses", min: 6, max: 12 },
+				{ label: "Menor a 6 meses", max: 6 }
+			];
 			filter_options_drawer(duraciones_posibles, "#duracion-multiselect");
 
 			const generos_posibles = [ "Hombre", "Mujer", "Mixto" ];
