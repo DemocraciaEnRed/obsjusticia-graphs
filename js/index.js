@@ -924,7 +924,6 @@ const apply_filters = () => {
 	if (!categoria_principal) return;
 
 	vizFinal(categoria_principal);
-	draw_filter_tags();
 }
 
 $("#apply-filters").on("click", apply_filters)
