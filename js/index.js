@@ -774,6 +774,7 @@ const vizFinal= (option) =>{
 		categoria_principal = option;
 		$(`[id$=multiselect-container]`).css('display', 'block');
 		$(`#${categoria_principal}-multiselect-container`).css('display', 'none');
+		draw_filter_tags();
 	}
 
 
@@ -895,12 +896,36 @@ $(".filtro").change(function(){
 	vizFinal(op);
 })
 
-const applyFilters = () => {
-	if (categoria_principal)
-		vizFinal(categoria_principal);
+const deselect_option = (category, value) => {
+	$(`#${category}-multiselect`).multiselect("deselect", value);
+	draw_filter_tags();
+	vizFinal(categoria_principal);
+};
+
+const draw_filter_tag = (value, category) => $("#search-filters-tags")
+	.append(`<span class="badge badge-pill badge-light"><span>${value}</span><span class="far fa-times-circle" onclick="deselect_option('${category}', ${value})"></span></span>`);
+
+const draw_filter_tags = () => {
+	const filters = [
+		{
+			values: _.map($('#anio-multiselect').val(), _.toNumber),
+			obtener_valor: d => _.get(d, "anio"),
+			category: "anio"
+		}
+	];
+
+	$("#search-filters-tags").empty();
+	_.forEach(filters, ({ values, category }) => _.forEach(values, value => draw_filter_tag(value, category)));
 }
 
-$("#apply-filters").on("click", applyFilters)
+const apply_filters = () => {
+	if (!categoria_principal) return;
+
+	vizFinal(categoria_principal);
+	draw_filter_tags();
+}
+
+$("#apply-filters").on("click", apply_filters)
 
 function hoverdiv(e,event){
 
