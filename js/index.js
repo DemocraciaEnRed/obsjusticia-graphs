@@ -704,49 +704,56 @@ const genero_drawer = (dot_container, d) => {
 		></span>`)
 }
 
-const causas_filtradas_por_categoria = () => {
-	const anios = $('#anio-multiselect').val();
-	const estados = $('#estado-multiselect').val();
-	const resultados = $('#resultado-multiselect').val();
-	const duraciones = $("#duracion-multiselect option:selected").toArray()
-		.map(it => ({ min: $(it).attr("data-min"), max: $(it).attr("data-max") }));
-	const generos = $('#genero-multiselect').val();
+const selected_options = multiselectId => $(`${multiselectId} option:selected`).toArray()
+	.map(option => _.pick(option, [ "label", "value" ]));
 
-	const filters = [
+const obtener_filtros = () => {
+	const anios = selected_options('#anio-multiselect');
+	const estados = selected_options('#estado-multiselect');
+	const resultados = selected_options('#resultado-multiselect');
+	const duraciones = $("#duracion-multiselect option:selected").toArray()
+		.map(it => ({ label: it.label, min: $(it).attr("data-min"), max: $(it).attr("data-max") }));
+	const generos = selected_options('#genero-multiselect');
+
+	return [
 		{
-			values: _.map(anios, _.toNumber),
+			selected_options: _.map(anios, it => ({ ...it, value: _.toNumber(it.value) })),
 			obtener_valor: d => _.get(d, "anio"),
 			category: "anio"
 		},
 		{
-			values: estados,
+			selected_options: estados,
 			obtener_valor: d => _.get(d, "estado"),
 			category: "estado"
 		},
 		{
-			values: resultados,
+			selected_options: resultados,
 			obtener_valor: d => _.get(d, "NORM_estado"),
 			category: "resultado"
 		},
 		{
-			values: duraciones,
+			selected_options: duraciones,
 			obtener_valor: d => monthDiff(new Date(_.get(d, "fecha_dispone_articulo_11")), hoy),
 			category: "duracion",
 			is_range: true
 		},
 		{
-			values: generos,
+			selected_options: generos,
 			obtener_valor: d => _.get(d, "genero_est"),
 			category: "genero"
 		},
 	];
+};
+
+const causas_filtradas_por_categoria = () => {
+	const filters = obtener_filtros();
 
 	return casusas_ordenadas.filter(d => 
 		_(filters).reject({ category: categoria_principal })
-		.every(({ values, obtener_valor, is_range }) => {
+		.every(({ selected_options, obtener_valor, is_range }) => {
 			const value = obtener_valor(d);
-			const filter_applies = is_range? _.some(values, ({ min, max }) => (!min || value > min) && (!max || value <= max)) : _.includes(values, value);
-			return _.isEmpty(values) || filter_applies;
+			const filter_applies = is_range? _.some(selected_options, ({ min, max }) => (!min || value > min) && (!max || value <= max)) : _.includes(_.map(selected_options, "value"), value);
+			return _.isEmpty(selected_options) || filter_applies;
 		})
 	)
 }
@@ -896,26 +903,21 @@ $(".filtro").change(function(){
 	vizFinal(op);
 })
 
-const deselect_option = (category, value) => {
+const deselect_option = (category, value, label) => {
 	$(`#${category}-multiselect`).multiselect("deselect", value);
+	$(`#${category}-multiselect`).multiselect("deselect", label);
 	draw_filter_tags();
 	vizFinal(categoria_principal);
 };
 
-const draw_filter_tag = (value, category) => $("#search-filters-tags")
-	.append(`<span class="badge badge-pill badge-light"><span>${value}</span><span class="far fa-times-circle" onclick="deselect_option('${category}', ${value})"></span></span>`);
+const draw_filter_tag = ({ label, value }, category) => $("#search-filters-tags")
+	.append(`<span class="badge badge-pill badge-light"><span>${label}</span><span class="far fa-times-circle" onclick="deselect_option('${category}', '${value}', '${label}')"></span></span>`);
 
 const draw_filter_tags = () => {
-	const filters = [
-		{
-			values: _.map($('#anio-multiselect').val(), _.toNumber),
-			obtener_valor: d => _.get(d, "anio"),
-			category: "anio"
-		}
-	];
+	const filters = obtener_filtros();
 
 	$("#search-filters-tags").empty();
-	_.forEach(filters, ({ values, category }) => _.forEach(values, value => draw_filter_tag(value, category)));
+	_.forEach(filters, ({ selected_options, category }) => _.forEach(selected_options, option => draw_filter_tag(option, category)));
 }
 
 const apply_filters = () => {
