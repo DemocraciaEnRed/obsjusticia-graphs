@@ -715,7 +715,7 @@ const obtener_filtros = () => {
 		.map(it => ({ label: it.label, min: $(it).attr("data-min"), max: $(it).attr("data-max") }));
 	const generos = selected_options('#genero-multiselect');
 
-	return [
+	const filters = [
 		{
 			selected_options: _.map(anios, it => ({ ...it, value: _.toNumber(it.value) })),
 			obtener_valor: d => _.get(d, "anio"),
@@ -743,14 +743,15 @@ const obtener_filtros = () => {
 			category: "genero"
 		},
 	];
+
+	return _.reject(filters, { category: categoria_principal });
 };
 
 const causas_filtradas_por_categoria = () => {
 	const filters = obtener_filtros();
 
 	return casusas_ordenadas.filter(d => 
-		_(filters).reject({ category: categoria_principal })
-		.every(({ selected_options, obtener_valor, is_range }) => {
+		_.every(filters, ({ selected_options, obtener_valor, is_range }) => {
 			const value = obtener_valor(d);
 			const filter_applies = is_range? _.some(selected_options, ({ min, max }) => (!min || value > min) && (!max || value <= max)) : _.includes(_.map(selected_options, "value"), value);
 			return _.isEmpty(selected_options) || filter_applies;
@@ -917,6 +918,7 @@ const draw_filter_tags = () => {
 	const filters = obtener_filtros();
 
 	$("#search-filters-tags").empty();
+
 	_.forEach(filters, ({ selected_options, category }) => _.forEach(selected_options, option => draw_filter_tag(option, category)));
 }
 
