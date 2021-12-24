@@ -914,12 +914,21 @@ const deselect_option = (category, value, label) => {
 const draw_filter_tag = ({ label, value }, category) => $("#search-filters-tags")
 	.append(`<span class="badge badge-pill badge-light"><span>${label}</span><span class="far fa-times-circle" onclick="deselect_option('${category}', '${value}', '${label}')"></span></span>`);
 
+const draw_clear_button = filters => {
+	const some_filter_selected = !_(filters).flatMap("selected_options").isEmpty();
+	if (some_filter_selected)
+		$("#clean-filters").css('display', 'block');
+	else
+		$("#clean-filters").css('display', 'none');
+};
+
 const draw_filter_tags = () => {
 	const filters = obtener_filtros();
 
 	$("#search-filters-tags").empty();
-
 	_.forEach(filters, ({ selected_options, category }) => _.forEach(selected_options, option => draw_filter_tag(option, category)));
+	
+	draw_clear_button(filters);
 }
 
 const apply_filters = () => {
@@ -929,6 +938,8 @@ const apply_filters = () => {
 };
 
 const clean_filters = () => {
+	if (!categoria_principal) return;
+
 	$('#anio-multiselect').multiselect("deselectAll");
 	$('#estado-multiselect').multiselect("deselectAll");
 	$('#resultado-multiselect').multiselect("deselectAll");
