@@ -926,9 +926,20 @@ const apply_filters = () => {
 	if (!categoria_principal) return;
 
 	vizFinal(categoria_principal);
-}
+};
+
+const clean_filters = () => {
+	$('#anio-multiselect').multiselect("deselectAll");
+	$('#estado-multiselect').multiselect("deselectAll");
+	$('#resultado-multiselect').multiselect("deselectAll");
+	$('#duracion-multiselect').multiselect("deselectAll");
+	$('#genero-multiselect').multiselect("deselectAll");
+
+	vizFinal(categoria_principal, false);
+};
 
 $("#apply-filters").on("click", apply_filters)
+$("#clean-filters").on("click", clean_filters)
 
 function hoverdiv(e,event){
 
