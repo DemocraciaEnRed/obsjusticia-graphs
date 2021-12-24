@@ -319,6 +319,14 @@ nav > ul > li.active{
     margin-bottom: 25px;
  }
 
+ #search-filters-tags {
+    float: left;
+ }
+
+ #clean-filters {
+    float: right;
+ }
+
  /* Customize the label (the container) */
 .container {
     display: block;
@@ -329,6 +337,7 @@ nav > ul > li.active{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width: auto;
   }
   
   /* Hide the browser's default checkbox */
