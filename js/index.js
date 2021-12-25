@@ -69,15 +69,26 @@ const filter_options_drawer = (options, filter_name) => {
 	$(filter_name).multiselect('dataprovider', opciones_multiselect);
 }
 
+const configure_filters_dropdown = (multiselectId, label) =>
+	$(multiselectId).multiselect({
+		buttonText: () => label,
+		buttonTextAlignment: 'left'
+	});
+
+const configure_filters_dropdowns = () => {
+	//TODO reuse multiselectIds in obtener_filtros
+	configure_filters_dropdown('#anio-multiselect', 'AÑO');
+	configure_filters_dropdown('#estado-multiselect', 'ESTADO');
+	configure_filters_dropdown('#resultado-multiselect', 'RESULTADO');
+	configure_filters_dropdown('#duracion-multiselect', 'DURACIÓN');
+	configure_filters_dropdown('#genero-multiselect', 'GÉNERO');
+}
+
 $(document).ready(function () {
 	var getOne = $.ajax('data/juiciosp.csv')
 	var getTwo = $.ajax('data/data2.csv')
 
-	$('#anio-multiselect').multiselect({ buttonText: () => 'AÑO' });
-	$('#estado-multiselect').multiselect({ buttonText: () => 'ESTADO' });
-	$('#resultado-multiselect').multiselect({ buttonText: () => 'RESULTADO' });
-	$('#duracion-multiselect').multiselect({ buttonText: () => 'DURACIÓN' });
-	$('#genero-multiselect').multiselect({ buttonText: () => 'GÉNERO' });
+	configure_filters_dropdowns();
 	
 	console.log('- GET datasets...')
 	$.when( getOne, getTwo )

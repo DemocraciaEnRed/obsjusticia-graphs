@@ -311,15 +311,23 @@ nav > ul > li.active{
      margin-top: 10px;
  }
 
- .filter-container{
+#search-filters-container > * {
+    margin: 0 10px 0 10px;
+}
+
+#search-filters-container .btn-group {
+    width: 140px;
+}
+
+.filter-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
- }
+}
 
- #search-filters-tags-container {
+#search-filters-tags-container {
     margin-bottom: 15px;
 }
 
