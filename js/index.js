@@ -525,7 +525,7 @@ const deselect_option = (category, value, label) => {
 };
 
 const draw_filter_tag = ({ label, value }, category) => $("#search-filters-tags")
-	.append(`<span class="badge badge-pill badge-light"><span>${label}</span><span class="far fa-times-circle" onclick="deselect_option('${category}', '${value}', '${label}')"></span></span>`);
+	.append(`<span class="badge badge-pill badge-light filter-tag"><span class="filter-tag-value">${label}</span><span class="far fa-times-circle filter-tag-remove" onclick="deselect_option('${category}', '${value}', '${label}')"></span></span>`);
 
 const draw_clear_button = filters => {
 	const some_filter_selected = !_(filters).flatMap("selected_options").isEmpty();

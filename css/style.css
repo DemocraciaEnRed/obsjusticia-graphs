@@ -319,13 +319,36 @@ nav > ul > li.active{
     margin-bottom: 25px;
  }
 
- #search-filters-tags {
-    float: left;
- }
+ #search-filters-tags-container {
+    margin-bottom: 15px;
+}
 
- #clean-filters {
-    float: right;
- }
+#clean-filters {
+    margin-top: 15px;
+}
+
+.filter-tag {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.filter-tag:not(:first-child) {
+    margin-left: 15px;
+}
+
+.filter-tag-value {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.filter-tag-remove {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.87);
+}
 
  /* Customize the label (the container) */
 .container {
