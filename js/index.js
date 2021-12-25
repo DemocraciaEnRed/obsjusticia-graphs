@@ -427,6 +427,7 @@ const vizFinal= (option) =>{
 			return 0;
 		})
 		
+		//TODO avoid repeating in every category
 		const causas_filtradas = causas_filtradas_por_categoria();
 		causas_filtradas.forEach(d => situacion_drawer(dot_container, d));
 
@@ -576,8 +577,33 @@ const clean_filters = () => {
 	vizFinal(categoria_principal, false);
 };
 
-$("#apply-filters").on("click", apply_filters)
-$("#clean-filters").on("click", clean_filters)
+const download_filtered = () => {
+	if (!categoria_principal) return;
+
+	const header_row = ['estado', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
+	const causas_filtradas = causas_filtradas_por_categoria();
+
+	const rows = [
+		header_row,
+		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").replace(/(^"|"$)/g, '')))
+	];
+	let csv_content = "data:text/csv;charset=utf-8," 
+	+ rows.map(e => e.join(",")).join("\n");
+
+	var encoded_uri = encodeURI(csv_content);
+
+	var link = document.createElement("a");
+	link.setAttribute("href", encoded_uri);
+	link.setAttribute("download", "my_data.csv");
+	document.body.appendChild(link); // Required for FF
+
+	link.click();
+};
+
+$("#apply-filters").on("click", apply_filters);
+$("#clean-filters").on("click", clean_filters);
+$("#download-filtered").on("click", download_filtered);
+$("#download-all").on("click", download_all);
 
 function hoverdiv(e,event){
 
