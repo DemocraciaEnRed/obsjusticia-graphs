@@ -528,6 +528,10 @@ const vizFinal= (option) =>{
 		}	
 	}
 
+	if( dot_container.is(':empty') ) {
+		dot_container.append("<p>No hubo resultados para los filtros seleccionados</p>");
+	}
+
 }
 
 $(".filtro").change(function(){
