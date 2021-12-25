@@ -158,6 +158,10 @@ section{
     color: #1db8b1
 }
 
+.dot-container-container {
+    min-height: 400px;
+}
+
 .dot-container{
     width: 100%;
     display: flex;

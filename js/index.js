@@ -218,6 +218,7 @@ $(document).ready(function () {
 
 });
 
+//TODO reuse span drawing (the same in every drawer)
 const situacion_drawer = (dot_container, d) => {
 	const norm_estado = normalizacion_situacion[d.NORM_estado]
 	contador_situacion[norm_estado].contador += 1;
@@ -384,7 +385,7 @@ const causas_filtradas_por_categoria = () => {
 }
 
 const vizFinal= (option) =>{
-	const dot_container = $("#vizFinal  > .viz-container > .dot-container")
+	const dot_container = $("#vizFinal  > .viz-container > .dot-container-container > .dot-container")
 	$(".viz-ref").empty()
 	dot_container.empty()
 
