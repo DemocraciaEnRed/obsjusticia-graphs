@@ -394,10 +394,10 @@ nav > ul > li.active{
     position: absolute;
     top: 1;
     left: 1;
-    height: 21px;
-    width: 21px;
+    height: 16px;
+    width: 16px;
     background-color: #eee;
-    border-radius: 20%;
+    border-radius: 50%;
   }
 
   .container img {
@@ -423,17 +423,18 @@ nav > ul > li.active{
   }
 
   .pre-checkmark{
-    border-radius: 20%;
+    border-radius: 50%;
     border-style: solid;
     border-color: #000;
     border-width: 1px;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     top: 0;
     left: 0;
     margin-right: 10px;
+    overflow: hidden;
     }
   
   /* Show the checkmark when checked */
