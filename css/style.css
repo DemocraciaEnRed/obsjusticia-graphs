@@ -328,6 +328,14 @@ nav > ul > li.active{
     width: 140px;
 }
 
+#apply-filters {
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #6200E8;
+    outline: none;
+}
+
 .filter-container{
     display: flex;
     flex-direction: row;
@@ -341,7 +349,14 @@ nav > ul > li.active{
 }
 
 #clean-filters {
-    margin-top: 15px;
+    margin-top: 10px;
+    background: #C8DAFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
 }
 
 .filter-tag {
