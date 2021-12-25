@@ -416,6 +416,7 @@ const vizFinal= (option) =>{
 
 
 	if(option === "resultado"){
+		//TODO avoid repeating this
 		_.forEach(contador_situacion, (contador) => _.update(contador, "contador", () => 0));
 		casusas_ordenadas = causas_cerradas.filter((d) => {
 			return  d.situacion.toLowerCase() !== 'acumulados' 
@@ -610,7 +611,7 @@ const download_filtered = () => {
 
 	const rows = [
 		header_row,
-		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").replace(/(^"|"$)/g, '')))
+		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").replace(/("|\\")/g, '')))
 	];
 	
 	download_csv_rows(rows);
