@@ -383,6 +383,25 @@ nav > ul > li.active{
     color: rgba(0, 0, 0, 0.87);
 }
 
+#download-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download-all {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#download-filtered {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
  /* Customize the label (the container) */
 .container {
     display: block;

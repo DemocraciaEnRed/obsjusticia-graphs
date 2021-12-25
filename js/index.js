@@ -1,4 +1,5 @@
 let juicios;
+let data_csv
 let casusas
 let causas_abiertas
 let causas_cerradas
@@ -109,6 +110,7 @@ $(document).ready(function () {
 			}).filter((j)=> {return j.causa_numero !== ""})
 			console.log('-- step one DONE')
 		}).done( (dataOne, dataTwo) => {
+			data_csv = dataTwo;
 			dataParseTwo= Papa.parse(dataTwo[0], {
 				header: 'true',
 				transformHeader: function (h) {
@@ -577,6 +579,29 @@ const clean_filters = () => {
 	vizFinal(categoria_principal, false);
 };
 
+const download_csv = csv => {
+	var link = document.createElement("a");
+	link.setAttribute("href", csv);
+	link.setAttribute("download", "denuncias.csv");
+	document.body.appendChild(link); // Required for FF
+
+	link.click();
+}
+
+const download_csv_rows = rows => {
+	let csv_content = "data:text/csv;charset=utf-8," 
+	+ rows.map(e => e.join(",")).join("\n");
+
+	var encoded_uri = encodeURI(csv_content);
+
+	download_csv(encoded_uri);
+}
+
+const download_all = () => {
+	const all_reports_csv = "data:text/csv;charset=utf-8," + data_csv;
+	download_csv(all_reports_csv);
+};
+
 const download_filtered = () => {
 	if (!categoria_principal) return;
 
@@ -587,17 +612,8 @@ const download_filtered = () => {
 		header_row,
 		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").replace(/(^"|"$)/g, '')))
 	];
-	let csv_content = "data:text/csv;charset=utf-8," 
-	+ rows.map(e => e.join(",")).join("\n");
-
-	var encoded_uri = encodeURI(csv_content);
-
-	var link = document.createElement("a");
-	link.setAttribute("href", encoded_uri);
-	link.setAttribute("download", "my_data.csv");
-	document.body.appendChild(link); // Required for FF
-
-	link.click();
+	
+	download_csv_rows(rows);
 };
 
 $("#apply-filters").on("click", apply_filters);
