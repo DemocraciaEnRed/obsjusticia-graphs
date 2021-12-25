@@ -159,7 +159,7 @@ section{
 }
 
 .dot-container-container {
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .dot-container{
@@ -303,7 +303,12 @@ nav > ul > li.active{
      font-size: 30px;
      font-weight: bold;
      line-height: 1;
-     margin-bottom: 20px;
+     margin-bottom: 60px;
+ }
+
+ .sub-title-search {
+    font-weight: 100;
+    font-size: 24px;
  }
 
  .title-search{
@@ -332,7 +337,7 @@ nav > ul > li.active{
 }
 
 #search-filters-tags-container {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 #clean-filters {

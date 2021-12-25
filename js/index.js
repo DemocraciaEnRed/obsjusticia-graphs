@@ -123,6 +123,8 @@ $(document).ready(function () {
 			});
 
 			casusas = dataParseTwo
+			const reports_size = _.size(casusas);
+			$("#title-reports-amount").text(reports_size);
 			causas_abiertas = dataParseTwo.filter((d) => d.estado !== 'cerrados')
 			causas_cerradas = dataParseTwo.filter((d) => d.estado === 'cerrados')
 			const _jueces = dataParseTwo.map((k) => k.juez_nombre_apellido);
