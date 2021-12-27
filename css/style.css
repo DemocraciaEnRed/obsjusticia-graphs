@@ -45,7 +45,7 @@ section{
     /* height: 100vh; */
     min-height: 100vh;
     padding: 0 150px 0 150px;
-    /* padding: 50px; */
+    padding: 50px;
     display: block;
     scroll-margin-top: 0em!important;
 }
@@ -548,9 +548,6 @@ nav > ul > li.active{
 @media screen and (max-width: 768px) {
     h1{
         font-size: 15px;
-    }
-    .viz-section{
-        padding: 0 135px 0 20px;
     }
     .dot{
         min-height: 4px;
