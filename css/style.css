@@ -400,6 +400,7 @@ nav > ul > li.active{
     border: none;
     cursor: pointer;
     margin-left: 70px;
+    color: #6200E8;
 }
 
  /* Customize the label (the container) */
