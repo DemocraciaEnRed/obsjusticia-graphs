@@ -640,9 +640,9 @@ const search_reports = ({ target }) => {
 			<div class="line">
 				<p class="status">${estado == 'cerrados'? 'CERRADA - ' + _.toUpper(NORM_estado) : "ACTIVA"}</p>
 				${estado == "abierto"? `<p class="remaining-time"> CADUCA EN ${years_to_expiry} AÑO ${years_to_expiry == 1 ? 'S' : ''}</p>` : ""}
-					<p class="report-date report-date-value">
+					<p class="report-date">
 						<span class="report-date-title">FECHA DE DENUNCIA:</span>
-						${date_with_format(report_date)}
+						<span class="report-date-value">${date_with_format(report_date)}</span>
 					</p>
 			</div>
 			<div class="line">
@@ -656,9 +656,10 @@ const search_reports = ({ target }) => {
 					<span>DENUNCIA:</span>
 					${caratula_nombre}
 				</p>
-				${estado == "abierto"? `<p class="expiry-date expiry-date-value">
+				${estado == "abierto"? `<p class="expiry-date">
 						<span class="expiry-date-title">FECHA DE CADUCIDAD:</span>
-					${date_with_format(expiry_time)}</p>`
+						<span class="expiry-date-value">${date_with_format(expiry_time)}</span>
+					</p>`
 				: ""}
 			</div>
 			${estado == "cerrados"? `<div class="line">

@@ -567,6 +567,10 @@ nav > ul > li.active{
     order: 2;
 }
 
+.report-date-value, .expiry-date-value{
+    float: right;
+}
+
 .status, .remaining-time{
     display: contents;
 }
