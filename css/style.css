@@ -553,6 +553,10 @@ nav > ul > li.active{
     display: flex;
 }
 
+.report-date-title, .expiry-date-title{
+    display: block;
+}
+
 .report-response > *{
     display: block;
     float: left;
