@@ -544,6 +544,28 @@ nav > ul > li.active{
     font-size: 12px;
 }
 
+.report-result{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.line{
+    display: flex;
+}
+
+.report-response > *{
+    display: block;
+    float: left;
+}
+
+.report-date, .expiry-date{
+    margin-left: auto;
+    order: 2;
+}
+
+.status, .remaining-time{
+    display: contents;
+}
 
 @media screen and (max-width: 768px) {
     h1{

@@ -418,7 +418,7 @@ const vizFinal= (option) =>{
 	if(option === "resultado"){
 		//TODO avoid repeating this
 		_.forEach(contador_situacion, (contador) => _.update(contador, "contador", () => 0));
-		casusas_ordenadas = causas_cerradas.filter((d) => {
+		casusas_ordenadas = _.filter(causas_cerradas, (d) => {
 			return  d.situacion.toLowerCase() !== 'acumulados' 
 					&& d.situacion !== ''
 					&& d.NORM_estado !== 'Renuncia'
@@ -450,7 +450,7 @@ const vizFinal= (option) =>{
 
 	if(option === "estado"){
 		_.forEach(contador_estado, (contador) => _.update(contador, "contador", () => 0));
-		casusas_ordenadas = casusas.sort((a, b) => {
+		casusas_ordenadas = _.cloneDeep(casusas).sort((a, b) => {
 			if (a.estado == 'cerrados') {
 				return 1;
 			}
@@ -503,8 +503,7 @@ const vizFinal= (option) =>{
 
 	if(option === "genero"){
 		_.forEach(contador_genero, (contador) => _.update(contador, "contador", () => 0));
-		casusas_ordenadas = casusas
-				.filter((d) => d.juez_nombre_apellido !== "" && d.genero_est !== "Desconocido")
+		casusas_ordenadas = _.filter(casusas, (d) => d.juez_nombre_apellido !== "" && d.genero_est !== "Desconocido")
 				.sort((a, b) => {
 					if (a.genero_est < b.genero_est) return 1;
 					if (a.genero_est > b.genero_est) return -1;
@@ -621,10 +620,59 @@ const download_filtered = () => {
 	download_csv_rows(rows);
 };
 
+const to_comparable_name = name => _.chain(name).deburr().toLower().value();
+const date_with_format = date => date.format("DD/MM/YYYY");
+
+const search_reports = ({ target }) => {
+	const judge_name = _.get(target, "value", "");
+	if (judge_name.length < 3) return;
+	
+	$("#reports-search-results").empty();
+	_(casusas).filter(({ juez_nombre_apellido }) => _.includes(to_comparable_name(juez_nombre_apellido), to_comparable_name(judge_name)))
+	.forEach(({ estado, anio, juez_nombre_apellido, ingreso_comisión_fecha, fecha_dispone_articulo_11, caratula_nombre, dictamen_resolucion, situacion, NORM_estado }) => {
+		const report_date = moment(ingreso_comisión_fecha || fecha_dispone_articulo_11);
+		const expiry_time = moment(report_date).add(3, "years");
+		const years_to_expiry = expiry_time.diff(moment(), "years");
+		
+		$("#reports-search-results").append(`<div class='report-result'>
+			<span></span>
+			<div class="line">
+				<p class="status">${estado == 'cerrados'? 'CERRADA - ' + _.toUpper(NORM_estado) : "ACTIVA"}</p>
+				${estado == "abierto"? `<p class="remaining-time"> CADUCA EN ${years_to_expiry} AÑO ${years_to_expiry == 1 ? 'S' : ''}</p>` : ""}
+				<div class='search-subitem report-date'>
+					<p class="report-date-title">FECHA DE DENUNCIA:</p>
+					<p class="report-date-value">${date_with_format(report_date)}</p>
+				</div>
+			</div>
+			<div class="line">
+				<p class="judge-names-title">JUEZ / JUECES:</p>
+				<p class="judge-names">${juez_nombre_apellido}</p>
+			</div>
+			<div class="line">
+				<div class='report-response'>
+					<p class="report-reason-title">DENUNCIA:</p>
+					<p class="report-reason">${caratula_nombre}</p>
+				</div>
+				${estado == "abierto"? `<div class='expiry-date'>
+						<p class="expiry-date-title">FECHA DE CADUCIDAD:</p>
+						<p class="expiry-date-value">${date_with_format(expiry_time)}</p>
+					</div>`
+				: ""}
+			</div>
+			${estado == "cerrados"? `<div class="line">
+					<p class="closing-reason-title">MOTIVO DE CIERRE:</p>
+					<p class="closing-reason">${situacion || dictamen_resolucion}</p>
+				</div>`
+			: ""}
+		</div>`);
+	});
+};
+
 $("#apply-filters").on("click", apply_filters);
 $("#clean-filters").on("click", clean_filters);
 $("#download-filtered").on("click", download_filtered);
 $("#download-all").on("click", download_all);
+$("#reports-search-input").on("input", search_reports);
 
 function hoverdiv(e,event){
 
