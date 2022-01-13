@@ -630,16 +630,18 @@ const search_reports = ({ target }) => {
 	$("#reports-search-results").empty();
 	_(casusas).filter(({ juez_nombre_apellido }) => _.includes(to_comparable_name(juez_nombre_apellido), to_comparable_name(judge_name)))
 	.take(4)
-	.forEach(({ estado, anio, juez_nombre_apellido, ingreso_comisión_fecha, fecha_dispone_articulo_11, caratula_nombre, dictamen_resolucion, situacion, NORM_estado }) => {
+	.forEach(({ estado, juez_nombre_apellido, ingreso_comisión_fecha, fecha_dispone_articulo_11, caratula_nombre, dictamen_resolucion, situacion, NORM_estado }) => {
 		const report_date = moment(ingreso_comisión_fecha || fecha_dispone_articulo_11);
 		const expiry_time = moment(report_date).add(3, "years");
 		const years_to_expiry = expiry_time.diff(moment(), "years");
+		const estado_actualizado = estado == "abierto" && !years_to_expiry? "cerrados" : estado;
+		const NORM_estado_actualizado = estado == "abierto" && !years_to_expiry? "Caducado" : NORM_estado;
 		
 		$("#reports-search-results").append(`<div class='report-result'>
 			<span></span>
 			<div class="line">
-				<p class="status">${estado == 'cerrados'? 'CERRADA - ' + _.toUpper(NORM_estado) : "ACTIVA"}</p>
-				${estado == "abierto"? `<p class="remaining-time"> CADUCA EN ${years_to_expiry} AÑO ${years_to_expiry == 1 ? 'S' : ''}</p>` : ""}
+				<p class="status">${estado_actualizado == 'cerrados'? 'CERRADA - ' + _.toUpper(NORM_estado_actualizado) : "ACTIVA"}</p>
+				${estado_actualizado == "abierto" && years_to_expiry? `<p class="remaining-time"> CADUCA EN ${years_to_expiry} AÑO ${years_to_expiry >= 1 ? 'S' : ''}</p>` : ""}
 					<p class="report-date">
 						<span class="report-date-title">FECHA DE DENUNCIA:</span>
 						<span class="report-date-value">${date_with_format(report_date)}</span>
@@ -650,19 +652,19 @@ const search_reports = ({ target }) => {
 					<span class="judge-names-title">JUEZ / JUECES:</span>
 					${juez_nombre_apellido}
 				</p>
+				${estado_actualizado == "abierto"? `<p class="expiry-date">
+						<span class="expiry-date-title">FECHA DE CADUCIDAD:</span>
+						<span class="expiry-date-value">${date_with_format(expiry_time)}</span>
+					</p>`
+				: ""}
 			</div>
 			<div class="line">
 				<p class="report-response report-reason">
 					<span>DENUNCIA:</span>
 					${caratula_nombre}
 				</p>
-				${estado == "abierto"? `<p class="expiry-date">
-						<span class="expiry-date-title">FECHA DE CADUCIDAD:</span>
-						<span class="expiry-date-value">${date_with_format(expiry_time)}</span>
-					</p>`
-				: ""}
 			</div>
-			${estado == "cerrados"? `<div class="line">
+			${estado_actualizado == "cerrados" && (situacion || dictamen_resolucion)? `<div class="line">
 					<p class="closing-reason-title">MOTIVO DE CIERRE:</p>
 					<p class="closing-reason">${situacion || dictamen_resolucion}</p>
 				</div>`
