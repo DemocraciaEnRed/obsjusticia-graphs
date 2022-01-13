@@ -7,6 +7,7 @@ let jueces
 let total_casusas
 let juicios_politicos
 let categoria_principal
+let juez_a_buscar
 
 const hoy = new Date()
 
@@ -623,12 +624,20 @@ const download_filtered = () => {
 const to_comparable_name = name => _.chain(name).deburr().toLower().value();
 const date_with_format = date => date.format("DD/MM/YYYY");
 
+const causas_filtradas_por_nombre = () =>
+	_(casusas).filter(({ juez_nombre_apellido }) =>
+		_.includes(to_comparable_name(juez_nombre_apellido), to_comparable_name(juez_a_buscar))
+	)
+
 const search_reports = ({ target }) => {
-	const judge_name = _.get(target, "value", "");
-	if (judge_name.length < 3) return;
-	
+	juez_a_buscar = _.get(target, "value", "");
 	$("#reports-search-results").empty();
-	_(casusas).filter(({ juez_nombre_apellido }) => _.includes(to_comparable_name(juez_nombre_apellido), to_comparable_name(judge_name)))
+
+	if (juez_a_buscar.length < 3) return;
+	
+	const causas_filtradas = causas_filtradas_por_nombre();
+
+	causas_filtradas
 	.take(4)
 	.forEach(({ estado, juez_nombre_apellido, ingreso_comisión_fecha, fecha_dispone_articulo_11, caratula_nombre, dictamen_resolucion, situacion, NORM_estado }) => {
 		const report_date = moment(ingreso_comisión_fecha || fecha_dispone_articulo_11);
@@ -670,7 +679,28 @@ const search_reports = ({ target }) => {
 				</div>`
 			: ""}
 		</div>`);
+
 	});
+	
+	if (causas_filtradas.size() > 4)
+		$("#reports-search-results").append(`<div class='report-result-more'>
+			<p>Mostrando los primeros 4 resultados. Para ver todos, hacé click en el botón a continuación</p>
+		</div>`);
+};
+
+const download_filtered_by_name = () => {
+	if (!juez_a_buscar || juez_a_buscar.length < 3) return;
+
+	const header_row = ['estado', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
+	const causas_filtradas = causas_filtradas_por_nombre();
+	if (causas_filtradas.isEmpty()) return;
+
+	const rows = [
+		header_row,
+		...causas_filtradas.map(causa => _.map(header_row, column => _.get(causa, column, "").replace(/("|\\")/g, '')))
+	];
+	
+	download_csv_rows(rows);
 };
 
 $("#apply-filters").on("click", apply_filters);
@@ -678,6 +708,7 @@ $("#clean-filters").on("click", clean_filters);
 $("#download-filtered").on("click", download_filtered);
 $("#download-all").on("click", download_all);
 $("#reports-search-input").on("input", search_reports);
+$("#download-filtered-by-name").on("click", download_filtered_by_name);
 
 function hoverdiv(e,event){
 

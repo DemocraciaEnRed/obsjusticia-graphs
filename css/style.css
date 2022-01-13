@@ -383,7 +383,7 @@ nav > ul > li.active{
     color: rgba(0, 0, 0, 0.87);
 }
 
-#download-buttons-container {
+.download-buttons-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,13 +393,13 @@ nav > ul > li.active{
     outline: none;
     border: none;
     cursor: pointer;
+    margin-right: 70px;
 }
 
-#download-filtered {
+[id^=download-filtered] {
     outline: none;
     border: none;
     cursor: pointer;
-    margin-left: 70px;
     color: #6200E8;
 }
 
