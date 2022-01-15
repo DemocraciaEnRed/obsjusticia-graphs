@@ -682,9 +682,10 @@ const search_reports = ({ target }) => {
 
 	});
 	
-	if (causas_filtradas.size() > 4)
+	const cantidad_causas_filtradas = causas_filtradas.size();
+	if (cantidad_causas_filtradas > 4)
 		$("#reports-search-results").append(`<div class='report-result-more'>
-			<p>Mostrando los primeros 4 resultados. Para ver todos, hacé click en el botón a continuación</p>
+			<p>Mostrando 4 de ${causas_filtradas.size()} resultados. Para ver todos, hacé click en el botón a continuación</p>
 		</div>`);
 };
 
