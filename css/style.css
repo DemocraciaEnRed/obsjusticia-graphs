@@ -558,11 +558,11 @@ nav > ul > li.active{
 }
 
 #reports-search-input{
-    width: 35%;
     background-color: transparent;
     border: 1px solid;
     border-radius: 3px;
     padding-left: 10px;
+    width: 90%;
 }
 
 #reports-search-results{
