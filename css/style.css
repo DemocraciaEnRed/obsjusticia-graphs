@@ -544,6 +544,32 @@ nav > ul > li.active{
     font-size: 12px;
 }
 
+.reports-search{
+    margin-top: 70px;
+}
+
+.reports-search-input-container i{
+    position: relative;
+}
+
+.reports-search-input-container .fas {
+    top: 2px;
+    right: 2rem;
+}
+
+#reports-search-input{
+    width: 35%;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+#reports-search-results{
+    padding-top: 25px;
+    min-height: 20vh;
+}
+
 .report-result{
     border: 1px solid;
     margin-bottom: 15px;
@@ -571,6 +597,7 @@ nav > ul > li.active{
 .report-date, .expiry-date{
     margin-left: auto;
     order: 2;
+    margin-bottom: 10px;
 }
 
 .report-date-value, .expiry-date-value{
@@ -579,6 +606,15 @@ nav > ul > li.active{
 
 .status, .remaining-time{
     display: contents;
+    font-weight: 600;
+}
+
+.status{
+    font-size: 20px;
+}
+
+.remaining-time{
+    font-size: 14px;
 }
 
 .result-color-tag{
@@ -600,6 +636,11 @@ nav > ul > li.active{
     display: block;
     float: left;
     background-color: #CD3D27;
+}
+
+.judge-names-title, .report-response-title, .closing-reason-title{
+    text-decoration: underline;
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 768px) {

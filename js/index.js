@@ -629,16 +629,21 @@ const causas_filtradas_por_nombre = () =>
 		_.includes(to_comparable_name(juez_nombre_apellido), to_comparable_name(juez_a_buscar))
 	)
 
+function is_mobile() {
+	try{ document.createEvent("TouchEvent"); return true; }
+	catch(e){ return false; }
+}
+
 const search_reports = ({ target }) => {
 	juez_a_buscar = _.get(target, "value", "");
 	$("#reports-search-results").empty();
-
 	if (juez_a_buscar.length < 3) return;
 	
 	const causas_filtradas = causas_filtradas_por_nombre();
 
+	const results_limit = is_mobile()? 2 : 4;
 	causas_filtradas
-	.take(4)
+	.take(results_limit)
 	.forEach(({ estado, juez_nombre_apellido, ingreso_comisión_fecha, fecha_dispone_articulo_11, caratula_nombre, dictamen_resolucion, situacion, NORM_estado }) => {
 		const report_date = moment(ingreso_comisión_fecha || fecha_dispone_articulo_11);
 		const expiry_time = moment(report_date).add(3, "years");
@@ -670,7 +675,7 @@ const search_reports = ({ target }) => {
 				</div>
 				<div class="line">
 					<p class="report-response report-reason">
-						<span>DENUNCIA:</span>
+						<span class="report-response-title">DENUNCIA:</span>
 						${caratula_nombre}
 					</p>
 				</div>
@@ -685,9 +690,9 @@ const search_reports = ({ target }) => {
 	});
 	
 	const cantidad_causas_filtradas = causas_filtradas.size();
-	if (cantidad_causas_filtradas > 4)
+	if (cantidad_causas_filtradas > results_limit)
 		$("#reports-search-results").append(`<div class='report-result-more'>
-			<p>Mostrando 4 de ${causas_filtradas.size()} resultados. Para ver todos, hacé click en el botón a continuación</p>
+			<p>Mostrando ${results_limit} de ${causas_filtradas.size()} resultados. Para ver todos, hacé click en el botón a continuación</p>
 		</div>`);
 };
 
