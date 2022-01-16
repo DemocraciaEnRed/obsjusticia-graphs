@@ -546,7 +546,13 @@ nav > ul > li.active{
 
 .report-result{
     border: 1px solid;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.report-result-info{
     padding: 10px;
+    width: 100%;
 }
 
 .line{
@@ -573,6 +579,27 @@ nav > ul > li.active{
 
 .status, .remaining-time{
     display: contents;
+}
+
+.result-color-tag{
+    width: 25px;
+    display: block;
+    float: left;
+}
+
+.closed{
+    background-color: #6B6B6B;
+}
+
+.opened{
+    background-color: #1DD1A1;
+}
+
+.opened-short-expiry{
+    width: 25px;
+    display: block;
+    float: left;
+    background-color: #CD3D27;
 }
 
 @media screen and (max-width: 768px) {
