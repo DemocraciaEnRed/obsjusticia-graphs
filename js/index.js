@@ -74,7 +74,8 @@ const filter_options_drawer = (options, filter_name) => {
 const configure_filters_dropdown = (multiselectId, label) =>
 	$(multiselectId).multiselect({
 		buttonText: () => label,
-		buttonTextAlignment: 'left'
+		buttonTextAlignment: 'left',
+		maxHeight: 230
 	});
 
 const configure_filters_dropdowns = () => {
