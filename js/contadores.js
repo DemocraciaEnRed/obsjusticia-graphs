@@ -197,7 +197,7 @@ const contador_estado = {
 	},
 	abierto:{
 		contador: 0,
-		label:'Abierto',
+		label:'Activo',
 		color: paletaColores.verde
 	}
 }

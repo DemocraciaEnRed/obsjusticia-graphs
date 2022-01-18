@@ -32,376 +32,103 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">		
 		<link rel="stylesheet" href="css/style.css">
 
+		<!-- Multiselect -->
+		<script type="text/javascript" src="https://davidstutz.github.io/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+		<link rel="stylesheet" href="https://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css"/>
+
+		<!-- Lodash -->
+		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+		
+		<!-- Moment -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</head>
 	<body>
-		
-		<nav>
-			<ul id="mainNav">
-				<b><span id="anios_desde_1988"></span> AÑOS</b>
-				<li class="active">
-					<a href="#goViz1">
-						<span class="num total_denuncias">0</span>
-						<br/> 
-						<span class="title">DENUNCIAS</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz2">
-						<!--<span class="num total_desestimadas">0</span>-->
-						<span class="num">3360</span>
-						<br/> 
-						<span class="title">DESESTIMADAS</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz3">
-						<span class="num total_caducadas">0</span>
-						<br/> 
-						<span class="title">CADUCARON</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz4">
-						<span class="num total_activas">0</span>
-						<br/> 
-						<span class="title">causas activas</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz5">
-						<span class="num total_sancionadas">0</span>
-						<br/> 
-						<span class="title">con sanciones</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz9">
-						<span class="num total_juicios">0</span>
-						<br/> 
-						<span class="title">juicios politcos</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz10"> 
-						<span class="title">renuncias</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goViz11">
-						<span class="num total_incompletas">0</span>
-						<br/> 
-						<span class="title">incompletas</span>
-						
-					</a>
-				</li>
-				<li>
-					<a href="#goVizFinal">
-						<span class="num"><b>BUSCA<br>DENUNCIAS</b></span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-
-		<section class="viz-section" id="viz1">
-			<span id="goViz1"></span>
-			<div class="viz-container">
-				<h1> Desde que comenzó a funcionar el consejo de la magistratura en 1998 se registran <strong><span class="total_denuncias">(cargando...)</span> denuncias</strong>. </h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot1">
-							</div>
-						</div>
-						<div class="ref-text">
-							Denuncias
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="viz-section" id="viz2">
-			<span id="goViz2"></span>
-			<div class="viz-container">
-				<h1>De todas las denuncias, <strong>3360 se desestimaron</strong> a la falta de solidez de las mismas. Muchas ni siquiera cumplen con los requisitos mínimos (por lo cual se las desestima in limine)</h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot2">
-							</div>
-						</div>
-						<div class="ref-text">
-							Desestimadas
-						</div>
-					</div>
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot0">
-							</div>
-						</div>
-						<div class="ref-text">
-							Con apertura de trámite
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="viz-section" id="viz3">
-			<span id="goViz3"></span>
-			<div class="viz-container">
-				<h1><strong>245</strong> denuncias <strong>caducaron</strong> por falta de voluntad del Consejo De La Magistratura. La ley establece que tiene <i>3 años</i> para investigar y determinar un veredicto, caso contrario se cierra por falta de eficacia.</h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot1">
-							</div>
-						</div>
-						<div class="ref-text">
-							Caducadas
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="viz-section" id="viz4">
-			<span id="goViz4"></span>
-			<div class="viz-container">
-				<h1>En la actualidad hay <b>187</b> causas <b>activas</b> de las cuales 25 estan a punto de caducar!</h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot5">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							Caducan en <br/>
-							<span class="color5 bold">1 año</span>
-						</div>
-					</div>
-
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot4">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							Caducan en <br/>
-							<span class="color4 bold">2 años</span>
-						</div>
-					</div>
-
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot3">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							Caducan en <br/>
-							<span class="color3 bold">3 años</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="viz-section" id="viz5">
-			<span id="goViz5"></span>
-			<div class="viz-container">
-				
-				<h1>Hay 3728 sin sanción y <b>42 con sanción</b>. Las sanciones son multas, advertencias o apercibimientos.</h1>
-
-				
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-			
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot11">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							Sin sanción
-						</div>
-					</div>
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot12">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							Con sanción
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-
-	
-
-		<section class="viz-section" id="viz9">
-			<span id="goViz9"></span>
-			<div class="viz-container">
-				<h1>De todas las denuncias y luego de 22 años, solo se iniciaron <strong>35 juicios políticos</strong> que terminaron en 18 destituciones, 6 absoluciones y el resto en renuncias de los acusados</h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-		
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot9">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							18 destituciones
-						</div>
-					</div>
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot7">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							6 absoluciones
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="viz-section" id="viz10">
-			<span id="goViz10"></span>
-			<div class="viz-container">
-				<h1> Esto quiere decir que de los <b><span class="total_juicios"></span>35 juicios políticos</b>, terminaron con la <b>11 terminaron con la renuncia del Juez </b> antes de que el proceso judicial termine.
-					En muchos casos esto es una solución política que no resuelve el fondo de la denuncia
-					</h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-				<div class="viz-footer">
-					<p class="viz-caption"><i>Hay dos jueces que tuvieron dos causas que se unificaron.</i></p>
-				</div>
-			</div>
-		</section>
-
-		<section class="viz-section" id="viz11">
-			<!-- <span id="goViz11"></span> -->
-			<div id="goViz11" class="viz-container">
-				<h1>Lamentablemente hay más de <b><span class="total_incompletas"></span> denuncias</b> de las cuales el Consejo de la Magistratura no brinda información completa como nombre del juez o jueza denunciados. La información abierta es poca y de baja calidad y el propio Consejo reconoce que no cuenta con información detallada sobre denuncias.</h1>
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
-				</div>
-				<div class="viz-footer-ref">
-					<div class="ref-container"> 
-						<div class="ref-dot">
-							<div class="dot-ref dot6">
-
-							</div>
-						</div>
-						<div class="ref-text">
-							Incompletas
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section class="viz-section" id="vizFinal">
 			<div id="goVizFinal" class="viz-container">
 				
 				<div class="title-search-contianer">
-					<div class="title-search">Ahora te toca a vos jugar al</div>
-					<div lass="sub-title-search">busca denuncias</div>
+					<span class="sub-title-search">
+						DESDE QUE COMENZÓ A FUNCIONAR EL CONSEJO DE LA MAGISTRATURA EN 1998 SE REGISTRAN
+						<span id="title-reports-amount">(cargando...)</span>
+						DENUNCIAS.
+					</span>
 				</div>
-				<div class="title-feet-search">Selecciná los datos que quieras ver en detalles</div>
 
 				<div class="filter-container">
-					
-					
-						<label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="anio">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/anio.png"/>
-							Por año
-						  </label>
+					<label class="container">
 						
+						<input type="radio" name="filter" class="filtro" value="estado">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
 						
-						  <label class="container">
+						<img src="img/estado.png"/>
+						Estado
+					</label>
+						
+					<label class="container">
 							
-							<input type="radio" name="filter" class="filtro" value="situacion">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/situacion.png"/>
-							Situación
-						  </label>
-						  <label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="estado">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/estado.png"/>
-							Estado
-						  </label>
-						  <label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="demora">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/demora.png"/>
-							Demora
-						  </label>
-						  <label class="container">
-							
-							<input type="radio" name="filter" class="filtro" value="genero">
-							<div class="pre-checkmark">
-								<span class="checkmark"/>
-							</div>
-							
-							<img src="img/genero.png"/>
-							Género
-						  </label>
+						<input type="radio" name="filter" class="filtro" value="resultado">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
+						
+						<img src="img/situacion.png"/>
+						Resultado
+					</label>
+					<label class="container">
+						
+						<input type="radio" name="filter" class="filtro" value="duracion">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
+						
+						<img src="img/demora.png"/>
+						Duración
+					</label>
+					<label class="container">
+						
+						<input type="radio" name="filter" class="filtro" value="genero">
+						<div class="pre-checkmark">
+							<span class="checkmark"/>
+						</div>
+						
+						<img src="img/genero.png"/>
+						Género
+					</label>
 				</div>
+
+			<div id="search-filters-container" class="filter-container row">
+				<div id="anio-multiselect-container">
+					<select id="anio-multiselect" multiple="multiple"></select>
+				</div>
+				
+				<div id="estado-multiselect-container">
+					<select id="estado-multiselect" multiple="multiple"></select>
+				</div>
+
+				<div id="resultado-multiselect-container">
+					<select id="resultado-multiselect" multiple="multiple"></select>
+				</div>
+				
+				<div id="duracion-multiselect-container">
+					<select id="duracion-multiselect" multiple="multiple"></select>
+				</div>
+				
+				<div id="genero-multiselect-container">
+					<select id="genero-multiselect" multiple="multiple"></select>
+				</div>
+				
+				<button id="apply-filters">APLICAR FILTROS</button>
+			</div>
+
+			<div id="search-filters-tags-container" class="row">
+				<div id="search-filters-tags" class="col-md-9"></div>
+				<div id="clean-filters-container" class="col-md-3">
+					<button id="clean-filters" style="display: none;">Limpiar todos los filtros</button>
+				</div>
+			</div>
 
 				<div class="tooltip-container" id="tooltip-container">
 					<img src="img/t.png" id="t">
@@ -435,23 +162,43 @@
 					</div>
 					<div class="tooltip-row chivo">
 						<p>
-							<span class="tooltip-label">SITUACION</span>
+							<span class="tooltip-label">RESULTADO</span>
 							<br>
 							<span class="tooltip-info" id="tooltip-situacion"></span>
 						</p>
 					</div>
 				</div>
 
-				<div class="dot-container">
-					<img src="loading.gif" class="loading"/>
+				<div class="dot-container-container">
+					<div class="dot-container">
+						<img src="loading.gif" class="loading"/>
+					</div>
 				</div>
 				<div class="viz-footer">
 					<div class="viz-ref">
 					</div>
 				</div>
+				<div class="download-buttons-container">
+					<button id="download-all">DESCARGAR TODAS</button>
+					<button id="download-filtered">DESCARGAR FILTRADAS</button>
+				</div>
+			</div>
+			<div class="reports-search">
+				<p>BUSCÁ DENUNCIAS</p>
+				<div class="reports-search-input-container col-md-4">
+					<input id="reports-search-input" type="text" />
+					<i class="fas fa-search"></i>
+				</div>
+				<div id="reports-search-results" class="col-md-12">
+				</div>
+				<div class="download-buttons-container">
+					<button id="download-filtered-by-name">DESCARGAR FILTRADAS</button>
+				</div>
 			</div>
 		</section>
 		
+		
+
 		<script src="js/const.js" ></script>
 		<script src="js/contadores.js" ></script>
 		<script src="js/index.js" ></script>
