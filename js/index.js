@@ -611,12 +611,12 @@ const download_all = () => {
 const download_filtered = () => {
 	if (!categoria_principal) return;
 
-	const header_row = ['estado', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
+	const header_row = ['estado', 'anio', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
 	const causas_filtradas = causas_filtradas_por_categoria();
 
 	const rows = [
 		header_row,
-		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").replace(/("|\\")/g, '')))
+		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").toString().replace(/("|\\")/g, '')))
 	];
 	
 	download_csv_rows(rows);
@@ -700,13 +700,13 @@ const search_reports = ({ target }) => {
 const download_filtered_by_name = () => {
 	if (!juez_a_buscar || juez_a_buscar.length < 3) return;
 
-	const header_row = ['estado', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
+	const header_row = ['estado', 'anio', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
 	const causas_filtradas = causas_filtradas_por_nombre();
 	if (causas_filtradas.isEmpty()) return;
 
 	const rows = [
 		header_row,
-		...causas_filtradas.map(causa => _.map(header_row, column => _.get(causa, column, "").replace(/("|\\")/g, '')))
+		...causas_filtradas.map(causa => _.map(header_row, column => _.get(causa, column, "").toString().replace(/("|\\")/g, '')))
 	];
 	
 	download_csv_rows(rows);
