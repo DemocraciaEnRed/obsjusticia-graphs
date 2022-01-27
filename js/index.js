@@ -261,7 +261,7 @@ const demora_drawer = (dot_container, d) => {
 	const date = monthDiff(fecha,hoy)
 	let color
 	if(date === NaN) console.log(d)
-	console.log({ date, fecha,hoy, d })
+	
 	if (date <= 12) {
 		color = contador_demora.menor_1.color;
 		contador_demora.menor_1.contador += 1;
