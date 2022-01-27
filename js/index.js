@@ -460,7 +460,12 @@ const vizFinal= (option) =>{
 
 	if(option === "duracion"){
 		_.forEach(contador_demora, (contador) => _.update(contador, "contador", () => 0));
-		casusas_ordenadas = causas_abiertas.sort((a, b) => {
+		casusas_ordenadas = causas_abiertas.filter(d => {
+			const fecha = new Date(d.fecha_dispone_articulo_11);
+			const date = monthDiff(fecha,hoy);
+			return date <= 36;
+		})
+		.sort((a, b) => {
 			const date_a = new Date(a.fecha_dispone_articulo_11);
 			const date_b = new Date(b.fecha_dispone_articulo_11);
 			return date_a > date_b ? 1 : -1;
