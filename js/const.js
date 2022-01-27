@@ -64,13 +64,14 @@ const colorArrayDemora = [
 const paletaColores = {
 	celeste : '#00B1AF',
 	gris: '#B2B2B2',
-	verde: '#9DD14B',
-	rojo:'#DE2C13',
+	verde: '#1DD1A1',
+	rojo:'#CD3D27',
 	naranja: '#F19A1E',
 	rosa:'#AA57BC',
-	azul:'#0061C6',
-	naranja: '#F19A1E'
-
+	azul:'#6C9EFF',
+	naranja: '#F19A1E',
+	amarillo: '#E59D3F',
+	violeta: "#9F5EB7",
 }
 const generoIcon = ['fa-male', 'fa-female', 'fa-transgender'];
 const normalizacion_situacion = {

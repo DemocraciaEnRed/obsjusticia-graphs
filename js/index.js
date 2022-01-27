@@ -145,13 +145,9 @@ $(document).ready(function () {
 			filter_options_drawer(resultados_posibles, "#resultado-multiselect");
 
 			const duraciones_posibles = [
-				{ label: "Mayor a 36 meses", min: 36 },
-				{ label: "Entre 36 y 30 meses", min: 30, max: 36 },
-				{ label: "Entre 30 y 24 meses", min: 24, max: 30 },
-				{ label: "Entre 24 y 18 meses", min: 18, max: 24 },
-				{ label: "Entre 18 y 12 meses", min: 12, max: 18 },
-				{ label: "Entre 12 y 6 meses", min: 6, max: 12 },
-				{ label: "Menor a 6 meses", max: 6 }
+				{ label: "3 - 2 años", min: 24, max: 36 },
+				{ label: "2 - 1 años", min: 12, max: 24 },
+				{ label: "Menos de 1 año", max: 12 }
 			];
 			filter_options_drawer(duraciones_posibles, "#duracion-multiselect");
 
@@ -265,34 +261,18 @@ const demora_drawer = (dot_container, d) => {
 	const date = monthDiff(fecha,hoy)
 	let color
 	if(date === NaN) console.log(d)
-
-	if (date <= 6 ) {
-		color = contador_demora.menor_6.color;
-		contador_demora.menor_6.contador += 1;
+	
+	if (date <= 12) {
+		color = contador_demora.menor_1.color;
+		contador_demora.menor_1.contador += 1;
 	}
-	if (date <= 12 && date > 6) {
-		color = contador_demora.entre_12_6.color;
-		contador_demora.entre_12_6.contador += 1;
+	if (date <= 24 && date > 12) {
+		color = contador_demora.entre_2_1.color;
+		contador_demora.entre_2_1.contador += 1;
 	}
-	if (date <= 18 && date > 12) {
-		color = contador_demora.entre_18_12.color;
-		contador_demora.entre_18_12.contador += 1;
-	}
-	if (date <= 24 && date > 18) {
-		color = contador_demora.entre_24_18.color;
-		contador_demora.entre_24_18.contador += 1;
-	}
-	if (date <= 30 && date > 24) {
-		color = contador_demora.entre_30_24.color;
-		contador_demora.entre_30_24.contador += 1;
-	}
-	if (date <= 36 && date > 30) {
-		color = contador_demora.entre_36_30.color;
-		contador_demora.entre_36_30.contador += 1;
-	}
-	if(date>36){
-		color = contador_demora.mayor_36.color;
-		contador_demora.mayor_36.contador += 1;
+	if (date <= 36 && date > 24) {
+		color = contador_demora.entre_3_2.color;
+		contador_demora.entre_3_2.contador += 1;
 	}
 	dot_container.append(`<span 
 	class="dot dot8 info" 
@@ -480,7 +460,12 @@ const vizFinal= (option) =>{
 
 	if(option === "duracion"){
 		_.forEach(contador_demora, (contador) => _.update(contador, "contador", () => 0));
-		casusas_ordenadas = causas_abiertas.sort((a, b) => {
+		casusas_ordenadas = causas_abiertas.filter(d => {
+			const fecha = new Date(d.fecha_dispone_articulo_11);
+			const date = monthDiff(fecha,hoy);
+			return date <= 36;
+		})
+		.sort((a, b) => {
 			const date_a = new Date(a.fecha_dispone_articulo_11);
 			const date_b = new Date(b.fecha_dispone_articulo_11);
 			return date_a > date_b ? 1 : -1;

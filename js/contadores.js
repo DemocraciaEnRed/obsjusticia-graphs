@@ -89,17 +89,17 @@ const contador_genero = {
 	hombre:{
 		contador: 0,
 		label:'Hombre',
-		color: paletaColores.azul
+		color: paletaColores.violeta
 	},
 	mujer:{
 		contador: 0,
 		label:'Mujer',
-		color: paletaColores.rosa
+		color: paletaColores.verde
 	},
 	mixto:{
 		contador: 0,
 		label:'Mixto',
-		color: paletaColores.naranja
+		color: paletaColores.azul
 	},
 	// desconocido:{
 	// 	contador: 0,
@@ -113,22 +113,22 @@ const contador_situacion = {
 	'desestimado':{
 		contador: 0,
 		label:'Desestimado',
-		color:"#f85fd5"
+		color: paletaColores.azul
 	},
 	'caducado':{
 		contador: 0,
 		label:'Caducado',
-		color:"#22b3ee"
+		color: paletaColores.rojo
 	},
 	'sancion':{
 		contador: 0,
 		label:'Sanción',
-		color:"#e59d3f"
+		color: paletaColores.verde
 	},
 	'juicio-político':{
 		contador: 0,
 		label:'Juicio Político',
-		color:"#da2222"
+		color: paletaColores.amarillo
 	},
 	// 'renuncia':{
 	// 	contador: 0,
@@ -149,42 +149,20 @@ const contador_situacion = {
 }
 
 const contador_demora = {
-	mayor_36:{
+	entre_3_2:{
 		contador: 0,
-		label: 'Mayor a<br />36 meses',
-		color: '#129921'
-		
-	},
-	entre_36_30:{
-		contador: 0,
-		label: 'Entre 36 meses <br/> y 30 meses',
-		color: '#56df26'
-	},
-	entre_30_24:{
-		contador: 0,
-		label: 'Entre 30 meses <br/> y 24 meses',
-		color: '#facd35'
-		
-	},
-	entre_24_18:{
-		contador: 0,
-		label: 'Entre 24 meses <br/> y 18 meses',
-		color: '#ff5162'
-	},
-	entre_18_12:{
-		contador: 0,
-		label: 'Entre 18 meses <br/> y 12 meses',
-		color: '#f00'
+		label: '3 - 2 años',
+		color: paletaColores.verde
     },
-	entre_12_6:{
+	entre_2_1:{
 		contador: 0,
-		label: 'Entre 12 meses <br/> y 6 meses',
-		color: '#994646'
+		label: '2 - 1 años',
+		color: paletaColores.amarillo
     },
-	menor_6:{
+	menor_1:{
 		contador: 0,
-		label: 'Menor a<br/>6 meses',
-		color: '550000'
+		label: 'Menos de 1 año',
+		color: paletaColores.rojo
 	}
 }
 
@@ -193,7 +171,7 @@ const contador_estado = {
 	cerrados:{
 		contador: 0,
 		label:'Cerrado',
-		color: paletaColores.celeste
+		color: paletaColores.rojo
 	},
 	abierto:{
 		contador: 0,
