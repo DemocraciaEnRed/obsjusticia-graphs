@@ -14,7 +14,8 @@ html, body{
 }
 
 body{
-    overflow: clip
+    overflow: clip;
+    height: fit-content;
 }
 
 h1{
@@ -42,8 +43,6 @@ section{
 }
 
 .viz-section{
-    /* height: 100vh; */
-    min-height: 100vh;
     padding: 0 150px 0 150px;
     padding: 50px;
     display: block;
@@ -403,6 +402,10 @@ nav > ul > li.active{
     color: #6200E8;
 }
 
+#download-filtered-by-name-container{
+    display: none;
+}
+
  /* Customize the label (the container) */
 .container {
     display: block;
@@ -501,10 +504,6 @@ nav > ul > li.active{
 
 }
 
-#vizFinal{
-    margin-bottom: 200px;
-}
-
 .tooltip-row{
     text-align: left;
 }
@@ -567,7 +566,6 @@ nav > ul > li.active{
 
 #reports-search-results{
     padding-top: 25px;
-    min-height: 20vh;
 }
 
 .report-result{
