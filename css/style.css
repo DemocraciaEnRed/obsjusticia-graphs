@@ -681,4 +681,7 @@ nav > ul > li.active{
         width: 5px;
         height: 10px;
     }
+    #reports-search-input{
+        font-size: 12px;
+    }
 }
