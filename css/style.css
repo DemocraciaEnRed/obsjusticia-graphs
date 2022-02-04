@@ -404,6 +404,7 @@ nav > ul > li.active{
 
 #download-filtered-by-name-container{
     display: none;
+    margin-top: 60px;
 }
 
  /* Customize the label (the container) */
