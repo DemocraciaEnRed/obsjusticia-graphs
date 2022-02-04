@@ -623,6 +623,7 @@ function is_mobile() {
 const search_reports = ({ target }) => {
 	juez_a_buscar = _.get(target, "value", "");
 	$("#reports-search-results").empty();
+	$("#download-filtered-by-name-container").css("display", "none");
 	if (juez_a_buscar.length < 3) return;
 	
 	const causas_filtradas = causas_filtradas_por_nombre();
@@ -676,6 +677,10 @@ const search_reports = ({ target }) => {
 	});
 	
 	const cantidad_causas_filtradas = causas_filtradas.size();
+
+	if (cantidad_causas_filtradas)
+		$("#download-filtered-by-name-container").css("display", "flex");
+
 	if (cantidad_causas_filtradas > results_limit)
 		$("#reports-search-results").append(`<div class='report-result-more'>
 			<p>Mostrando ${results_limit} de ${causas_filtradas.size()} resultados. Para ver todos, hacé click en el botón a continuación</p>
