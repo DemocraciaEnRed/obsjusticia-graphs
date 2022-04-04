@@ -472,7 +472,7 @@ nav > ul > li.active{
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
     margin-right: 10px;
     overflow: hidden;
@@ -490,7 +490,22 @@ nav > ul > li.active{
     width: 5px;
     height: 10px;
   }
+.head-filter{
+    /* H4 */
 
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+
+}
 /* ****************TOOTLTIPS *********************/
 /* ****************** For Type Filter ************************ */
 /* Tooltip container */
@@ -498,8 +513,9 @@ nav > ul > li.active{
     color: #EC6961;
     margin: 2px;
     position: relative;
-    top: 0px;
+    top: -20px;
     right: 0px;
+    font-size: 70%;
 }
 .tooltip-config {
     position: relative !important;
@@ -511,7 +527,7 @@ nav > ul > li.active{
     visibility: hidden;
     color: #000;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px;
     border-radius: 6px;
    
     /* Position the tooltip text - see examples below! */
@@ -520,7 +536,7 @@ nav > ul > li.active{
 
 
     width: 195px;
-    height: 95px;
+    height: 110px;
     left: 27px;
     top: 2.02px;
 
@@ -537,6 +553,21 @@ nav > ul > li.active{
     position: absolute;
     border-width: 5px;
     border-style: solid;
+}
+.tooltiptext{
+    /* Captions */
+
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+
+    text-align: center;
+
+    color: #000000;
+
 }
   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip-config:hover .tooltiptext {
@@ -644,12 +675,15 @@ nav > ul > li.active{
 
 #reports-search-results{
     padding-top: 25px;
+    max-height: 700px;
+    overflow-y: scroll;
 }
 
 .report-result{
     border: 1px solid;
     margin-bottom: 15px;
     display: flex;
+
 }
 
 .report-result-info{
@@ -697,23 +731,40 @@ nav > ul > li.active{
     width: 25px;
     display: block;
     float: left;
+    background-color: #858585;
 }
-
-.closed{
+/* Abiertas  caducidad entre 3 y 2 años    ->  color verde
+                caducidad  entre 2 y 1            -> amarillo
+                caducidad en menos de 1      -> rojo
+Cerradas  desestimada -> celeste #6C9EFF
+                   con juicio publico -> asmarillo  #E59D3F
+                   con sancion -> verde #1DD1A1
+                    caducada -> rojo #EC6961
+ */ 
+ .closed, .closed-with-sanction, .closed-with-judgment, .closed-dismissed{
+    height: 40% !important;
+}
+.opened , .opened-to-expire, .closed-with-sanction, .opened-short-expiry{
+    height: 100%;
+}
+.closed, .opened-to-expire{
     background-color: #EC6961;
 }
 
-.opened{
+
+.opened, .closed-with-sanction{
     background-color: #1DD1A1;
 }
 
-.opened-short-expiry{
+.opened-short-expiry, .closed-with-judgment{
     width: 25px;
     display: block;
     float: left;
     background-color: #E59D3F;
 }
-
+.closed-dismissed{
+    background-color: #6C9EFF;
+}
 .judge-names-title, .report-response-title, .closing-reason-title{
     text-decoration: underline;
     margin-right: 5px;

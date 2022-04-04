@@ -127,6 +127,7 @@ $(document).ready(function () {
 			});
 
 			casusas = dataParseTwo
+
 			const reports_size = _.size(casusas);
 			$("#title-reports-amount").text(reports_size);
 			causas_abiertas = dataParseTwo.filter((d) => d.estado !== 'cerrados')
@@ -134,7 +135,9 @@ $(document).ready(function () {
 			const _jueces = dataParseTwo.map((k) => k.juez_nombre_apellido);
 			jueces = _.uniq(_jueces);
 			console.log('-- step two: DONE')
-
+			// *************control borrame
+			console.log(causas_cerradas);
+			// *************control borrame		
 			const anios_posibles = _(casusas).map("anio").uniq().filter(anio => anio > 1000).sort().value();
 			filter_options_drawer(anios_posibles, "#anio-multiselect");
 			
@@ -594,7 +597,12 @@ const download_all = () => {
 };
 
 const download_filtered = () => {
+	// console.log('download filtered: ', typeof(categoria_principal));
+
 	if (!categoria_principal) return;
+	// verificar que el input id="reports-search-input" tenga contenido antes de ejecutar (osea que hay filtrados)
+	// no esta trayendo nada en causas_filtradas
+	//  chequear causas_filtradas_por_categoria
 
 	const header_row = ['estado', 'anio', 'expediente_numero', 'ingreso_comisión_fecha', 'juez_nombre_apellido', 'fuero_nombre', 'denunciante_nombre', 'caratula_nombre', 'consejero_nombre', 'dictamen_resolucion', 'situacion', 'NORM_estado', 'observacion', 'fecha_dispone_articulo_11', 'estado_procesal', 'genero_est'];
 	const causas_filtradas = causas_filtradas_por_categoria();
@@ -603,7 +611,8 @@ const download_filtered = () => {
 		header_row,
 		..._.map(causas_filtradas, causa => _.map(header_row, column => _.get(causa, column, "").toString().replace(/("|\\")/g, '')))
 	];
-	
+	console.log('download filtered in process...');
+
 	download_csv_rows(rows);
 };
 
@@ -619,7 +628,38 @@ function is_mobile() {
 	try{ document.createEvent("TouchEvent"); return true; }
 	catch(e){ return false; }
 }
+function evalStateColor(estado,NORM,years){
+	// evaluara el estado teniendo encuenta todas las posibilidades y retornara la clases css correspondinete
+	// return "closed"	
+	
+	if (estado == "cerrados"){
+		if (NORM == "Sanción"){
+			console.log('devuelve:cerrado por sancion')
+			return' closed-with-sanction'
+		}else{
+			if (NORM == "Desestimado"){
 
+				return 'closed-dismissed'
+			}else{
+				if (NORM == "Juicio Político"){
+					return 'closed-with-judgment'
+				}else{
+					return 'closed'
+		}}}
+	}else{
+		if (estado == "abierto" && (years >=2 && years <=3)){
+			return 'opened'
+		}else{
+			if (estado == "abierto" && (years >=1 && years <=2)){
+				return 'opened-short-expiry'
+			}
+		else{
+			return 'opened-to-expire'
+		}}
+	}
+	// esto estaba odnde ahora se llama la funcion  estado == "cerrados"? "closed"  : estado == "abierto"  && years > 1? "opened" : "opened-short-expiry" 
+	// return 'closed-with-judgment'
+}
 const search_reports = ({ target }) => {
 	juez_a_buscar = _.get(target, "value", "");
 	$("#reports-search-results").empty();
@@ -628,7 +668,8 @@ const search_reports = ({ target }) => {
 	
 	const causas_filtradas = causas_filtradas_por_nombre();
 
-	const results_limit = is_mobile()? 2 : 4;
+	const results_limit = is_mobile()? 2 : causas_filtradas.size();
+	// console.log(results_limit);
 	causas_filtradas
 	.take(results_limit)
 	.forEach(({ estado, juez_nombre_apellido, ingreso_comisión_fecha, fecha_dispone_articulo_11, caratula_nombre, dictamen_resolucion, situacion, NORM_estado }) => {
@@ -637,9 +678,11 @@ const search_reports = ({ target }) => {
 		const years_to_expiry = expiry_time.diff(moment(), "years");
 		const estado_actualizado = estado == "abierto" && !years_to_expiry? "cerrados" : estado;
 		const NORM_estado_actualizado = estado == "abierto" && !years_to_expiry? "Caducado" : NORM_estado;
-		
+
 		$("#reports-search-results").append(`<div class='report-result'>
-			<span class="result-color-tag ${estado_actualizado == "cerrados"? "closed" : estado_actualizado == "abierto"  && years_to_expiry > 1? "opened" : "opened-short-expiry" }"></span>
+			<div class="result-color-tag">
+				<div class="${evalStateColor(estado_actualizado,NORM_estado,years_to_expiry)}"></div>
+			</div>
 			<div class='report-result-info'>
 				<div class="line">
 					<p class="status">${estado_actualizado == 'cerrados'? 'CERRADA - ' + _.toUpper(NORM_estado_actualizado) : "ACTIVA"}</p>
