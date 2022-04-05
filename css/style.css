@@ -9,7 +9,8 @@
 }
 
 html, body{
-    background-color: #ededed;
+    /* background-color: #ededed; */
+    background-color: #fff;
     font-family: 'Chivo', sans-serif;
 }
 
@@ -637,7 +638,7 @@ nav > ul > li.active{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 35px;
     text-align: center;
     text-transform: uppercase;
