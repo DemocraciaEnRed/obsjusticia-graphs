@@ -679,7 +679,54 @@ nav > ul > li.active{
     max-height: 700px;
     overflow-y: scroll;
 }
+.solidbtn{
 
+    width: 197px;
+    height: 50px;
+    left: 732px;
+    top: 1872px;
+
+    background: #3157AC;
+    border-radius: 5px;
+
+    /* texto boton */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+.transparentbtn{
+    width: 197px;
+    height: 50px;
+    left: 732px;
+    top: 1872px;
+
+    background: #fff;
+    border: 1px solid #3157AC !important;
+    border-radius: 5px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+
+    color: #3157AC;
+
+
+}
 .report-result{
     border: 1px solid;
     margin-bottom: 15px;

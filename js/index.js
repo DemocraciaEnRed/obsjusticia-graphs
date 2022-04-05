@@ -135,9 +135,7 @@ $(document).ready(function () {
 			const _jueces = dataParseTwo.map((k) => k.juez_nombre_apellido);
 			jueces = _.uniq(_jueces);
 			console.log('-- step two: DONE')
-			// *************control borrame
-			console.log(causas_cerradas);
-			// *************control borrame		
+	
 			const anios_posibles = _(casusas).map("anio").uniq().filter(anio => anio > 1000).sort().value();
 			filter_options_drawer(anios_posibles, "#anio-multiselect");
 			
@@ -634,7 +632,6 @@ function evalStateColor(estado,NORM,years){
 	
 	if (estado == "cerrados"){
 		if (NORM == "Sanción"){
-			console.log('devuelve:cerrado por sancion')
 			return' closed-with-sanction'
 		}else{
 			if (NORM == "Desestimado"){
