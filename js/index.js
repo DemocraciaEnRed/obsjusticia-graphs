@@ -678,7 +678,7 @@ const search_reports = ({ target }) => {
 
 		$("#reports-search-results").append(`<div class='report-result'>
 			<div class="result-color-tag">
-				<div class="${evalStateColor(estado_actualizado,NORM_estado,years_to_expiry)}"></div>
+				<div id="status-color" class="${evalStateColor(estado_actualizado,NORM_estado,years_to_expiry)}"></div>
 			</div>
 			<div class='report-result-info'>
 				<div class="line">
