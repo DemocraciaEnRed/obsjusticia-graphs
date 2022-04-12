@@ -742,6 +742,10 @@ nav > ul > li.active{
     margin-bottom: 15px;
     display: flex;
     height: 250px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 13px 0px rgba(0,0,0,0.9); 
+    box-shadow: 5px 5px 13px 0px rgba(0,0,0,0.9);
 }
 
 .report-result-info{
@@ -792,6 +796,7 @@ nav > ul > li.active{
     display: block;
     float: left;
     background-color: #858585;
+    border-radius: 5px 0px 0px 5px;
 }
 /* Abiertas  caducidad entre 3 y 2 años    ->  color verde
                 caducidad  entre 2 y 1            -> amarillo
