@@ -662,7 +662,7 @@ const search_reports = ({ target }) => {
 	$("#reports-search-results").empty();
 	$("#download-filtered-by-name-container").css("display", "none");
 	if (juez_a_buscar.length < 3) return;
-	
+	$("#reports-search-results").css("visibility", "visible")
 	const causas_filtradas = causas_filtradas_por_nombre();
 
 	const results_limit = is_mobile()? 2 : causas_filtradas.size();
