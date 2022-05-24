@@ -344,9 +344,9 @@ nav > ul > li.active{
     margin-bottom: 25px;
     
 }
-@include mobile {
+@media screen and (max-width: 740px) {
     .filter-container{
-        display: block;
+        display: block !important;
         font: 1.5rem;
     }
 }
