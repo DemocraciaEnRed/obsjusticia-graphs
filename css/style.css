@@ -347,7 +347,7 @@ nav > ul > li.active{
 @media screen and (max-width: 740px) {
     .filter-container{
         display: block !important;
-        font: 1.5rem;
+        font-size: 1.5rem !important;
     }
 }
 
