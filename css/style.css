@@ -853,7 +853,7 @@ Cerradas  desestimada -> celeste #6C9EFF
 }
 
 .opened-short-expiry, .closed-with-judgment{
-    width: 25px;
+    width: 100%;
     display: block;
     float: left;
     background-color: #E59D3F;
