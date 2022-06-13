@@ -165,60 +165,6 @@ $(document).ready(function () {
 		}).fail( () => {
 			console.log('Error GET!!!')
 		});
-
-
-	// $.get('data/juiciosp.csv', (data) => {
-	// 	dataParse = Papa.parse(data, {
-	// 		header: 'true',
-	// 		transformHeader: function (h) {
-	// 			return h.trim();
-	// 		},
-	// 	});
-
-	// 	juicios_politicos = dataParse.data.map((j)=>{
-	// 		const a = new Date(j.causa_fecha)
-	// 		j["anio"] = a.getFullYear()
-	// 		j['juez_nombre_apellido'] = j.juez_apellido + " "+ j.juez_nombre
-	// 		return  j
-	// 	}).filter((j)=> {return j.causa_numero !== ""})
-	// 	finishloading()
-	// })
-
-	// $.get('data/data2.csv', (data) => {
-	// 	dataParse = Papa.parse(data, {
-	// 		header: 'true',
-	// 		transformHeader: function (h) {
-	// 			return h.trim();
-	// 		},
-	// 	});
-		
-	// 	dataParse = dataParse.data.map((d) => {
-	// 		d['anio'] = obtenerAnio(d);
-	// 		if (d.fecha_dispone_articulo_11 === "" || d.fecha_dispone_articulo_11 === "17/0/19") d.fecha_dispone_articulo_11 = "1/1/2019"
-	// 		return d;
-	// 	});
-
-	// 	casusas = dataParse
-	// 	causas_abiertas = dataParse.filter((d) => d.estado !== 'cerrados')
-	// 	causas_cerradas = dataParse.filter((d) => d.estado === 'cerrados')
-	// 	const _jueces = dataParse.map((k) => k.juez_nombre_apellido);
-	// 	jueces = _.uniq(_jueces);
-	// }).done( () => {
-	// 	viz1()
-	// 	viz2()
-	// 	viz3()
-	// 	viz4()
-	// 	viz5()
-	// 	viz6()
-	// 	viz7()
-	// 	viz8()
-	// 	viz9()
-	// 	viz10()
-	// 	viz11()
-	// 	vizFinal('init')
-	// 	finishloading()
-	// });
-
 });
 
 //TODO reuse span drawing (the same in every drawer)
