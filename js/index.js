@@ -204,7 +204,7 @@ const estado_drawer = (dot_container, d) => {
 }
 
 const demora_drawer = (dot_container, d) => {
-	const fecha = new Date(d.fecha_dispone_articulo_11)
+	const fecha = new Date(d.ingreso_comisión_fecha)
 	const date = monthDiff(fecha,hoy)
 	let color
 	if(date === NaN) console.log(d)
@@ -291,7 +291,7 @@ const obtener_filtros = () => {
 		},
 		{
 			selected_options: duraciones,
-			obtener_valor: d => monthDiff(new Date(_.get(d, "fecha_dispone_articulo_11")), hoy),
+			obtener_valor: d => monthDiff(new Date(_.get(d, "ingreso_comisión_fecha")), hoy),
 			category: "duracion",
 			is_range: true
 		},
@@ -408,13 +408,13 @@ const vizFinal= (option) =>{
 	if(option === "duracion"){
 		_.forEach(contador_demora, (contador) => _.update(contador, "contador", () => 0));
 		casusas_ordenadas = causas_abiertas.filter(d => {
-			const fecha = new Date(d.fecha_dispone_articulo_11);
+			const fecha = new Date(d.ingreso_comisión_fecha);
 			const date = monthDiff(fecha,hoy);
 			return date <= 36;
 		})
 		.sort((a, b) => {
-			const date_a = new Date(a.fecha_dispone_articulo_11);
-			const date_b = new Date(b.fecha_dispone_articulo_11);
+			const date_a = new Date(a.ingreso_comisión_fecha);
+			const date_b = new Date(b.ingreso_comisión_fecha);
 			return date_a > date_b ? 1 : -1;
 		})
 		
