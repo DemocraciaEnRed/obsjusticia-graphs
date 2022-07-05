@@ -652,7 +652,7 @@ const search_reports = ({ target }) => {
 						${caratula_nombre}
 					</p>
 				</div>
-				${estado_actualizado == "cerrados" && (situacion || dictamen_resolucion)? `<div class="line">
+				${estado_actualizado == "cerrados" && (situacion || dictamen_resolucion)? `<div class="line description">
 						<p class="closing-reason-title">MOTIVO DE CIERRE:</p>
 						<p class="closing-reason">${situacion || dictamen_resolucion}</p>
 					</div>`

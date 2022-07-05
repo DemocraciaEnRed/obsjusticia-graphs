@@ -908,4 +908,23 @@ Cerradas  desestimada -> celeste #6C9EFF
     #reports-search-input{
         font-size: 12px;
     }
+    #anio-multiselect-container {
+        width: 100% !important;
+    }
+    .btn-group{
+        width: 80% !important;
+        padding-bottom: 5px !important ;
+    }
+    #search-filters-container{
+        display: block !important;
+    }
+    #apply-filters{
+        margin-top: 50px !important;
+    }
+    .report-result{
+        height: 360px !important;
+    }
+    .report-date, .description{
+        visibility: hidden !important;
+    }
 }
